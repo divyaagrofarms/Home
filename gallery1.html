@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livestock Inventory | Divya Agro Farms Piggery</title>
+    <meta name="description" content="Browse our current inventory of high-quality breeding stock, weaners, and growers.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-piggy-bank"></i> Divya Agro Farms
+            </a>
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#nutrition">Nutrition</a></li>
+                <li><a href="index.html#stories">Reviews</a></li>
+                <li><a href="gallery.html" class="active">Livestock</a></li>
+                <li><a href="https://script.google.com/a/~/macros/s/AKfycbxm_MziGYYYec8XvmN_HFSw30t2jAZQNPVnIiqUgoXory1wMzzQtzzBSjO1YVpId8Xh/exec" class="nav-btn">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="section-gray" style="padding-top: 3rem;">
+        
+        <section class="gallery-header">
+            <div class="section-title" style="margin-bottom: 2rem;">
+                <h2>Current Livestock Inventory</h2>
+                <p class="subtitle">Select a category below to filter stock.</p>
+            </div>
+
+            <div class="gallery-controls">
+                <button class="filter-btn active" data-filter="all">All Stock</button>
+                <button class="filter-btn" data-filter="breeding">Breeding Stock</button>
+                <button class="filter-btn" data-filter="weaners">Piglets & Weaners</button>
+                <button class="filter-btn" data-filter="facilities">Facilities</button>
+            </div>
+        </section>
+
+        <section class="gallery-grid-section">
+            <div class="inventory-grid">
+                
+                <div class="inv-card" data-category="breeding">
+                    <div class="inv-img-holder">
+                        <img src="" alt="Large White Sow">
+                        <span class="badge ready">Ready for Sale</span>
+                    </div>
+                    <div class="inv-content">
+                        <div class="inv-meta">ID: #SOW-402</div>
+                        <h3>Large White Gilt</h3>
+                        <p>Excellent maternal lines. Vaccinated and ready for first mating service.</p>
+                        <ul class="inv-specs">
+                            <li><i class="fa-solid fa-calendar"></i> 8 Months</li>
+                            <li><i class="fa-solid fa-weight-hanging"></i> ~130kg</li>
+                        </ul>
+                        <button class="view-btn lightbox-trigger" data-full-img="https://images.unsplash.com/photo-1629822603607-4229b139db08?q=80&w=1200">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i> View Details
+                        </button>
+                    </div>
+                </div>
+
+                 <div class="inv-card" data-category="weaners">
+                    <div class="inv-img-holder">
+                        <img src="" alt="Batch of piglets">
+                        <span class="badge new">New Batch</span>
+                    </div>
+                    <div class="inv-content">
+                        <div class="inv-meta">Batch: #OCT-23B</div>
+                        <h3>Landrace x Duroc Weaners</h3>
+                        <p>Strong batch, fully weaned onto dry feed. High growth potential.</p>
+                        <ul class="inv-specs">
+                            <li><i class="fa-solid fa-paw"></i> Group of 20</li>
+                            <li><i class="fa-solid fa-calendar"></i> 6 Weeks</li>
+                        </ul>
+                        <button class="view-btn lightbox-trigger" data-full-img="https://images.unsplash.com/photo-1541600383005-565c949cf777?q=80&w=1200">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i> View Details
+                        </button>
+                    </div>
+                </div>
+
+                <div class="inv-card" data-category="breeding">
+                    <div class="inv-img-holder">
+                        <img src="" alt="Mature Boar">
+                    </div>
+                    <div class="inv-content">
+                        <div class="inv-meta">ID: #BOAR-112</div>
+                        <h3>Proven Duroc Sire</h3>
+                        <p>The cornerstone of our meat quality program. Excellent temperament.</p>
+                        <ul class="inv-specs">
+                            <li><i class="fa-solid fa-calendar"></i> 2 Years</li>
+                            <li><i class="fa-solid fa-dna"></i> High Marbling</li>
+                        </ul>
+                        <button class="view-btn lightbox-trigger" data-full-img="https://images.unsplash.com/photo-1596796929949-8c44c5750d4f?q=80&w=1200">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i> View Details
+                        </button>
+                    </div>
+                </div>
+
+                <div class="inv-card" data-category="facilities">
+                    <div class="inv-img-holder">
+                        <img src="" alt="Piggery Facility">
+                    </div>
+                    <div class="inv-content">
+                        <div class="inv-meta">Infrastructure</div>
+                        <h3>Grower Pens</h3>
+                        <p>A look at our climate-controlled grower section with automated feeders.</p>
+                        <ul class="inv-specs">
+                            <li><i class="fa-solid fa-check"></i> Biosecure</li>
+                            <li><i class="fa-solid fa-wind"></i> Ventilated</li>
+                        </ul>
+                        <button class="view-btn lightbox-trigger" data-full-img="https://images.unsplash.com/photo-1615560424569-8d80c399042c?q=80&w=1200">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i> View Details
+                        </button>
+                    </div>
+                </div>
+                 <div class="inv-card" data-category="weaners">
+                    <div class="inv-img-holder">
+                        <img src="" alt="Sleeping piglets">
+                    </div>
+                    <div class="inv-content">
+                        <div class="inv-meta">Batch: #NOV-01A</div>
+                        <h3>Upcoming Weaners</h3>
+                        <p>Currently in the nursery. Will be available for deposit next week.</p>
+                        <ul class="inv-specs">
+                            <li><i class="fa-solid fa-paw"></i> Group of 35</li>
+                            <li><i class="fa-solid fa-calendar"></i> 3 Weeks</li>
+                        </ul>
+                        <button class="view-btn lightbox-trigger" data-full-img="https://images.unsplash.com/photo-1605273934551-096d274889c1?q=80&w=1200">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i> View Details
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Divya Agro Farms</h3>
+                <p>Sustainable. Ethical. Professional.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Marepally, Nagarkurnool, Telangana</p>
+                <p><i class="fa-solid fa-envelope"></i> divyaagrofarmstr@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 9966966538</p>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://youtube.com/@divyaagrofarms?si=rPuU8BE7GiFG2D_f"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#https://www.facebook.com/share/1CBjUc9Hqu/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/divyaagrofarms?igsh=ODhrdm40YjV1MHA4"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=<+919966966538>&text=<Hello>"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025-26 Diva Agro Farms Piggery. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script2.js"></script>
+</body>
+</html>
