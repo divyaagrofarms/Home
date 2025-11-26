@@ -17,6 +17,31 @@ a { text-decoration: none; color: inherit; transition: 0.3s; }
 ul { list-style: none; }
 img { max-width: 100%; display: block; }
 
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+  background: #f0f0f0;
+  padding: 10px;
+}
+
+.scroll-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-left 12s linear infinite;
+  font-size: 20px;
+  color: #663300;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
 /* --- 2. Navigation --- */
 header { background-color: var(--bg-light); box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
 .navbar { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; max-width: 1200px; margin: 0 auto; }
@@ -112,4 +137,5 @@ footer { background-color: #1a1a1a; color: #ccc; padding: 4rem 2rem 1rem; }
     .split-layout { grid-template-columns: 1fr; gap: 2rem; }
     .split-layout.reverse .split-text { order: 1; }
     .stats-banner { flex-direction: column; gap: 2rem; }
+
 }
