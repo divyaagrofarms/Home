@@ -263,5 +263,6 @@ function openDetails(data) {
 
 function closeDetails() {
     document.getElementById("detailsPopup").style.display = "none";
-    history.back();  // Go to previous page
+    window.location.href = "gallery1.html";
 }
+
