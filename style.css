@@ -210,3 +210,67 @@ header.scrolled {
 }
 
 
+/* Popup Background */
+.details-popup-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Popup Box */
+.details-popup-box {
+    width: 90%;
+    max-width: 550px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Cancel Button */
+.details-cancel-btn {
+    float: right;
+    padding: 6px 12px;
+    background: red;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.details-cancel-btn:hover {
+    background: darkred;
+}
+
+/* Table inside popup */
+.details-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.details-table th, .details-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    font-weight: bold;
+}
+
+.details-table th {
+    background: #007bff;
+    color: white;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
