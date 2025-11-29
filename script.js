@@ -263,6 +263,7 @@ function openDetails(data) {
 
 function closeDetails() {
     document.getElementById("detailsPopup").style.display = "none";
-    window.location.href = "gallery1.html";
+    window.location.href = "gallery.html";
 }
+
 
