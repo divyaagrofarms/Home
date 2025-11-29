@@ -242,3 +242,26 @@ function populateGalleryImages() {
         }
     });
 }
+
+
+function openDetails(data) {
+    document.getElementById("detailsPopup").style.display = "flex";
+
+    let table = document.getElementById("detailsTableBody");
+    table.innerHTML = ""; // Clear previous data
+
+    // Insert rows dynamically
+    for (let key in data) {
+        table.innerHTML += `
+            <tr>
+                <td>${key}</td>
+                <td>${data[key]}</td>
+            </tr>
+        `;
+    }
+}
+
+function closeDetails() {
+    document.getElementById("detailsPopup").style.display = "none";
+    history.back();  // Go to previous page
+}
