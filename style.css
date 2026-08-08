@@ -1458,3 +1458,457 @@ footer {
         inset: 8px -8px -8px 8px;
     }
 }
+
+/* =========================================================
+DIVYA AGRO FARMS — BULK IMAGE GALLERY
+========================================================= */
+
+.farm-gallery-section {
+position: relative;
+max-width: 100%;
+padding: 7rem 5%;
+background:
+radial-gradient(circle at 10% 20%, rgba(245,184,61,.08), transparent 25rem),
+radial-gradient(circle at 90% 80%, rgba(22,132,91,.08), transparent 28rem),
+#f7faf8;
+overflow: hidden;
+}
+
+.farm-gallery-section::before {
+content: "";
+position: absolute;
+inset: 0;
+pointer-events: none;
+opacity: .35;
+background-image:
+linear-gradient(rgba(11,79,60,.035) 1px, transparent 1px),
+linear-gradient(90deg, rgba(11,79,60,.035) 1px, transparent 1px);
+background-size: 50px 50px;
+}
+
+.gallery-eyebrow {
+display: inline-block;
+margin-bottom: .8rem;
+padding: 6px 13px;
+border-radius: 999px;
+background: rgba(22,132,91,.08);
+color: #16845b;
+font-size: .72rem;
+font-weight: 800;
+letter-spacing: .14em;
+}
+
+.farm-gallery-section .section-title {
+position: relative;
+z-index: 1;
+}
+
+.farm-gallery-section .section-title h2 {
+font-size: clamp(2.2rem, 4vw, 3.2rem);
+}
+
+/* Gallery grid */
+
+.farm-gallery {
+position: relative;
+z-index: 1;
+
+```
+max-width: 1250px;
+margin: 3rem auto 0;
+
+display: grid;
+
+grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+grid-auto-rows: 230px;
+
+gap: 16px;
+```
+
+}
+
+/* Individual image */
+
+.farm-gallery-item {
+position: relative;
+overflow: hidden;
+border-radius: 20px;
+
+```
+background: #dfe9e4;
+
+box-shadow:
+    0 12px 35px rgba(11,79,60,.09);
+
+cursor: pointer;
+
+border: 1px solid rgba(11,79,60,.08);
+
+transition:
+    transform .4s cubic-bezier(.2,.8,.2,1),
+    box-shadow .4s ease;
+```
+
+}
+
+.farm-gallery-item:hover {
+transform: translateY(-6px);
+
+```
+box-shadow:
+    0 24px 55px rgba(11,79,60,.18);
+```
+
+}
+
+/* Image */
+
+.farm-gallery-item img {
+width: 100%;
+height: 100%;
+
+```
+object-fit: cover;
+
+transition:
+    transform .7s cubic-bezier(.2,.8,.2,1),
+    filter .4s ease;
+```
+
+}
+
+.farm-gallery-item:hover img {
+transform: scale(1.08);
+filter: brightness(.82);
+}
+
+/* Large images */
+
+.farm-gallery-item.gallery-large {
+grid-column: span 2;
+grid-row: span 2;
+}
+
+.farm-gallery-item.gallery-wide {
+grid-column: span 2;
+}
+
+/* Dark image overlay */
+
+.farm-gallery-item::after {
+content: "";
+
+```
+position: absolute;
+inset: 0;
+
+background:
+    linear-gradient(
+        to top,
+        rgba(2,25,18,.78),
+        rgba(2,25,18,.05) 60%
+    );
+
+opacity: .65;
+
+transition: opacity .4s ease;
+```
+
+}
+
+.farm-gallery-item:hover::after {
+opacity: .9;
+}
+
+/* Image information */
+
+.farm-gallery-overlay {
+position: absolute;
+
+```
+left: 20px;
+right: 20px;
+bottom: 18px;
+
+z-index: 2;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+color: white;
+
+font-family: var(--font-heading);
+font-size: .92rem;
+font-weight: 700;
+```
+
+}
+
+.farm-gallery-overlay span {
+text-shadow: 0 3px 12px rgba(0,0,0,.4);
+}
+
+.farm-gallery-overlay i {
+width: 38px;
+height: 38px;
+
+```
+display: grid;
+place-items: center;
+
+border-radius: 50%;
+
+background: rgba(255,255,255,.16);
+
+border: 1px solid rgba(255,255,255,.35);
+
+backdrop-filter: blur(8px);
+
+transition: .3s ease;
+```
+
+}
+
+.farm-gallery-item:hover .farm-gallery-overlay i {
+background: var(--accent-color);
+color: #173326;
+
+```
+transform: rotate(10deg);
+```
+
+}
+
+/* View gallery button */
+
+.gallery-more {
+position: relative;
+z-index: 2;
+
+```
+text-align: center;
+
+margin-top: 3rem;
+```
+
+}
+
+.gallery-more-btn {
+display: inline-flex;
+
+```
+align-items: center;
+gap: 10px;
+
+padding: 14px 24px;
+
+border-radius: 999px;
+
+background:
+    linear-gradient(
+        135deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+
+color: white;
+
+font-weight: 800;
+
+box-shadow:
+    0 12px 28px rgba(11,79,60,.2);
+
+transition: .3s ease;
+```
+
+}
+
+.gallery-more-btn:hover {
+transform: translateY(-3px);
+
+```
+box-shadow:
+    0 18px 38px rgba(11,79,60,.28);
+```
+
+}
+
+.gallery-more-btn i {
+transition: transform .3s ease;
+}
+
+.gallery-more-btn:hover i {
+transform: translateX(5px);
+}
+
+/* =========================================================
+FULLSCREEN IMAGE VIEWER
+========================================================= */
+
+.farm-image-viewer {
+position: fixed;
+
+```
+inset: 0;
+
+z-index: 10000;
+
+display: flex;
+
+justify-content: center;
+align-items: center;
+
+padding: 30px;
+
+background:
+    rgba(2,18,13,.94);
+
+backdrop-filter: blur(12px);
+
+opacity: 0;
+
+visibility: hidden;
+
+transition:
+    opacity .3s ease,
+    visibility .3s ease;
+```
+
+}
+
+.farm-image-viewer.active {
+opacity: 1;
+visibility: visible;
+}
+
+.farm-image-viewer img {
+max-width: 92vw;
+max-height: 88vh;
+
+```
+object-fit: contain;
+
+border-radius: 16px;
+
+box-shadow:
+    0 30px 100px rgba(0,0,0,.55);
+
+transform: scale(.94);
+
+transition: transform .35s ease;
+```
+
+}
+
+.farm-image-viewer.active img {
+transform: scale(1);
+}
+
+.farm-viewer-close {
+position: absolute;
+
+```
+top: 25px;
+right: 30px;
+
+width: 48px;
+height: 48px;
+
+border: 1px solid rgba(255,255,255,.25);
+
+border-radius: 50%;
+
+background: rgba(255,255,255,.1);
+
+color: white;
+
+font-size: 1.25rem;
+
+cursor: pointer;
+
+backdrop-filter: blur(8px);
+
+transition: .3s ease;
+```
+
+}
+
+.farm-viewer-close:hover {
+background: var(--accent-color);
+color: #173326;
+
+```
+transform: rotate(90deg);
+```
+
+}
+
+/* =========================================================
+MOBILE GALLERY
+========================================================= */
+
+@media (max-width: 900px) {
+
+```
+.farm-gallery {
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    grid-auto-rows: 220px;
+}
+
+.farm-gallery-item.gallery-large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.farm-gallery-item.gallery-wide {
+    grid-column: span 2;
+}
+```
+
+}
+
+@media (max-width: 600px) {
+
+```
+.farm-gallery-section {
+    padding: 4.5rem 1rem;
+}
+
+.farm-gallery {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 240px;
+    gap: 12px;
+}
+
+.farm-gallery-item.gallery-large,
+.farm-gallery-item.gallery-wide {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.farm-gallery-item.gallery-large {
+    height: 300px;
+}
+
+.farm-gallery-overlay {
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+}
+
+.farm-viewer-close {
+    top: 15px;
+    right: 15px;
+}
+
+.farm-image-viewer {
+    padding: 15px;
+}
+```
+
+}
