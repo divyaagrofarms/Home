@@ -82,6 +82,7 @@ header {
     margin: 0 auto;
 }
 
+/*===
 .logo {
     font-family: var(--font-heading);
     font-size: 1.28rem;
@@ -96,6 +97,12 @@ header {
 .logo i {
     color: var(--accent-color);
     filter: drop-shadow(0 4px 8px rgba(245,184,61,.25));
+}
+
+*/
+.logo img {
+   height: 40px;
+   width: auto;
 }
 
 .nav-links {
