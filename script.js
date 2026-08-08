@@ -266,4 +266,93 @@ function closeDetails() {
     window.location.href = "gallery.html";
 }
 
+/* =========================================================
+DIVYA AGRO FARMS — BULK IMAGE VIEWER
+========================================================= */
+
+function openFarmImage(image) {
+
+
+const viewer = document.getElementById("farmImageViewer");
+const viewerImage = document.getElementById("farmViewerImage");
+
+if (!viewer || !viewerImage || !image) return;
+
+viewerImage.src = image.src;
+viewerImage.alt = image.alt || "Divya Agro Farms";
+
+viewer.classList.add("active");
+
+document.body.style.overflow = "hidden";
+```
+
+}
+
+function closeFarmImage() {
+
+
+const viewer = document.getElementById("farmImageViewer");
+
+if (!viewer) return;
+
+viewer.classList.remove("active");
+
+document.body.style.overflow = "";
+
+setTimeout(() => {
+
+    const viewerImage =
+        document.getElementById("farmViewerImage");
+
+    if (viewerImage) {
+        viewerImage.src = "";
+    }
+
+}, 300);
+
+
+}
+
+/* Close when clicking outside image */
+
+document.addEventListener("click", function (event) {
+
+
+const viewer =
+    document.getElementById("farmImageViewer");
+
+const image =
+    document.getElementById("farmViewerImage");
+
+if (
+    viewer &&
+    viewer.classList.contains("active") &&
+    event.target === viewer
+) {
+    closeFarmImage();
+}
+
+
+});
+
+/* Close with ESC */
+
+document.addEventListener("keydown", function (event) {
+
+
+if (event.key === "Escape") {
+
+    const viewer =
+        document.getElementById("farmImageViewer");
+
+    if (
+        viewer &&
+        viewer.classList.contains("active")
+    ) {
+        closeFarmImage();
+    }
+}
+
+
+});
 
