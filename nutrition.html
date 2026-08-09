@@ -1,0 +1,3284 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pig Nutrition & Feeding Guide | Divya Agro Farms</title>
+
+<meta name="description"
+content="In-depth pig nutrition, feeding, water, vitamins, minerals, amino acids and feed management guide by Divya Agro Farms.">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+/* =========================================================
+   DIVYA AGRO FARMS
+   PIG NUTRITION PROFESSIONAL PAGE
+========================================================= */
+
+:root{
+    --primary:#245b36;
+    --primary-dark:#17482a;
+    --primary-light:#3c7a49;
+    --accent:#d9a441;
+    --dark:#13231a;
+    --text:#445248;
+    --muted:#6c7b71;
+    --light:#f5f8f4;
+    --white:#ffffff;
+    --border:#e3ebe4;
+    --soft:#edf5ee;
+    --danger:#b94b42;
+
+    --shadow:
+        0 18px 45px rgba(19,35,26,.10);
+
+    --radius:22px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+    width:100%;
+    overflow-x:hidden;
+}
+
+body{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+
+    font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    color:var(--dark);
+    background:var(--light);
+    line-height:1.6;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+button{
+    font-family:inherit;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+header{
+    width:100%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    background:rgba(255,255,255,.96);
+    backdrop-filter:blur(16px);
+
+    border-bottom:1px solid var(--border);
+}
+
+.navbar{
+    width:100%;
+    max-width:1240px;
+    min-height:76px;
+
+    margin:auto;
+    padding:0 22px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    color:var(--primary);
+
+    font-size:1.15rem;
+    font-weight:850;
+
+    white-space:nowrap;
+}
+
+.logo i{
+    color:var(--accent);
+    font-size:1.55rem;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:6px;
+
+    list-style:none;
+}
+
+.nav-links a{
+    display:block;
+
+    padding:10px 14px;
+
+    border-radius:12px;
+
+    color:var(--text);
+    font-weight:650;
+
+    transition:.25s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+    color:var(--primary);
+    background:var(--soft);
+}
+
+.nav-btn{
+    color:#fff!important;
+    background:var(--primary);
+
+    padding:11px 18px!important;
+    margin-left:6px;
+}
+
+.nav-btn:hover{
+    color:#fff!important;
+    background:var(--primary-dark)!important;
+}
+
+.hamburger{
+    display:none;
+
+    width:44px;
+    height:44px;
+
+    align-items:center;
+    justify-content:center;
+
+    color:var(--primary);
+    font-size:1.4rem;
+
+    cursor:pointer;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+    width:100%;
+
+    padding:
+        80px 20px 70px;
+
+    background:
+
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(60,122,73,.13),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 90% 0%,
+            rgba(217,164,65,.13),
+            transparent 25%
+        ),
+
+        linear-gradient(
+            135deg,
+            #f7faf7,
+            #edf5ee
+        );
+}
+
+.hero-container{
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1.15fr .85fr;
+
+    gap:50px;
+    align-items:center;
+}
+
+.eyebrow{
+    display:inline-block;
+
+    color:var(--primary);
+
+    font-size:.78rem;
+    font-weight:850;
+
+    letter-spacing:1.8px;
+    text-transform:uppercase;
+
+    margin-bottom:12px;
+}
+
+.hero h1{
+    font-size:
+        clamp(2.4rem,5vw,4.3rem);
+
+    line-height:1.08;
+
+    letter-spacing:-2px;
+
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:var(--primary);
+}
+
+.hero p{
+    max-width:700px;
+
+    color:var(--muted);
+
+    font-size:1.05rem;
+}
+
+.hero-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+
+    margin-top:28px;
+}
+
+.btn{
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:8px;
+
+    padding:13px 21px;
+
+    border-radius:13px;
+
+    font-weight:800;
+
+    transition:.25s;
+}
+
+.btn-primary{
+    background:var(--primary);
+    color:#fff;
+
+    box-shadow:
+        0 10px 25px rgba(36,91,54,.2);
+}
+
+.btn-primary:hover{
+    background:var(--primary-dark);
+    transform:translateY(-2px);
+}
+
+.btn-secondary{
+    background:#fff;
+    color:var(--primary);
+
+    border:1px solid var(--border);
+}
+
+.btn-secondary:hover{
+    background:var(--soft);
+}
+
+
+/* =========================================================
+   HERO NUTRITION CARD
+========================================================= */
+
+.hero-card{
+    background:#fff;
+
+    border:1px solid var(--border);
+
+    border-radius:28px;
+
+    padding:28px;
+
+    box-shadow:var(--shadow);
+}
+
+.hero-card-icon{
+    width:70px;
+    height:70px;
+
+    display:grid;
+    place-items:center;
+
+    border-radius:20px;
+
+    background:var(--soft);
+
+    color:var(--primary);
+
+    font-size:2rem;
+
+    margin-bottom:18px;
+}
+
+.hero-card h3{
+    margin-bottom:8px;
+}
+
+.hero-card p{
+    font-size:.9rem;
+}
+
+.mini-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:10px;
+
+    margin-top:20px;
+}
+
+.mini-item{
+    padding:14px;
+
+    border-radius:14px;
+
+    background:#f6f9f6;
+
+    border:1px solid var(--border);
+}
+
+.mini-item strong{
+    display:block;
+
+    color:var(--primary);
+
+    font-size:1.15rem;
+}
+
+.mini-item span{
+    color:var(--muted);
+
+    font-size:.73rem;
+}
+
+
+/* =========================================================
+   GENERAL SECTIONS
+========================================================= */
+
+.section{
+    width:100%;
+
+    padding:
+        75px 20px;
+}
+
+.section.alt{
+    background:#fff;
+}
+
+.container{
+    width:100%;
+    max-width:1200px;
+
+    margin:auto;
+}
+
+.section-heading{
+    text-align:center;
+
+    max-width:780px;
+
+    margin:
+        0 auto 42px;
+}
+
+.section-heading h2{
+    font-size:
+        clamp(2rem,4vw,3rem);
+
+    line-height:1.15;
+
+    letter-spacing:-1px;
+
+    margin-bottom:12px;
+}
+
+.section-heading h2:after{
+    content:"";
+
+    display:block;
+
+    width:60px;
+    height:4px;
+
+    border-radius:20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--primary),
+            var(--accent)
+        );
+
+    margin:
+        16px auto 0;
+}
+
+.section-heading p{
+    color:var(--muted);
+
+    font-size:.97rem;
+}
+
+
+/* =========================================================
+   STAGE FILTER
+========================================================= */
+
+.stage-filter{
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-bottom:35px;
+}
+
+.stage-btn{
+    border:1px solid var(--border);
+
+    background:#fff;
+
+    color:var(--text);
+
+    padding:
+        11px 17px;
+
+    border-radius:999px;
+
+    font-weight:750;
+
+    cursor:pointer;
+
+    transition:.25s;
+}
+
+.stage-btn:hover{
+    transform:translateY(-2px);
+}
+
+.stage-btn.active{
+    background:var(--primary);
+    color:#fff;
+    border-color:var(--primary);
+}
+
+
+/* =========================================================
+   NUTRITION CARDS
+========================================================= */
+
+.nutrition-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:22px;
+}
+
+.nutrition-card{
+    background:#fff;
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    padding:25px;
+
+    box-shadow:
+        0 12px 35px rgba(19,35,26,.07);
+
+    transition:.28s;
+}
+
+.nutrition-card:hover{
+    transform:translateY(-6px);
+
+    box-shadow:
+        0 22px 50px rgba(19,35,26,.13);
+}
+
+.card-icon{
+    width:52px;
+    height:52px;
+
+    display:grid;
+    place-items:center;
+
+    border-radius:15px;
+
+    background:var(--soft);
+
+    color:var(--primary);
+
+    font-size:1.3rem;
+
+    margin-bottom:17px;
+}
+
+.nutrition-card h3{
+    font-size:1.25rem;
+
+    margin-bottom:8px;
+}
+
+.nutrition-card p{
+    color:var(--muted);
+
+    font-size:.88rem;
+}
+
+.card-list{
+    list-style:none;
+
+    margin-top:18px;
+}
+
+.card-list li{
+    padding:9px 0;
+
+    border-bottom:
+        1px solid #edf1ed;
+
+    font-size:.83rem;
+
+    color:var(--text);
+}
+
+.card-list li:last-child{
+    border-bottom:0;
+}
+
+.card-list i{
+    color:var(--primary);
+
+    margin-right:7px;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.table-wrapper{
+    width:100%;
+
+    overflow-x:auto;
+
+    border-radius:18px;
+
+    border:1px solid var(--border);
+
+    box-shadow:
+        0 12px 35px rgba(19,35,26,.06);
+}
+
+.nutrition-table{
+    width:100%;
+
+    min-width:850px;
+
+    border-collapse:collapse;
+
+    background:#fff;
+}
+
+.nutrition-table th{
+    padding:15px;
+
+    text-align:left;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    font-size:.82rem;
+
+    white-space:nowrap;
+}
+
+.nutrition-table td{
+    padding:14px 15px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    color:var(--text);
+
+    font-size:.82rem;
+}
+
+.nutrition-table tr:hover td{
+    background:#f7faf7;
+}
+
+.nutrition-table td:first-child{
+    font-weight:800;
+    color:var(--dark);
+}
+
+
+/* =========================================================
+   NUTRIENT GRID
+========================================================= */
+
+.nutrient-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:15px;
+}
+
+.nutrient-card{
+    background:#fff;
+
+    border:1px solid var(--border);
+
+    border-radius:18px;
+
+    padding:20px;
+
+    text-align:center;
+}
+
+.nutrient-card i{
+    color:var(--primary);
+
+    font-size:1.5rem;
+
+    margin-bottom:10px;
+}
+
+.nutrient-card h4{
+    margin-bottom:5px;
+}
+
+.nutrient-card p{
+    color:var(--muted);
+
+    font-size:.78rem;
+}
+
+
+/* =========================================================
+   FEED INGREDIENTS
+========================================================= */
+
+.ingredient-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:18px;
+}
+
+.ingredient-card{
+    background:#fff;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 10px 30px rgba(19,35,26,.06);
+}
+
+.ingredient-top{
+    padding:22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #edf5ee,
+            #f8faf8
+        );
+}
+
+.ingredient-top i{
+    color:var(--primary);
+
+    font-size:1.5rem;
+}
+
+.ingredient-card h3{
+    margin-top:10px;
+
+    font-size:1rem;
+}
+
+.ingredient-card p{
+    padding:18px 22px;
+
+    color:var(--muted);
+
+    font-size:.8rem;
+}
+
+
+/* =========================================================
+   WATER SECTION
+========================================================= */
+
+.water-grid{
+    display:grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:25px;
+}
+
+.water-card{
+    background:#fff;
+
+    border:1px solid var(--border);
+
+    border-radius:22px;
+
+    padding:28px;
+
+    box-shadow:var(--shadow);
+}
+
+.water-card h3{
+    margin-bottom:10px;
+}
+
+.water-card p{
+    color:var(--muted);
+
+    font-size:.88rem;
+}
+
+.water-list{
+    list-style:none;
+
+    margin-top:15px;
+}
+
+.water-list li{
+    display:flex;
+
+    gap:10px;
+
+    padding:9px 0;
+
+    font-size:.82rem;
+
+    border-bottom:1px solid var(--border);
+}
+
+.water-list i{
+    color:var(--primary);
+
+    margin-top:4px;
+}
+
+
+/* =========================================================
+   FCR / PERFORMANCE
+========================================================= */
+
+.performance-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:20px;
+}
+
+.performance-card{
+    background:#fff;
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    padding:25px;
+}
+
+.performance-card .number{
+    font-size:2.2rem;
+
+    font-weight:900;
+
+    color:var(--primary);
+
+    line-height:1;
+}
+
+.performance-card h3{
+    margin:
+        12px 0 6px;
+}
+
+.performance-card p{
+    color:var(--muted);
+
+    font-size:.8rem;
+}
+
+
+/* =========================================================
+   WARNING / DEFICIENCY
+========================================================= */
+
+.warning-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:18px;
+}
+
+.warning-card{
+    padding:20px;
+
+    background:#fff;
+
+    border:1px solid var(--border);
+
+    border-radius:18px;
+
+    display:flex;
+
+    gap:15px;
+}
+
+.warning-icon{
+    flex:0 0 45px;
+
+    width:45px;
+    height:45px;
+
+    display:grid;
+
+    place-items:center;
+
+    border-radius:13px;
+
+    background:#fff4e7;
+
+    color:#b47b1c;
+}
+
+.warning-card h4{
+    margin-bottom:3px;
+}
+
+.warning-card p{
+    color:var(--muted);
+
+    font-size:.78rem;
+}
+
+
+/* =========================================================
+   FARM MANAGEMENT BOX
+========================================================= */
+
+.management-box{
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary),
+            var(--primary-light)
+        );
+
+    color:#fff;
+
+    border-radius:28px;
+
+    padding:40px;
+
+    box-shadow:
+        0 25px 60px rgba(36,91,54,.2);
+}
+
+.management-box h2{
+    font-size:2rem;
+
+    margin-bottom:10px;
+}
+
+.management-box p{
+    color:#dce9df;
+
+    max-width:800px;
+}
+
+.management-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:15px;
+
+    margin-top:25px;
+}
+
+.management-item{
+    padding:18px;
+
+    border-radius:16px;
+
+    background:
+        rgba(255,255,255,.1);
+
+    border:
+        1px solid rgba(255,255,255,.13);
+}
+
+.management-item i{
+    color:#f1d080;
+
+    margin-bottom:8px;
+}
+
+.management-item strong{
+    display:block;
+}
+
+.management-item span{
+    display:block;
+
+    color:#d5e3d9;
+
+    font-size:.75rem;
+
+    margin-top:4px;
+}
+
+
+/* =========================================================
+   DISCLAIMER
+========================================================= */
+
+.disclaimer{
+    margin-top:25px;
+
+    padding:18px;
+
+    border-radius:15px;
+
+    background:#fff8ea;
+
+    border:1px solid #f0dfbd;
+
+    color:#6d5a35;
+
+    font-size:.76rem;
+}
+
+.disclaimer i{
+    margin-right:7px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+    width:100%;
+
+    background:#102218;
+
+    color:#dbe6dd;
+}
+
+.footer-container{
+    width:100%;
+    max-width:1240px;
+
+    margin:auto;
+
+    padding:50px 22px;
+
+    display:grid;
+
+    grid-template-columns:
+        1.4fr 1fr 1fr;
+
+    gap:40px;
+}
+
+.footer-col h3,
+.footer-col h4{
+    color:#fff;
+
+    margin-bottom:12px;
+}
+
+.footer-col p{
+    color:#aebdb2;
+
+    margin:8px 0;
+
+    font-size:.88rem;
+}
+
+.footer-col i{
+    width:20px;
+
+    color:var(--accent);
+}
+
+.social-links{
+    display:flex;
+
+    gap:10px;
+
+    margin-top:14px;
+}
+
+.social-links a{
+    width:42px;
+    height:42px;
+
+    display:grid;
+
+    place-items:center;
+
+    border-radius:12px;
+
+    background:#1b3424;
+
+    color:#fff;
+
+    transition:.2s;
+}
+
+.social-links a:hover{
+    background:var(--primary-light);
+
+    transform:translateY(-2px);
+}
+
+.copyright{
+    text-align:center;
+
+    border-top:
+        1px solid rgba(255,255,255,.09);
+
+    padding:18px;
+
+    color:#8fa094;
+
+    font-size:.8rem;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:1000px){
+
+    .nutrition-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .ingredient-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .nutrient-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .navbar{
+        min-height:68px;
+
+        padding:
+            0 14px;
+    }
+
+    .hamburger{
+        display:flex;
+    }
+
+    .nav-links{
+        position:absolute;
+
+        top:68px;
+
+        left:10px;
+        right:10px;
+
+        width:auto;
+
+        display:none;
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+        gap:4px;
+
+        padding:12px;
+
+        background:
+            rgba(255,255,255,.98);
+
+        border:
+            1px solid var(--border);
+
+        border-radius:17px;
+
+        box-shadow:
+            0 20px 50px rgba(0,0,0,.15);
+    }
+
+    .nav-links.open{
+        display:flex;
+    }
+
+    .nav-links li{
+        width:100%;
+    }
+
+    .nav-links a{
+        width:100%;
+
+        padding:12px 14px;
+    }
+
+    .nav-links .nav-btn{
+        margin:
+            4px 0 0;
+
+        text-align:center;
+    }
+
+    .hero{
+        padding:
+            55px 14px;
+    }
+
+    .hero-container{
+        grid-template-columns:1fr;
+
+        gap:30px;
+    }
+
+    .section{
+        padding:
+            55px 14px;
+    }
+
+    .nutrition-grid{
+        grid-template-columns:1fr;
+    }
+
+    .water-grid{
+        grid-template-columns:1fr;
+    }
+
+    .performance-grid{
+        grid-template-columns:1fr;
+    }
+
+    .warning-grid{
+        grid-template-columns:1fr;
+    }
+
+    .management-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr;
+
+        gap:25px;
+
+        padding:
+            40px 20px;
+    }
+
+}
+
+@media(max-width:430px){
+
+    .logo{
+        max-width:
+            calc(100% - 55px);
+
+        overflow:hidden;
+
+        text-overflow:ellipsis;
+    }
+
+    .hero h1{
+        font-size:2.3rem;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+    }
+
+    .btn{
+        width:100%;
+    }
+
+    .mini-grid{
+        grid-template-columns:1fr;
+    }
+
+    .nutrient-grid{
+        grid-template-columns:1fr;
+    }
+
+    .ingredient-grid{
+        grid-template-columns:1fr;
+    }
+
+    .management-box{
+        padding:28px 20px;
+    }
+
+}
+
+
+/* =========================================================
+   FILTER VISIBILITY
+========================================================= */
+
+.stage-card.hidden{
+    display:none;
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header>
+
+<nav class="navbar">
+
+    <a href="index.html" class="logo">
+
+        <i class="fa-solid fa-piggy-bank"></i>
+
+        <span>Divya Agro Farms</span>
+
+    </a>
+
+
+    <div class="hamburger" id="hamburger">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </div>
+
+
+    <ul class="nav-links" id="navLinks">
+
+        <li>
+            <a href="index.html">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="#nutrition" class="active">
+                Nutrition
+            </a>
+        </li>
+
+        <li>
+            <a href="#feeding">
+                Feeding
+            </a>
+        </li>
+
+        <li>
+            <a href="#ingredients">
+                Ingredients
+            </a>
+        </li>
+
+        <li>
+            <a href="#water">
+                Water
+            </a>
+        </li>
+
+        <li>
+            <a href="gallery.html">
+                Livestock
+            </a>
+        </li>
+
+        <li>
+            <a
+                href="https://forms.gle/qfbE7knoYrA9mHkD8"
+                class="nav-btn">
+
+                Contact Us
+
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
+</header>
+
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero">
+
+<div class="hero-container">
+
+
+    <div>
+
+        <span class="eyebrow">
+            Divya Agro Farms • Nutrition Centre
+        </span>
+
+
+        <h1>
+
+            Complete Pig
+            <span>Nutrition Guide</span>
+
+        </h1>
+
+
+        <p>
+
+            A practical reference for pig nutrition,
+            feeding management, water, amino acids,
+            minerals, vitamins and feed performance
+            across different production stages.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a
+                href="#feeding"
+                class="btn btn-primary">
+
+                <i class="fa-solid fa-book-open"></i>
+
+                Explore Nutrition
+
+            </a>
+
+
+            <a
+                href="#feed-table"
+                class="btn btn-secondary">
+
+                <i class="fa-solid fa-table"></i>
+
+                View Feed Guide
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="hero-card">
+
+        <div class="hero-card-icon">
+
+            <i class="fa-solid fa-wheat-awn"></i>
+
+        </div>
+
+
+        <h3>
+            Balanced Pig Nutrition
+        </h3>
+
+
+        <p>
+
+            A successful pig feeding program
+            balances energy, protein, amino acids,
+            minerals, vitamins, water and feed
+            intake according to animal age,
+            weight and production stage.
+
+        </p>
+
+
+        <div class="mini-grid">
+
+            <div class="mini-item">
+
+                <strong>
+                    Energy
+                </strong>
+
+                <span>
+                    Growth & maintenance
+                </span>
+
+            </div>
+
+
+            <div class="mini-item">
+
+                <strong>
+                    Protein
+                </strong>
+
+                <span>
+                    Muscle development
+                </span>
+
+            </div>
+
+
+            <div class="mini-item">
+
+                <strong>
+                    Minerals
+                </strong>
+
+                <span>
+                    Bone & metabolism
+                </span>
+
+            </div>
+
+
+            <div class="mini-item">
+
+                <strong>
+                    Water
+                </strong>
+
+                <span>
+                    Essential daily nutrient
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     NUTRITION STAGES
+========================================================= -->
+
+<section class="section" id="nutrition">
+
+<div class="container">
+
+
+<div class="section-heading">
+
+    <h2>
+        Nutrition by Production Stage
+    </h2>
+
+    <p>
+        Nutritional requirements change significantly
+        as pigs move from newborn piglets through
+        nursery, growing, finishing and breeding stages.
+    </p>
+
+</div>
+
+
+<div class="stage-filter">
+
+    <button
+        class="stage-btn active"
+        data-stage="all">
+
+        All Stages
+
+    </button>
+
+    <button
+        class="stage-btn"
+        data-stage="piglet">
+
+        Piglets
+
+    </button>
+
+    <button
+        class="stage-btn"
+        data-stage="weaner">
+
+        Weaners
+
+    </button>
+
+    <button
+        class="stage-btn"
+        data-stage="grower">
+
+        Growers
+
+    </button>
+
+    <button
+        class="stage-btn"
+        data-stage="finisher">
+
+        Finishers
+
+    </button>
+
+    <button
+        class="stage-btn"
+        data-stage="sow">
+
+        Sows
+
+    </button>
+
+    <button
+        class="stage-btn"
+        data-stage="boar">
+
+        Boars
+
+    </button>
+
+</div>
+
+
+<div class="nutrition-grid">
+
+
+    <article
+        class="nutrition-card stage-card"
+        data-stage="piglet">
+
+        <div class="card-icon">
+            <i class="fa-solid fa-baby"></i>
+        </div>
+
+        <h3>
+            Piglet Nutrition
+        </h3>
+
+        <p>
+            Early nutrition supports gut development,
+            immunity and healthy early growth.
+        </p>
+
+        <ul class="card-list">
+
+            <li>
+                <i class="fa-solid fa-check"></i>
+                Highly digestible ingredients
+            </li>
+
+            <li>
+                <i class="fa-solid fa-check"></i>
+                Quality protein sources
+            </li>
+
+            <li>
+                <i class="fa-solid fa-check"></i>
+                Balanced amino acids
+            </li>
+
+            <li>
+                <i class="fa-solid fa-check"></i>
+                Clean drinking water
+            </li>
+
+        </ul>
+
+    </article>
+
+
+
+    <article
+        class="nutrition-card stage-card"
+        data-stage="weaner">
+
+        <div class="card-icon">
+            <i class="fa-solid fa-paw"></i>
+        </div>
+
+        <h3>
+            Weaner Nutrition
+        </h3>
+
+        <p>
+            Post-weaning diets should support feed
+            intake, digestive adaptation and steady growth.
+        </p>
+
+        <ul class="card-list">
+
+            <li>
+                <i class="fa-solid fa-check"></i>
+                Gradual feed transition
+            </li>
+
+            <li>
+                <i class="fa-solid fa-check"></i>
+                Digestible energy
+            </li>
+
+            <li>
+                <i class="fa-solid fa-check"></i>
+                Essential amino acids
+            </li>
+
+            <li>
+                <i class="fa-solid fa-check"></i>
+                Fresh water availability
+            </li>
+
+        </ul>
+
+    </article>
+
+
+
+    <article
+        class="nutrition-card stage-card"
+        data-stage="grower">
+
+        <div class="card-icon">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+        </div>
+
+        <h3>
+            Grower Nutrition
+        </h3>
+
+        <p>
+            Growing pigs need balanced nutrition
+            for efficient lean tissue development.
+        </p>
+
+        <ul class="card-list">
+
+            <li>
+                <i class="fa-solid fa-check"></i>
+                Adequate energy
+            </li>
+
+            <li>
+                <i class="fa-solid fa-check"></i>
+                Balanced lysine
+            </li>
+
+            <li>
+                <i class="fa-solid fa-check"></i>
+                Mineral balance
+            </li>
+
+            <li>
+                <i class="fa-solid fa-check"></i>
+                Consistent feeding
+            </li>
+
+        </ul>
+
+    </article>
+
+
+
+    <article
+        class="nutrition-card stage-card"
+        data-stage="finisher">
+
+        <div class="card-icon">
+            <i class="fa-solid fa-weight-scale"></i>
+        </div>
+
+        <h3>
+            Finisher Nutrition
+        </h3>
+
+        <p>
+            Finishing diets are designed around
+            growth efficiency, carcass targets and
+            feed conversion.
+        </p>
+
+        <ul class="card-list">
+
+            <li>
+                <i class="fa-solid fa-check"></i>
+                Controlled energy
+            </li>
+
+            <li>
+                <i class="fa-solid fa-check"></i>
+                Appropriate protein
+            </li>
+
+            <li>
+                <i class="fa-solid fa-check"></i>
+                Amino acid balance
+            </li>
+
+            <li>
+                <i class="fa-solid fa-check"></i>
+                Feed wastage control
+            </li>
+
+        </ul>
+
+    </article>
+
+
+
+    <article
+        class="nutrition-card stage-card"
+        data-stage="sow">
+
+        <div class="card-icon">
+            <i class="fa-solid fa-piggy-bank"></i>
+        </div>
+
+        <h3>
+            Sow Nutrition
+        </h3>
+
+        <p>
+            Sow diets need to support body condition,
+            reproduction, pregnancy and milk production.
+        </p>
+
+        <ul class="card-list">
+
+            <li>
+                <i class="fa-solid fa-check"></i>
+                Gestation feeding
+            </li>
+
+            <li>
+                <i class="fa-solid fa-check"></i>
+                Lactation nutrition
+            </li>
+
+            <li>
+                <i class="fa-solid fa-check"></i>
+                Mineral support
+            </li>
+
+            <li>
+                <i class="fa-solid fa-check"></i>
+                Adequate water
+            </li>
+
+        </ul>
+
+    </article>
+
+
+
+    <article
+        class="nutrition-card stage-card"
+        data-stage="boar">
+
+        <div class="card-icon">
+            <i class="fa-solid fa-paw"></i>
+        </div>
+
+        <h3>
+            Boar Nutrition
+        </h3>
+
+        <p>
+            Breeding boars require nutrition that
+            maintains body condition, activity and
+            reproductive performance.
+        </p>
+
+        <ul class="card-list">
+
+            <li>
+                <i class="fa-solid fa-check"></i>
+                Controlled body condition
+            </li>
+
+            <li>
+                <i class="fa-solid fa-check"></i>
+                Quality protein
+            </li>
+
+            <li>
+                <i class="fa-solid fa-check"></i>
+                Vitamins & minerals
+            </li>
+
+            <li>
+                <i class="fa-solid fa-check"></i>
+                Consistent water supply
+            </li>
+
+        </ul>
+
+    </article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FEED NUTRITION TABLE
+========================================================= -->
+
+<section
+    class="section alt"
+    id="feed-table">
+
+<div class="container">
+
+
+<div class="section-heading">
+
+    <h2>
+        Practical Feed Nutrition Guide
+    </h2>
+
+    <p>
+        Example production-stage framework.
+        Actual formulations should be adjusted according
+        to genetics, environment, feed ingredients,
+        laboratory analysis and farm performance.
+    </p>
+
+</div>
+
+
+<div class="table-wrapper">
+
+<table class="nutrition-table">
+
+<thead>
+
+<tr>
+
+<th>
+Production Stage
+</th>
+
+<th>
+Typical Objective
+</th>
+
+<th>
+Main Nutritional Focus
+</th>
+
+<th>
+Feed Management
+</th>
+
+<th>
+Key Monitoring
+</th>
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+<tr>
+
+<td>
+Pre-Weaning Piglets
+</td>
+
+<td>
+Survival & early development
+</td>
+
+<td>
+Digestibility, protein, amino acids
+</td>
+
+<td>
+Small frequent intake
+</td>
+
+<td>
+Growth, stool, appetite
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Weaners
+</td>
+
+<td>
+Rapid adaptation & growth
+</td>
+
+<td>
+Digestible energy and amino acids
+</td>
+
+<td>
+Controlled transition
+</td>
+
+<td>
+ADG, intake, gut health
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Growers
+</td>
+
+<td>
+Lean tissue growth
+</td>
+
+<td>
+Energy/protein balance
+</td>
+
+<td>
+Consistent daily feeding
+</td>
+
+<td>
+Body weight, FCR
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Finishers
+</td>
+
+<td>
+Efficient market growth
+</td>
+
+<td>
+Energy, amino acids
+</td>
+
+<td>
+Minimize feed wastage
+</td>
+
+<td>
+ADG, FCR, body condition
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Gestating Sows
+</td>
+
+<td>
+Pregnancy & body condition
+</td>
+
+<td>
+Energy, fibre, minerals
+</td>
+
+<td>
+Condition-based feeding
+</td>
+
+<td>
+Body condition score
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Lactating Sows
+</td>
+
+<td>
+Milk production & litter growth
+</td>
+
+<td>
+Energy, protein, amino acids
+</td>
+
+<td>
+Encourage intake
+</td>
+
+<td>
+Feed intake, litter growth
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Breeding Boars
+</td>
+
+<td>
+Body condition & reproduction
+</td>
+
+<td>
+Protein, minerals, vitamins
+</td>
+
+<td>
+Avoid excessive condition
+</td>
+
+<td>
+Weight & breeding activity
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<div class="disclaimer">
+
+<i class="fa-solid fa-circle-info"></i>
+
+The table is a management framework rather than
+a universal feed formulation. Nutrient specifications
+should be set by a qualified animal nutritionist
+using the pig genotype, stage, environment and
+actual ingredient analysis.
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     MAJOR NUTRIENTS
+========================================================= -->
+
+<section class="section" id="feeding">
+
+<div class="container">
+
+
+<div class="section-heading">
+
+    <h2>
+        Essential Nutrients for Pigs
+    </h2>
+
+    <p>
+        A complete diet needs multiple nutrient groups.
+        No single ingredient can supply everything required.
+    </p>
+
+</div>
+
+
+<div class="nutrient-grid">
+
+
+<div class="nutrient-card">
+
+    <i class="fa-solid fa-bolt"></i>
+
+    <h4>
+        Energy
+    </h4>
+
+    <p>
+        Supports maintenance,
+        movement, growth and
+        reproductive functions.
+    </p>
+
+</div>
+
+
+<div class="nutrient-card">
+
+    <i class="fa-solid fa-dumbbell"></i>
+
+    <h4>
+        Protein
+    </h4>
+
+    <p>
+        Supplies amino acids
+        required for tissue
+        formation and repair.
+    </p>
+
+</div>
+
+
+<div class="nutrient-card">
+
+    <i class="fa-solid fa-dna"></i>
+
+    <h4>
+        Amino Acids
+    </h4>
+
+    <p>
+        Lysine, methionine,
+        threonine and others
+        support protein synthesis.
+    </p>
+
+</div>
+
+
+<div class="nutrient-card">
+
+    <i class="fa-solid fa-bone"></i>
+
+    <h4>
+        Minerals
+    </h4>
+
+    <p>
+        Calcium, phosphorus,
+        sodium and trace minerals
+        support body functions.
+    </p>
+
+</div>
+
+
+<div class="nutrient-card">
+
+    <i class="fa-solid fa-capsules"></i>
+
+    <h4>
+        Vitamins
+    </h4>
+
+    <p>
+        Support metabolism,
+        immunity, growth and
+        reproduction.
+    </p>
+
+</div>
+
+
+<div class="nutrient-card">
+
+    <i class="fa-solid fa-droplet"></i>
+
+    <h4>
+        Water
+    </h4>
+
+    <p>
+        Essential for digestion,
+        thermoregulation and
+        physiological functions.
+    </p>
+
+</div>
+
+
+<div class="nutrient-card">
+
+    <i class="fa-solid fa-wheat-awn"></i>
+
+    <h4>
+        Fibre
+    </h4>
+
+    <p>
+        Supports digestive
+        function and can influence
+        gut health and satiety.
+    </p>
+
+</div>
+
+
+<div class="nutrient-card">
+
+    <i class="fa-solid fa-seedling"></i>
+
+    <h4>
+        Feed Additives
+    </h4>
+
+    <p>
+        Selected additives can
+        support feed quality and
+        production objectives.
+    </p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FEED INGREDIENTS
+========================================================= -->
+
+<section
+    class="section alt"
+    id="ingredients">
+
+<div class="container">
+
+
+<div class="section-heading">
+
+    <h2>
+        Common Feed Ingredients
+    </h2>
+
+    <p>
+        Ingredients should be evaluated for nutrient
+        composition, quality, digestibility, storage
+        condition and cost before inclusion.
+    </p>
+
+</div>
+
+
+<div class="ingredient-grid">
+
+
+<div class="ingredient-card">
+
+<div class="ingredient-top">
+
+    <i class="fa-solid fa-wheat-awn"></i>
+
+    <h3>
+        Maize / Corn
+    </h3>
+
+</div>
+
+<p>
+    Primarily used as an energy ingredient.
+    Quality and moisture should be checked before use.
+</p>
+
+</div>
+
+
+<div class="ingredient-card">
+
+<div class="ingredient-top">
+
+    <i class="fa-solid fa-seedling"></i>
+
+    <h3>
+        Soybean Meal
+    </h3>
+
+</div>
+
+<p>
+    A major plant protein source that contributes
+    essential amino acids to balanced pig diets.
+</p>
+
+</div>
+
+
+<div class="ingredient-card">
+
+<div class="ingredient-top">
+
+    <i class="fa-solid fa-leaf"></i>
+
+    <h3>
+        Wheat / Grains
+    </h3>
+
+</div>
+
+<p>
+    Can provide energy and nutrients depending
+    on grain type, quality and diet formulation.
+</p>
+
+</div>
+
+
+<div class="ingredient-card">
+
+<div class="ingredient-top">
+
+    <i class="fa-solid fa-flask"></i>
+
+    <h3>
+        Mineral Mixture
+    </h3>
+
+</div>
+
+<p>
+    Supplies selected macro and trace minerals
+    according to the complete diet specification.
+</p>
+
+</div>
+
+
+<div class="ingredient-card">
+
+<div class="ingredient-top">
+
+    <i class="fa-solid fa-bowl-food"></i>
+
+    <h3>
+        Rice Bran
+    </h3>
+
+</div>
+
+<p>
+    Can contribute energy, fibre and other nutrients.
+    Quality varies significantly between sources.
+</p>
+
+</div>
+
+
+<div class="ingredient-card">
+
+<div class="ingredient-top">
+
+    <i class="fa-solid fa-vial"></i>
+
+    <h3>
+        Vitamin Premix
+    </h3>
+
+</div>
+
+<p>
+    Used to provide vitamins at appropriate
+    inclusion rates in complete diets.
+</p>
+
+</div>
+
+
+<div class="ingredient-card">
+
+<div class="ingredient-top">
+
+    <i class="fa-solid fa-wheat-awn-circle-exclamation"></i>
+
+    <h3>
+        Bran / Fibre Sources
+    </h3>
+
+</div>
+
+<p>
+    Fibre ingredients may influence gut function,
+    feed intake and diet characteristics.
+</p>
+
+</div>
+
+
+<div class="ingredient-card">
+
+<div class="ingredient-top">
+
+    <i class="fa-solid fa-chart-line"></i>
+
+    <h3>
+        Specialty Ingredients
+    </h3>
+
+</div>
+
+<p>
+    Specialty ingredients should be evaluated
+    based on nutritional value and economic return.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     WATER
+========================================================= -->
+
+<section
+    class="section"
+    id="water">
+
+<div class="container">
+
+
+<div class="section-heading">
+
+    <h2>
+        Water Management
+    </h2>
+
+    <p>
+        Water is one of the most important nutrients
+        in a pig production system.
+    </p>
+
+</div>
+
+
+<div class="water-grid">
+
+
+<div class="water-card">
+
+    <div class="card-icon">
+
+        <i class="fa-solid fa-droplet"></i>
+
+    </div>
+
+    <h3>
+        Water Quality
+    </h3>
+
+    <p>
+        Water should be clean, accessible and
+        monitored regularly. Poor water quality
+        can reduce intake and negatively affect
+        production.
+    </p>
+
+    <ul class="water-list">
+
+        <li>
+            <i class="fa-solid fa-check"></i>
+            Clean drinking points
+        </li>
+
+        <li>
+            <i class="fa-solid fa-check"></i>
+            Regular water-line inspection
+        </li>
+
+        <li>
+            <i class="fa-solid fa-check"></i>
+            Check for blocked nipples
+        </li>
+
+        <li>
+            <i class="fa-solid fa-check"></i>
+            Monitor water cleanliness
+        </li>
+
+    </ul>
+
+</div>
+
+
+<div class="water-card">
+
+    <div class="card-icon">
+
+        <i class="fa-solid fa-temperature-half"></i>
+
+    </div>
+
+    <h3>
+        Water & Environment
+    </h3>
+
+    <p>
+        Water demand can increase with temperature,
+        body size, feed intake, lactation and
+        environmental conditions.
+    </p>
+
+    <ul class="water-list">
+
+        <li>
+            <i class="fa-solid fa-check"></i>
+            Increase attention during hot weather
+        </li>
+
+        <li>
+            <i class="fa-solid fa-check"></i>
+            Ensure easy access
+        </li>
+
+        <li>
+            <i class="fa-solid fa-check"></i>
+            Monitor drinking behaviour
+        </li>
+
+        <li>
+            <i class="fa-solid fa-check"></i>
+            Maintain water equipment
+        </li>
+
+    </ul>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PERFORMANCE
+========================================================= -->
+
+<section class="section alt">
+
+<div class="container">
+
+
+<div class="section-heading">
+
+    <h2>
+        Feed Performance Monitoring
+    </h2>
+
+    <p>
+        Nutrition should be evaluated using actual
+        farm performance rather than feed quantity alone.
+    </p>
+
+</div>
+
+
+<div class="performance-grid">
+
+
+<div class="performance-card">
+
+    <div class="number">
+        ADG
+    </div>
+
+    <h3>
+        Average Daily Gain
+    </h3>
+
+    <p>
+        Tracks average body-weight gain per day
+        and helps evaluate growth performance.
+    </p>
+
+</div>
+
+
+<div class="performance-card">
+
+    <div class="number">
+        FCR
+    </div>
+
+    <h3>
+        Feed Conversion Ratio
+    </h3>
+
+    <p>
+        Compares feed consumed with body-weight
+        gain and is an important efficiency indicator.
+    </p>
+
+</div>
+
+
+<div class="performance-card">
+
+    <div class="number">
+        FI
+    </div>
+
+    <h3>
+        Feed Intake
+    </h3>
+
+    <p>
+        Monitoring intake helps identify changes
+        caused by health, environment or feed quality.
+    </p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     DEFICIENCY WARNING
+========================================================= -->
+
+<section class="section">
+
+<div class="container">
+
+
+<div class="section-heading">
+
+    <h2>
+        Nutrition Warning Signs
+    </h2>
+
+    <p>
+        Changes in performance or appearance can have
+        many causes. These signs should trigger investigation,
+        not automatic diagnosis.
+    </p>
+
+</div>
+
+
+<div class="warning-grid">
+
+
+<div class="warning-card">
+
+    <div class="warning-icon">
+        <i class="fa-solid fa-arrow-trend-down"></i>
+    </div>
+
+    <div>
+
+        <h4>
+            Reduced Growth
+        </h4>
+
+        <p>
+            Review feed intake, health, environment,
+            feed quality and nutrient balance.
+        </p>
+
+    </div>
+
+</div>
+
+
+<div class="warning-card">
+
+    <div class="warning-icon">
+        <i class="fa-solid fa-utensils"></i>
+    </div>
+
+    <div>
+
+        <h4>
+            Reduced Feed Intake
+        </h4>
+
+        <p>
+            Check water, temperature, feed freshness,
+            health status and feeding management.
+        </p>
+
+    </div>
+
+</div>
+
+
+<div class="warning-card">
+
+    <div class="warning-icon">
+        <i class="fa-solid fa-water"></i>
+    </div>
+
+    <div>
+
+        <h4>
+            Changes in Manure
+        </h4>
+
+        <p>
+            Investigate diet changes, ingredient quality,
+            gut health and management factors.
+        </p>
+
+    </div>
+
+</div>
+
+
+<div class="warning-card">
+
+    <div class="warning-icon">
+        <i class="fa-solid fa-heart-pulse"></i>
+    </div>
+
+    <div>
+
+        <h4>
+            Poor Body Condition
+        </h4>
+
+        <p>
+            Review feeding level, nutrient density,
+            health and stage-specific requirements.
+        </p>
+
+    </div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FARM MANAGEMENT
+========================================================= -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="management-box">
+
+    <h2>
+        Professional Farm Nutrition Management
+    </h2>
+
+    <p>
+        A good nutrition program is not only about the
+        formula. Ingredient quality, storage, feed mixing,
+        feeding equipment, water availability, animal
+        health and regular performance measurement
+        all contribute to successful pig production.
+    </p>
+
+
+    <div class="management-grid">
+
+
+        <div class="management-item">
+
+            <i class="fa-solid fa-flask"></i>
+
+            <strong>
+                Ingredient Testing
+            </strong>
+
+            <span>
+                Check actual ingredient quality.
+            </span>
+
+        </div>
+
+
+        <div class="management-item">
+
+            <i class="fa-solid fa-scale-balanced"></i>
+
+            <strong>
+                Accurate Mixing
+            </strong>
+
+            <span>
+                Maintain consistent feed batches.
+            </span>
+
+        </div>
+
+
+        <div class="management-item">
+
+            <i class="fa-solid fa-temperature-low"></i>
+
+            <strong>
+                Storage Control
+            </strong>
+
+            <span>
+                Protect feed from moisture and contamination.
+            </span>
+
+        </div>
+
+
+        <div class="management-item">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            <strong>
+                Performance Records
+            </strong>
+
+            <span>
+                Monitor growth and feed efficiency.
+            </span>
+
+        </div>
+
+
+        <div class="management-item">
+
+            <i class="fa-solid fa-droplet"></i>
+
+            <strong>
+                Water Monitoring
+            </strong>
+
+            <span>
+                Ensure reliable clean water access.
+            </span>
+
+        </div>
+
+
+        <div class="management-item">
+
+            <i class="fa-solid fa-notes-medical"></i>
+
+            <strong>
+                Health Coordination
+            </strong>
+
+            <span>
+                Coordinate nutrition with herd health.
+            </span>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<div class="disclaimer">
+
+    <i class="fa-solid fa-triangle-exclamation"></i>
+
+    <strong>Important:</strong>
+    Nutrient requirements and feed formulations vary
+    with genetics, body weight, production stage,
+    climate, ingredient composition, health status and
+    management system. This webpage is an educational
+    farm-management reference and should not replace
+    a formulation prepared by a qualified animal nutritionist.
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+<div class="footer-container">
+
+
+<div class="footer-col">
+
+    <h3>
+        Divya Agro Farms
+    </h3>
+
+    <p>
+        Sustainable. Ethical. Professional.
+    </p>
+
+    <p>
+        Professional piggery and livestock solutions
+        focused on healthy breeding stock, nutrition
+        and responsible farm management.
+    </p>
+
+</div>
+
+
+<div class="footer-col">
+
+    <h4>
+        Nutrition
+    </h4>
+
+    <p>
+        <i class="fa-solid fa-piggy-bank"></i>
+        Piglet Nutrition
+    </p>
+
+    <p>
+        <i class="fa-solid fa-arrow-trend-up"></i>
+        Grower & Finisher
+    </p>
+
+    <p>
+        <i class="fa-solid fa-paw"></i>
+        Sow & Boar Nutrition
+    </p>
+
+</div>
+
+
+<div class="footer-col">
+
+    <h4>
+        Contact Us
+    </h4>
+
+    <p>
+        <i class="fa-solid fa-location-dot"></i>
+        Marepally, Nagarkurnool, Telangana
+    </p>
+
+    <p>
+        <i class="fa-solid fa-envelope"></i>
+        divyaagrofarmstr@gmail.com
+    </p>
+
+    <p>
+        <i class="fa-solid fa-phone"></i>
+        9000366245
+    </p>
+
+
+    <div class="social-links">
+
+        <a
+            href="https://youtube.com/@divyaagrofarms"
+            aria-label="YouTube">
+
+            <i class="fa-brands fa-youtube"></i>
+
+        </a>
+
+
+        <a
+            href="https://www.instagram.com/divyaagrofarms"
+            aria-label="Instagram">
+
+            <i class="fa-brands fa-instagram"></i>
+
+        </a>
+
+
+        <a
+            href="https://api.whatsapp.com/send?phone=919966966538&text=Hello"
+            aria-label="WhatsApp">
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+        </a>
+
+    </div>
+
+</div>
+
+
+</div>
+
+
+<div class="copyright">
+
+    © 2025-26 Divya Agro Farms Piggery.
+    All rights reserved.
+
+</div>
+
+</footer>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+/* =========================================================
+   MOBILE NAVIGATION
+========================================================= */
+
+const hamburger =
+    document.getElementById("hamburger");
+
+const navLinks =
+    document.getElementById("navLinks");
+
+
+hamburger.addEventListener(
+    "click",
+    function(){
+
+        navLinks.classList.toggle("open");
+
+    }
+);
+
+
+navLinks
+.querySelectorAll("a")
+.forEach(function(link){
+
+    link.addEventListener(
+        "click",
+        function(){
+
+            navLinks.classList.remove("open");
+
+        }
+    );
+
+});
+
+
+document.addEventListener(
+    "click",
+    function(event){
+
+        if(
+            !navLinks.contains(event.target) &&
+            !hamburger.contains(event.target)
+        ){
+
+            navLinks.classList.remove("open");
+
+        }
+
+    }
+);
+
+
+window.addEventListener(
+    "resize",
+    function(){
+
+        if(window.innerWidth > 768){
+
+            navLinks.classList.remove("open");
+
+        }
+
+    }
+);
+
+
+/* =========================================================
+   NUTRITION STAGE FILTER
+========================================================= */
+
+const stageButtons =
+    document.querySelectorAll(".stage-btn");
+
+const stageCards =
+    document.querySelectorAll(".stage-card");
+
+
+stageButtons.forEach(function(button){
+
+    button.addEventListener(
+        "click",
+        function(){
+
+            stageButtons.forEach(function(btn){
+
+                btn.classList.remove("active");
+
+            });
+
+
+            button.classList.add("active");
+
+
+            const selected =
+                button.dataset.stage;
+
+
+            stageCards.forEach(function(card){
+
+                if(
+                    selected === "all" ||
+                    card.dataset.stage === selected
+                ){
+
+                    card.classList.remove("hidden");
+
+                }
+                else{
+
+                    card.classList.add("hidden");
+
+                }
+
+            });
+
+        }
+    );
+
+});
+
+</script>
+
+
+</body>
+</html>
+
