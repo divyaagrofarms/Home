@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Under Maintenance | Divya Agro Farms</title>
+
+    <meta name="description"
+          content="Divya Agro Farms website is temporarily under maintenance. We will be back soon.">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+
+        /* =========================================================
+           DIVYA AGRO FARMS
+           PROFESSIONAL MAINTENANCE PAGE
+        ========================================================= */
+
+        :root {
+            --primary: #245b36;
+            --primary-dark: #17482a;
+            --primary-light: #3c7a49;
+            --accent: #d9a441;
+            --dark: #13231a;
+            --text: #445248;
+            --muted: #6c7b71;
+            --light: #f5f8f4;
+            --white: #ffffff;
+            --border: #e3ebe4;
+
+            --shadow:
+                0 18px 45px rgba(19, 35, 26, 0.10);
+
+            --radius: 22px;
+        }
+
+
+        /* =========================================================
+           RESET
+        ========================================================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            width: 100%;
+            max-width: 100%;
+            min-height: 100vh;
+
+            font-family:
+                Inter,
+                ui-sans-serif,
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+
+            color: var(--dark);
+            background: var(--light);
+
+            overflow-x: hidden;
+
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button {
+            font-family: inherit;
+        }
+
+
+        /* =========================================================
+           HEADER
+        ========================================================= */
+
+        header {
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            background:
+                rgba(255, 255, 255, 0.95);
+
+            backdrop-filter: blur(16px);
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+
+        /* =========================================================
+           NAVBAR
+        ========================================================= */
+
+        .navbar {
+            width: 100%;
+            max-width: 1240px;
+
+            min-height: 76px;
+
+            margin: auto;
+
+            padding:
+                0 22px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+        }
+
+
+        /* =========================================================
+           LOGO
+        ========================================================= */
+
+        .logo {
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            font-size: 1.15rem;
+
+            font-weight: 800;
+
+            color: var(--primary);
+
+            white-space: nowrap;
+        }
+
+        .logo i {
+            font-size: 1.55rem;
+
+            color: var(--accent);
+        }
+
+
+        /* =========================================================
+           NAVIGATION
+        ========================================================= */
+
+        .nav-links {
+            display: flex;
+
+            align-items: center;
+
+            gap: 6px;
+
+            list-style: none;
+        }
+
+        .nav-links a {
+            display: block;
+
+            padding:
+                10px 14px;
+
+            border-radius: 12px;
+
+            color: var(--text);
+
+            font-weight: 650;
+
+            transition:
+                0.25s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+
+            background:
+                #edf5ee;
+        }
+
+        .nav-links .active {
+            color: var(--primary);
+
+            background:
+                #edf5ee;
+        }
+
+
+        /* =========================================================
+           CONTACT BUTTON
+        ========================================================= */
+
+        .nav-btn {
+            color: var(--white) !important;
+
+            background:
+                var(--primary);
+
+            padding:
+                11px 18px !important;
+
+            margin-left: 6px;
+
+            box-shadow:
+                0 8px 20px rgba(36, 91, 54, 0.18);
+        }
+
+        .nav-btn:hover {
+            background:
+                var(--primary-dark) !important;
+
+            color:
+                var(--white) !important;
+        }
+
+
+        /* =========================================================
+           HAMBURGER
+        ========================================================= */
+
+        .hamburger {
+            display: none;
+
+            width: 44px;
+            height: 44px;
+
+            align-items: center;
+            justify-content: center;
+
+            color:
+                var(--primary);
+
+            font-size:
+                1.4rem;
+
+            cursor: pointer;
+        }
+
+
+        /* =========================================================
+           MAINTENANCE HERO
+        ========================================================= */
+
+        .maintenance-section {
+
+            min-height:
+                calc(100vh - 76px);
+
+            width: 100%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding:
+                70px 20px;
+
+            background:
+
+                radial-gradient(
+                    circle at 10% 10%,
+                    rgba(60, 122, 73, 0.12),
+                    transparent 28%
+                ),
+
+                radial-gradient(
+                    circle at 90% 10%,
+                    rgba(217, 164, 65, 0.13),
+                    transparent 25%
+                ),
+
+                linear-gradient(
+                    135deg,
+                    #f7faf7,
+                    #eef5ef
+                );
+        }
+
+
+        /* =========================================================
+           MAINTENANCE CONTAINER
+        ========================================================= */
+
+        .maintenance-container {
+
+            width: 100%;
+
+            max-width:
+                850px;
+
+            text-align:
+                center;
+
+            background:
+                rgba(255, 255, 255, 0.92);
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                30px;
+
+            padding:
+                55px 40px;
+
+            box-shadow:
+                0 25px 70px
+                rgba(19, 35, 26, 0.12);
+        }
+
+
+        /* =========================================================
+           ICON
+        ========================================================= */
+
+        .maintenance-icon {
+
+            width:
+                110px;
+
+            height:
+                110px;
+
+            margin:
+                0 auto 28px;
+
+            border-radius:
+                50%;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--primary),
+                    var(--primary-light)
+                );
+
+            color:
+                white;
+
+            font-size:
+                3rem;
+
+            box-shadow:
+                0 18px 35px
+                rgba(36, 91, 54, 0.25);
+
+            animation:
+                floatIcon 3s ease-in-out infinite;
+        }
+
+        @keyframes floatIcon {
+
+            0%,
+            100% {
+                transform:
+                    translateY(0);
+            }
+
+            50% {
+                transform:
+                    translateY(-10px);
+            }
+        }
+
+
+        /* =========================================================
+           EYEBROW
+        ========================================================= */
+
+        .maintenance-eyebrow {
+
+            display:
+                inline-block;
+
+            margin-bottom:
+                12px;
+
+            color:
+                var(--primary);
+
+            font-size:
+                0.78rem;
+
+            font-weight:
+                850;
+
+            letter-spacing:
+                1.8px;
+
+            text-transform:
+                uppercase;
+        }
+
+
+        /* =========================================================
+           TITLE
+        ========================================================= */
+
+        .maintenance-container h1 {
+
+            font-size:
+                clamp(2.3rem, 6vw, 4rem);
+
+            line-height:
+                1.1;
+
+            letter-spacing:
+                -1.8px;
+
+            color:
+                var(--dark);
+
+            margin-bottom:
+                18px;
+        }
+
+        .maintenance-container h1 span {
+
+            color:
+                var(--primary);
+        }
+
+
+        /* =========================================================
+           DESCRIPTION
+        ========================================================= */
+
+        .maintenance-description {
+
+            max-width:
+                650px;
+
+            margin:
+                0 auto;
+
+            color:
+                var(--muted);
+
+            font-size:
+                1.05rem;
+        }
+
+
+        /* =========================================================
+           STATUS
+        ========================================================= */
+
+        .status-box {
+
+            max-width:
+                570px;
+
+            margin:
+                32px auto;
+
+            padding:
+                20px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                18px;
+
+            background:
+                #f7faf7;
+
+            text-align:
+                left;
+        }
+
+        .status-header {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                space-between;
+
+            margin-bottom:
+                12px;
+        }
+
+        .status-header strong {
+
+            color:
+                var(--dark);
+        }
+
+        .status-label {
+
+            color:
+                var(--primary);
+
+            font-size:
+                0.8rem;
+
+            font-weight:
+                800;
+        }
+
+
+        /* =========================================================
+           PROGRESS BAR
+        ========================================================= */
+
+        .progress {
+
+            width:
+                100%;
+
+            height:
+                9px;
+
+            border-radius:
+                999px;
+
+            overflow:
+                hidden;
+
+            background:
+                #dfe8e1;
+        }
+
+        .progress-bar {
+
+            width:
+                75%;
+
+            height:
+                100%;
+
+            border-radius:
+                inherit;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    var(--primary),
+                    var(--primary-light),
+                    var(--accent)
+                );
+
+            animation:
+                progressMove 2.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes progressMove {
+
+            from {
+                width: 65%;
+            }
+
+            to {
+                width: 82%;
+            }
+        }
+
+
+        /* =========================================================
+           INFO CARDS
+        ========================================================= */
+
+        .maintenance-info {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap:
+                14px;
+
+            margin:
+                28px auto;
+        }
+
+        .info-card {
+
+            padding:
+                20px 14px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:
+                17px;
+
+            background:
+                #ffffff;
+        }
+
+        .info-card i {
+
+            color:
+                var(--primary);
+
+            font-size:
+                1.4rem;
+
+            margin-bottom:
+                8px;
+        }
+
+        .info-card strong {
+
+            display:
+                block;
+
+            color:
+                var(--dark);
+
+            font-size:
+                0.9rem;
+        }
+
+        .info-card span {
+
+            display:
+                block;
+
+            margin-top:
+                3px;
+
+            color:
+                var(--muted);
+
+            font-size:
+                0.76rem;
+        }
+
+
+        /* =========================================================
+           BUTTONS
+        ========================================================= */
+
+        .maintenance-buttons {
+
+            display:
+                flex;
+
+            justify-content:
+                center;
+
+            flex-wrap:
+                wrap;
+
+            gap:
+                12px;
+
+            margin-top:
+                30px;
+        }
+
+        .button {
+
+            display:
+                inline-flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            gap:
+                8px;
+
+            padding:
+                13px 22px;
+
+            border-radius:
+                13px;
+
+            font-weight:
+                800;
+
+            transition:
+                0.25s ease;
+        }
+
+        .button-primary {
+
+            background:
+                var(--primary);
+
+            color:
+                white;
+
+            box-shadow:
+                0 10px 25px
+                rgba(36, 91, 54, 0.2);
+        }
+
+        .button-primary:hover {
+
+            background:
+                var(--primary-dark);
+
+            transform:
+                translateY(-2px);
+        }
+
+        .button-secondary {
+
+            background:
+                #edf5ee;
+
+            color:
+                var(--primary);
+
+            border:
+                1px solid var(--border);
+        }
+
+        .button-secondary:hover {
+
+            background:
+                #e1eee3;
+
+            transform:
+                translateY(-2px);
+        }
+
+
+        /* =========================================================
+           FOOTER
+        ========================================================= */
+
+        footer {
+
+            width:
+                100%;
+
+            background:
+                #102218;
+
+            color:
+                #dbe6dd;
+        }
+
+        .footer-container {
+
+            width:
+                100%;
+
+            max-width:
+                1240px;
+
+            margin:
+                auto;
+
+            padding:
+                50px 22px;
+
+            display:
+                grid;
+
+            grid-template-columns:
+                1.4fr 1fr 1fr;
+
+            gap:
+                40px;
+        }
+
+        .footer-col h3,
+        .footer-col h4 {
+
+            color:
+                white;
+
+            margin-bottom:
+                12px;
+        }
+
+        .footer-col p {
+
+            color:
+                #aebdb2;
+
+            margin:
+                8px 0;
+
+            font-size:
+                0.92rem;
+        }
+
+        .footer-col i {
+
+            width:
+                20px;
+
+            color:
+                var(--accent);
+        }
+
+
+        /* =========================================================
+           SOCIAL LINKS
+        ========================================================= */
+
+        .social-links {
+
+            display:
+                flex;
+
+            gap:
+                10px;
+
+            margin-top:
+                14px;
+        }
+
+        .social-links a {
+
+            width:
+                42px;
+
+            height:
+                42px;
+
+            display:
+                grid;
+
+            place-items:
+                center;
+
+            border-radius:
+                12px;
+
+            background:
+                #1b3424;
+
+            color:
+                white;
+
+            transition:
+                0.2s;
+        }
+
+        .social-links a:hover {
+
+            background:
+                var(--primary-light);
+
+            transform:
+                translateY(-2px);
+        }
+
+
+        /* =========================================================
+           COPYRIGHT
+        ========================================================= */
+
+        .copyright {
+
+            text-align:
+                center;
+
+            border-top:
+                1px solid rgba(255,255,255,.09);
+
+            padding:
+                18px;
+
+            color:
+                #8fa094;
+
+            font-size:
+                0.8rem;
+        }
+
+
+        /* =========================================================
+           MOBILE
+        ========================================================= */
+
+        @media (max-width: 768px) {
+
+            .navbar {
+
+                min-height:
+                    68px;
+
+                padding:
+                    0 14px;
+            }
+
+            .hamburger {
+
+                display:
+                    flex;
+            }
+
+            .nav-links {
+
+                position:
+                    absolute;
+
+                top:
+                    68px;
+
+                left:
+                    10px;
+
+                right:
+                    10px;
+
+                width:
+                    auto;
+
+                display:
+                    none;
+
+                flex-direction:
+                    column;
+
+                align-items:
+                    stretch;
+
+                gap:
+                    4px;
+
+                padding:
+                    12px;
+
+                background:
+                    rgba(255,255,255,.98);
+
+                border:
+                    1px solid var(--border);
+
+                border-radius:
+                    17px;
+
+                box-shadow:
+                    0 20px 50px
+                    rgba(0,0,0,.15);
+            }
+
+            .nav-links.open {
+
+                display:
+                    flex;
+            }
+
+            .nav-links li {
+
+                width:
+                    100%;
+            }
+
+            .nav-links a {
+
+                width:
+                    100%;
+
+                padding:
+                    12px 14px;
+            }
+
+            .nav-links .nav-btn {
+
+                margin:
+                    4px 0 0;
+
+                text-align:
+                    center;
+            }
+
+            .maintenance-section {
+
+                min-height:
+                    auto;
+
+                padding:
+                    45px 14px;
+            }
+
+            .maintenance-container {
+
+                padding:
+                    38px 20px;
+
+                border-radius:
+                    24px;
+            }
+
+            .maintenance-icon {
+
+                width:
+                    90px;
+
+                height:
+                    90px;
+
+                font-size:
+                    2.4rem;
+            }
+
+            .maintenance-info {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+            .footer-container {
+
+                grid-template-columns:
+                    1fr;
+
+                gap:
+                    25px;
+
+                padding:
+                    40px 20px;
+            }
+        }
+
+
+        /* =========================================================
+           SMALL MOBILE
+        ========================================================= */
+
+        @media (max-width: 430px) {
+
+            .logo {
+
+                max-width:
+                    calc(100% - 55px);
+
+                overflow:
+                    hidden;
+
+                text-overflow:
+                    ellipsis;
+            }
+
+            .maintenance-container h1 {
+
+                font-size:
+                    2.25rem;
+            }
+
+            .maintenance-description {
+
+                font-size:
+                    0.92rem;
+            }
+
+            .maintenance-buttons {
+
+                flex-direction:
+                    column;
+            }
+
+            .button {
+
+                width:
+                    100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+<!-- =========================================================
+     HEADER / NAVIGATION
+========================================================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+
+            <i class="fa-solid fa-piggy-bank"></i>
+
+            <span>Divya Agro Farms</span>
+
+        </a>
+
+
+        <div class="hamburger" id="hamburger">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </div>
+
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#nutrition">
+                    Nutrition
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#stories">
+                    Reviews
+                </a>
+            </li>
+
+            <li>
+                <a href="gallery.html">
+                    Livestock
+                </a>
+            </li>
+
+            <li>
+                <a href="https://script.google.com/a/~/macros/s/AKfycbxltI3jYO7NN47utVJHWxJgkyFjkdDiAaRhCFxyRHa8MODTbKrUbqA7oQQPs1YiQdYghg/exec">
+                    Login
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="https://forms.gle/qfbE7knoYrA9mHkD8"
+                    class="nav-btn">
+
+                    Contact Us
+
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =========================================================
+     MAINTENANCE CONTENT
+========================================================= -->
+
+<main>
+
+    <section class="maintenance-section">
+
+        <div class="maintenance-container">
+
+
+            <!-- ICON -->
+
+            <div class="maintenance-icon">
+
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+
+            </div>
+
+
+            <!-- LABEL -->
+
+            <span class="maintenance-eyebrow">
+
+                Divya Agro Farms
+
+            </span>
+
+
+            <!-- TITLE -->
+
+            <h1>
+
+                We'll Be Back <span>Soon!</span>
+
+            </h1>
+
+
+            <!-- DESCRIPTION -->
+
+            <p class="maintenance-description">
+
+                Our website is currently undergoing scheduled maintenance
+                to improve your experience and bring you new features,
+                livestock updates and better farm services.
+
+                <br><br>
+
+                We appreciate your patience and apologize for any
+                inconvenience.
+
+            </p>
+
+
+
+            <!-- STATUS -->
+
+            <div class="status-box">
+
+                <div class="status-header">
+
+                    <strong>
+                        Website Maintenance
+                    </strong>
+
+                    <span class="status-label">
+                        IN PROGRESS
+                    </span>
+
+                </div>
+
+
+                <div class="progress">
+
+                    <div class="progress-bar"></div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- INFORMATION -->
+
+            <div class="maintenance-info">
+
+
+                <div class="info-card">
+
+                    <i class="fa-solid fa-piggy-bank"></i>
+
+                    <strong>
+                        Livestock
+                    </strong>
+
+                    <span>
+                        Sows • Boars • Piglets
+                    </span>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <i class="fa-solid fa-shield-heart"></i>
+
+                    <strong>
+                        Farm Standards
+                    </strong>
+
+                    <span>
+                        Professional & Biosecure
+                    </span>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <i class="fa-solid fa-seedling"></i>
+
+                    <strong>
+                        Coming Soon
+                    </strong>
+
+                    <span>
+                        Better Farm Experience
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- BUTTONS -->
+
+            <div class="maintenance-buttons">
+
+
+                <a
+                    href="index.html"
+                    class="button button-primary">
+
+                    <i class="fa-solid fa-house"></i>
+
+                    Back to Home
+
+                </a>
+
+
+                <a
+                    href="https://forms.gle/qfbE7knoYrA9mHkD8"
+                    class="button button-secondary">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    Contact Us
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer id="contact">
+
+
+    <div class="footer-container">
+
+
+        <!-- COMPANY -->
+
+        <div class="footer-col">
+
+            <h3>
+                Divya Agro Farms
+            </h3>
+
+            <p>
+                Sustainable. Ethical. Professional.
+            </p>
+
+            <p>
+                Professional piggery and livestock
+                solutions focused on healthy breeding
+                stock and responsible farm management.
+            </p>
+
+        </div>
+
+
+
+        <!-- CONTACT -->
+
+        <div class="footer-col">
+
+            <h4>
+                Contact Us
+            </h4>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+
+                Marepally, Nagarkurnool, Telangana
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+
+                divyaagrofarmstr@gmail.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+
+                9000366245
+            </p>
+
+        </div>
+
+
+
+        <!-- SOCIAL -->
+
+        <div class="footer-col">
+
+            <h4>
+                Follow Us
+            </h4>
+
+            <div class="social-links">
+
+                <a
+                    href="https://youtube.com/@divyaagrofarms?si=rPuU8BE7GiFG2D_f"
+                    aria-label="YouTube">
+
+                    <i class="fa-brands fa-youtube"></i>
+
+                </a>
+
+
+                <a
+                    href="https://www.instagram.com/divyaagrofarms?igsh=ODhrdm40YjV1MHA4"
+                    aria-label="Instagram">
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                </a>
+
+
+                <a
+                    href="https://api.whatsapp.com/send?phone=919966966538&text=Hello"
+                    aria-label="WhatsApp">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="copyright">
+
+        © 2025-26 Divya Agro Farms Piggery.
+        All rights reserved.
+
+    </div>
+
+
+</footer>
+
+
+
+<!-- =========================================================
+     MOBILE NAVIGATION JAVASCRIPT
+========================================================= -->
+
+<script>
+
+    const hamburger =
+        document.getElementById("hamburger");
+
+    const navLinks =
+        document.getElementById("navLinks");
+
+
+    hamburger.addEventListener(
+        "click",
+        function () {
+
+            navLinks.classList.toggle("open");
+
+        }
+    );
+
+
+    /* Close menu after clicking link */
+
+    navLinks
+        .querySelectorAll("a")
+        .forEach(function (link) {
+
+            link.addEventListener(
+                "click",
+                function () {
+
+                    navLinks.classList.remove("open");
+
+                }
+            );
+
+        });
+
+
+    /* Close menu when clicking outside */
+
+    document.addEventListener(
+        "click",
+        function (event) {
+
+            if (
+                !navLinks.contains(event.target) &&
+                !hamburger.contains(event.target)
+            ) {
+
+                navLinks.classList.remove("open");
+
+            }
+
+        }
+    );
+
+
+    /* Reset mobile menu on desktop */
+
+    window.addEventListener(
+        "resize",
+        function () {
+
+            if (window.innerWidth > 768) {
+
+                navLinks.classList.remove("open");
+
+            }
+
+        }
+    );
+
+</script>
+
+
+</body>
+</html>
