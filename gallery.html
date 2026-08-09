@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livestock Inventory | Divya Agro Farms Piggery</title>
+    <meta name="description" content="Browse our current inventory of high-quality breeding stock, weaners, and growers.">
+    <style>
+
+:root{--primary:#245b36;--primary2:#3c7a49;--accent:#d9a441;--dark:#13231a;--muted:#66756b;--bg:#f5f8f4;--card:#fff;--border:#e3ebe4;--shadow:0 18px 45px rgba(19,35,26,.10);--radius:22px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--dark);background:var(--bg);line-height:1.6}a{text-decoration:none;color:inherit}button{font:inherit}
+header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+.navbar{max-width:1240px;margin:auto;min-height:76px;padding:0 22px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:10px;font-size:1.15rem;font-weight:800;color:var(--primary)}.logo i{font-size:1.55rem;color:var(--accent)}
+.nav-links{display:flex;align-items:center;gap:6px;list-style:none}.nav-links a{display:block;padding:10px 14px;border-radius:12px;color:#445248;font-weight:650;transition:.25s}.nav-links a:hover,.nav-links a.active{color:var(--primary);background:#edf5ee}.nav-links .nav-btn{color:#fff;background:var(--primary);padding:11px 18px;margin-left:6px}.nav-links .nav-btn:hover{background:#17482a;color:#fff}
+.hamburger{display:none;font-size:1.4rem;color:var(--primary);cursor:pointer}
+.section-gray{min-height:calc(100vh - 76px);background:radial-gradient(circle at 10% 10%,rgba(60,122,73,.10),transparent 28%),radial-gradient(circle at 90% 0%,rgba(217,164,65,.10),transparent 24%),var(--bg);padding:0 20px 80px!important}
+.gallery-header{max-width:1240px;margin:auto;padding:76px 0 34px;text-align:center}.section-title{margin-bottom:28px!important}.section-title h2{font-size:clamp(2rem,4vw,3.3rem);line-height:1.12;letter-spacing:-1.5px;color:var(--dark);font-weight:850}.section-title h2:after{content:"";display:block;width:62px;height:4px;border-radius:20px;background:linear-gradient(90deg,var(--primary),var(--accent));margin:18px auto 0}.subtitle{color:var(--muted);margin-top:12px;font-size:1.03rem}
+.gallery-controls{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:30px}.filter-btn{border:1px solid var(--border);background:#fff;color:#4e5d53;padding:11px 18px;border-radius:999px;font-weight:750;cursor:pointer;transition:.25s;box-shadow:0 5px 15px rgba(19,35,26,.04)}.filter-btn:hover{transform:translateY(-2px);border-color:#bdd0c0}.filter-btn.active{background:var(--primary);border-color:var(--primary);color:#fff;box-shadow:0 10px 24px rgba(36,91,54,.22)}
+.inventory-stats{max-width:1040px;margin:10px auto 45px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.inventory-stats div{background:rgba(255,255,255,.78);border:1px solid var(--border);border-radius:18px;padding:18px 12px;box-shadow:0 8px 25px rgba(19,35,26,.05)}.inventory-stats strong{display:block;font-size:1.55rem;color:var(--primary);line-height:1.1}.inventory-stats span{display:block;color:var(--muted);font-size:.78rem;font-weight:700;margin-top:4px}
+.gallery-grid-section{max-width:1240px;margin:auto}.inventory-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.inv-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:transform .28s,box-shadow .28s}.inv-card:hover{transform:translateY(-7px);box-shadow:0 25px 55px rgba(19,35,26,.15)}.inv-card.is-hidden{display:none}
+.inv-img-holder{height:245px;position:relative;overflow:hidden;background:#eaf1ea}.inv-img-holder:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.18));pointer-events:none}.inv-img-holder img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}.inv-card:hover .inv-img-holder img{transform:scale(1.06)}
+.badge{position:absolute;z-index:2;top:15px;left:15px;padding:7px 11px;border-radius:999px;color:#fff;font-size:.74rem;font-weight:800;box-shadow:0 7px 15px rgba(0,0,0,.14)}.badge.ready{background:#28734a}.badge.new{background:#b47b1c}.badge.info{background:#356c9a}
+.inv-content{padding:22px;display:flex;flex-direction:column;flex:1}.inv-meta{color:var(--primary);font-size:.75rem;font-weight:850;letter-spacing:.7px;text-transform:uppercase;margin-bottom:7px}.inv-content h3{font-size:1.38rem;line-height:1.25;margin-bottom:8px}.inv-content p{color:var(--muted);font-size:.93rem;min-height:50px}.inv-specs{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:17px 0 20px}.inv-specs li{background:#f3f7f3;border:1px solid #e4ede5;color:#536159;border-radius:10px;padding:7px 9px;font-size:.78rem;font-weight:700}.inv-specs i{color:var(--primary);margin-right:4px}.view-btn{margin-top:auto;width:100%;border:0;border-radius:13px;padding:12px 15px;background:#eef5ef;color:var(--primary);font-weight:800;cursor:pointer;transition:.25s}.view-btn:hover{background:var(--primary);color:#fff;transform:translateY(-1px)}
+.details-popup-bg{display:none;position:fixed;inset:0;z-index:2000;background:rgba(8,20,12,.65);backdrop-filter:blur(7px);align-items:center;justify-content:center;padding:20px}.details-popup-bg.show{display:flex}.details-popup-box{width:min(650px,100%);max-height:88vh;overflow:auto;background:#fff;border-radius:24px;padding:28px;position:relative;box-shadow:0 30px 90px rgba(0,0,0,.25)}.details-popup-box h2{color:var(--dark);margin:10px 0 20px}.details-cancel-btn{position:absolute;right:18px;top:18px;border:0;background:#eef3ee;color:var(--primary);width:38px;height:38px;border-radius:50%;cursor:pointer;font-weight:900}.details-table{width:100%;border-collapse:collapse}.details-table th,.details-table td{text-align:left;padding:12px;border-bottom:1px solid var(--border)}.details-table th{background:#f2f6f2;color:var(--primary)}
+footer{background:#102218;color:#dbe6dd}.footer-container{max-width:1240px;margin:auto;padding:55px 22px;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}.footer-col h3,.footer-col h4{color:#fff;margin-bottom:12px}.footer-col p{color:#aebdb2;margin:8px 0;font-size:.92rem}.footer-col i{width:20px;color:#d9a441}.social-links{display:flex;gap:10px;margin-top:14px}.social-links a{width:42px;height:42px;display:grid;place-items:center;border-radius:12px;background:#1b3424;color:#fff;transition:.2s}.social-links a:hover{background:var(--primary2);transform:translateY(-2px)}.copyright{text-align:center;border-top:1px solid rgba(255,255,255,.09);padding:18px;color:#8fa094;font-size:.8rem}
+@media(max-width:1000px){.inventory-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.navbar{min-height:68px}.hamburger{display:block}.nav-links{position:absolute;top:68px;left:14px;right:14px;display:none;flex-direction:column;align-items:stretch;background:#fff;padding:12px;border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow)}.nav-links.open{display:flex}.nav-links a{padding:12px 14px}.nav-links .nav-btn{margin:4px 0 0;text-align:center}.gallery-header{padding:52px 0 25px}.inventory-grid{grid-template-columns:1fr;gap:18px}.inv-img-holder{height:230px}.footer-container{grid-template-columns:1fr;gap:24px;padding:40px 22px}.inventory-stats{grid-template-columns:repeat(2,1fr);margin-bottom:28px}}
+@media(max-width:430px){.section-gray{padding-left:14px!important;padding-right:14px!important}.section-title h2{font-size:2rem}.gallery-controls{justify-content:flex-start}.filter-btn{font-size:.8rem;padding:9px 13px}.inv-content{padding:18px}}
+
+</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<!-- DETAILS POPUP -->
+<div class="details-popup-bg" id="detailsPopup">
+    <div class="details-popup-box">
+        
+        <button class="details-cancel-btn" onclick="closeDetails()">Cancel</button>
+
+        <h2 style="margin-top: 10px;">Pig Details</h2>
+
+        <table class="details-table">
+            <thead>
+                <tr>
+                    <th>Parameter</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody id="detailsTableBody">
+                <!-- Dynamic data will load here -->
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-piggy-bank"></i> Divya Agro Farms
+            </a>
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#nutrition">Nutrition</a></li>
+                <li><a href="index.html#stories">Reviews</a></li>
+                <li><a href="gallery.html" class="active">Livestock</a></li>
+                 <li><a href="https://script.google.com/a/~/macros/s/AKfycbxltI3jYO7NN47utVJHWxJgkyFjkdDiAaRhCFxyRHa8MODTbKrUbqA7oQQPs1YiQdYghg/exec">Login</a></li>
+                <li><a href="https://forms.gle/qfbE7knoYrA9mHkD8" class="nav-btn">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="section-gray" style="padding-top: 3rem;">
+        
+        <section class="gallery-header">
+            <div class="section-title" style="margin-bottom: 2rem;">
+                <h2>Current Livestock Inventory</h2>
+                <p class="subtitle">Select a category below to filter stock.</p>
+            </div>
+
+            <div class="gallery-controls">
+                <button class="filter-btn active" data-filter="all"><i class="fa-solid fa-layer-group"></i> All Stock</button>
+                <button class="filter-btn" data-filter="sows"><i class="fa-solid fa-piggy-bank"></i> Sows</button>
+                <button class="filter-btn" data-filter="boars"><i class="fa-solid fa-paw"></i> Boars</button>
+                <button class="filter-btn" data-filter="piglets"><i class="fa-solid fa-baby"></i> Piglets</button>
+                <button class="filter-btn" data-filter="breeding">Breeding Stock</button>
+                <button class="filter-btn" data-filter="weaners">Piglets & Weaners</button>
+                <button class="filter-btn" data-filter="facilities">Facilities</button>
+            </div>
+        </section>
+            <div class="inventory-stats">
+                <div><strong>125+</strong><span>Breeding Stock</span></div>
+                <div><strong>50+</strong><span>Healthy Piglets</span></div>
+                <div><strong>100%</strong><span>Farm Managed</span></div>
+                <div><strong>24/7</strong><span>Animal Care</span></div>
+            </div>
+
+        <section class="gallery-grid-section">
+            <div class="inventory-grid">
+                
+                <div class="inv-card" data-category="breeding sows">
+                    <div class="inv-img-holder">
+                        <img src="LWG.png" alt="Large White Sow">
+                        <span class="badge ready">Ready for Sale</span>
+                    </div>
+                    <div class="inv-content">
+                        <div class="inv-meta">ID: #SOW-402</div>
+                        <h3>Large White Sow</h3>
+                        <p>Excellent maternal lines. Vaccinated and ready for first mating service.</p>
+                        <ul class="inv-specs">
+                            <li><i class="fa-solid fa-heart-circle-check"></i> Active</li>
+                            <li><i class="fa-solid fa-weight-hanging"></i> ~80kg</li>
+                        </ul>
+                        <button class="view-btn" onclick="openDetails({
+    'Month-Year': 'Oct-2024',
+    'Breed': 'Large White Yorkshire',
+    'Vaccination': 'Done',
+    'Avg Weight': '130 kg',
+    'Status': 'Ready for Mating',
+    'In stock': '125'
+})">
+    <i class="fa-solid fa-magnifying-glass-plus"></i> View Details
+</button>
+                    </div>
+                </div>
+
+                 <div class="inv-card" data-category="weaners piglets">
+                    <div class="inv-img-holder">
+                        <img src="Psow.png" alt="Batch of piglets">
+                        <span class="badge new">New Batch</span>
+                    </div>
+                    <div class="inv-content">
+                        <div class="inv-meta">Batch: #OCT-23B</div>
+                        <h3>Piglets (Sow)</h3>
+                        <p>Strong batch, fully weaned onto dry feed. High growth potential.</p>
+                        <ul class="inv-specs">
+                            <li><i class="fa-solid fa-paw"></i> Group of 20</li>
+                            <li><i class="fa-solid fa-heart-circle-check"></i> Active</li>
+                        </ul>
+                        <button class="view-btn" onclick="openDetails({
+     'Month-Year': 'Oct-2024',
+    'Breed': 'Large White Yorkshire',
+    'Vaccination': 'Done',
+    'Avg Weight': '130 kg',
+    'Status': 'Ready for Mating',
+    'In stock': '125'
+})">
+    <i class="fa-solid fa-magnifying-glass-plus"></i> View Details
+</button>
+                    </div>
+                </div>
+
+                <div class="inv-card" data-category="breeding boars">
+                    <div class="inv-img-holder">
+                        <img src="LWG.png" alt="Mature Boar">
+                        <span class="badge ready">Ready for Sale</span>
+                    </div>
+                    <div class="inv-content">
+                        <div class="inv-meta">ID: #BOAR-112</div>
+                        <h3>Large White Boar</h3>
+                        <p>The cornerstone of our meat quality program. Excellent temperament.</p>
+                        <ul class="inv-specs">
+                            <li><i class="fa-solid fa-heart-circle-check"></i> Active</li>
+                            <li><i class="fa-solid fa-dna"></i> High Marbling</li>
+                        </ul>
+                        <button class="view-btn" onclick="openDetails({
+     'Month-Year': 'Oct-2024',
+    'Breed': 'Large White Yorkshire',
+    'Vaccination': 'Done',
+    'Avg Weight': '130 kg',
+    'Status': 'Ready for Mating',
+    'In stock': '125'
+})">
+    <i class="fa-solid fa-magnifying-glass-plus"></i> View Details
+</button>
+                    </div>
+                </div>
+
+                                <div class="inv-card" data-category="sows breeding">
+                    <div class="inv-img-holder"><img src="LWG.png" alt="Premium Large White Sow"><span class="badge ready">Breeding Sow</span></div>
+                    <div class="inv-content">
+                        <div class="inv-meta">Sow • ID: #SOW-118</div><h3>Premium Large White Sow</h3>
+                        <p>Healthy breeding sow selected for maternal performance, litter size and strong piglet growth.</p>
+                        <ul class="inv-specs"><li><i class="fa-solid fa-heart-circle-check"></i> Healthy</li><li><i class="fa-solid fa-dna"></i> Elite Line</li><li><i class="fa-solid fa-weight-hanging"></i> 140 kg</li></ul>
+                        <button class="view-btn" onclick="openDetails({'Animal ID':'SOW-118','Category':'Sow','Breed':'Large White Yorkshire','Vaccination':'Up to date','Avg Weight':'140 kg','Status':'Ready for Breeding','Availability':'In Stock'})"><i class="fa-solid fa-magnifying-glass-plus"></i> View Details</button>
+                    </div>
+                </div>
+                <div class="inv-card" data-category="boars breeding">
+                    <div class="inv-img-holder"><img src="LWG.png" alt="Premium Large White Boar"><span class="badge ready">Breeding Boar</span></div>
+                    <div class="inv-content">
+                        <div class="inv-meta">Boar • ID: #BOAR-204</div><h3>Premium Large White Boar</h3>
+                        <p>Strong breeding boar with excellent conformation, growth traits and robust farm performance.</p>
+                        <ul class="inv-specs"><li><i class="fa-solid fa-heart-circle-check"></i> Active</li><li><i class="fa-solid fa-dna"></i> Superior Genetics</li><li><i class="fa-solid fa-weight-hanging"></i> 180 kg</li></ul>
+                        <button class="view-btn" onclick="openDetails({'Animal ID':'BOAR-204','Category':'Boar','Breed':'Large White Yorkshire','Vaccination':'Up to date','Avg Weight':'180 kg','Status':'Ready for Breeding','Availability':'In Stock'})"><i class="fa-solid fa-magnifying-glass-plus"></i> View Details</button>
+                    </div>
+                </div>
+                <div class="inv-card" data-category="piglets weaners">
+                    <div class="inv-img-holder"><img src="Piglets.png" alt="Healthy piglets"><span class="badge new">Piglet Batch</span></div>
+                    <div class="inv-content">
+                        <div class="inv-meta">Piglets • Batch: #PL-026</div><h3>Healthy Farm Piglets</h3>
+                        <p>Active piglets from selected breeding stock, managed under hygienic nursery conditions and balanced feeding.</p>
+                        <ul class="inv-specs"><li><i class="fa-solid fa-paw"></i> Group of 24</li><li><i class="fa-solid fa-heart-circle-check"></i> Active</li><li><i class="fa-solid fa-scale-balanced"></i> 8–12 kg</li></ul>
+                        <button class="view-btn" onclick="openDetails({'Batch ID':'PL-026','Category':'Piglets','Breed':'Large White Yorkshire Cross','Vaccination':'As scheduled','Avg Weight':'8–12 kg','Status':'Growing','Availability':'Available Soon'})"><i class="fa-solid fa-magnifying-glass-plus"></i> View Details</button>
+                    </div>
+                </div>
+<div class="inv-card" data-category="facilities">
+                    <div class="inv-img-holder">
+                        <img src="gpens.png" alt="Piggery Facility">
+                        <span class="badge new">New Batch</span>
+                    </div>
+                    <div class="inv-content">
+                        <div class="inv-meta">Infrastructure</div>
+                        <h3>Grower Pens</h3>
+                        <p>A look at our climate-controlled grower section with automated feeders.</p>
+                        <ul class="inv-specs">
+                            <li><i class="fa-solid fa-check"></i> Biosecure</li>
+                            <li><i class="fa-solid fa-wind"></i> Ventilated</li>
+                        </ul>
+                        <button class="view-btn" onclick="openDetails({
+     'Month-Year': 'Oct-2024',
+    'Breed': 'Large White Yorkshire',
+    'Vaccination': 'Done',
+    'Avg Weight': '130 kg',
+    'Status': 'Ready for Mating',
+    'In stock': '125'
+})">
+    <i class="fa-solid fa-magnifying-glass-plus"></i> View Details
+</button>
+                    </div>
+                </div>
+                 <div class="inv-card" data-category="weaners piglets">
+                    <div class="inv-img-holder">
+                        <img src="Piglets.png" alt="Sleeping piglets">
+                        <span class="badge ready">Ready for Sale</span>
+                    </div>
+                    <div class="inv-content">
+                        <div class="inv-meta">Batch: #NOV-01A</div>
+                        <h3>Upcoming Weaners (Piglets)</h3>
+                        <p>Currently in the nursery. Will be available for deposit next week.</p>
+                        <ul class="inv-specs">
+                            <li><i class="fa-solid fa-paw"></i> Group of 35</li>
+                            <li><i class="fa-solid fa-heart-circle-check"></i> Active</li>
+                        </ul>
+                        <button class="view-btn" onclick="openDetails({
+     'Month-Year': 'Oct-2024',
+    'Breed': 'Large White Yorkshire',
+    'Vaccination': 'Done',
+    'Avg Weight': '130 kg',
+    'Status': 'Seperated from Mother & Ready to Eat Solid Food',
+    'In stock': '125'
+})">
+    <i class="fa-solid fa-magnifying-glass-plus"></i> View Details
+</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Divya Agro Farms</h3>
+                <p>Sustainable. Ethical. Professional.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Marepally, Nagarkurnool, Telangana</p>
+                <p><i class="fa-solid fa-envelope"></i> divyaagrofarmstr@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 9966966538</p>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://youtube.com/@divyaagrofarms?si=rPuU8BE7GiFG2D_f"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#https://www.facebook.com/share/1CBjUc9Hqu/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/divyaagrofarms?igsh=ODhrdm40YjV1MHA4"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=919966966538&text=Hello"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025-26 Diva Agro Farms Piggery. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+
+document.addEventListener("DOMContentLoaded",function(){
+  const hamburger=document.getElementById("hamburger"),nav=document.getElementById("nav-links");
+  hamburger&&hamburger.addEventListener("click",()=>nav.classList.toggle("open"));
+  nav&&nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")));
+  const buttons=document.querySelectorAll(".filter-btn"),cards=document.querySelectorAll(".inv-card");
+  buttons.forEach(button=>button.addEventListener("click",function(){
+    buttons.forEach(b=>b.classList.remove("active"));this.classList.add("active");
+    const filter=this.dataset.filter;
+    cards.forEach(card=>{
+      const categories=(card.dataset.category||"").split(/\s+/);
+      card.classList.toggle("is-hidden",filter!=="all"&&!categories.includes(filter));
+    });
+  }));
+});
+function openDetails(data){
+  const body=document.getElementById("detailsTableBody"); if(!body)return;
+  body.innerHTML=Object.entries(data).map(([k,v])=>`<tr><th>${escapeHtml(k)}</th><td>${escapeHtml(String(v))}</td></tr>`).join("");
+  document.getElementById("detailsPopup").classList.add("show");document.body.style.overflow="hidden";
+}
+function closeDetails(){document.getElementById("detailsPopup").classList.remove("show");document.body.style.overflow=""}
+function escapeHtml(v){return v.replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]))}
+document.getElementById("detailsPopup")?.addEventListener("click",e=>{if(e.target.id==="detailsPopup")closeDetails()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeDetails()});
+
+</script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
