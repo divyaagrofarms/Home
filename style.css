@@ -61,7 +61,11 @@ h1, h2, h3, h4 {
 p { color: var(--text-gray); }
 
 /* ========================= NAVIGATION ========================= */
-
+header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+.navbar{max-width:1240px;margin:auto;min-height:76px;padding:0 22px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:10px;font-size:1.15rem;font-weight:800;color:var(--primary)}.logo i{font-size:1.55rem;color:var(--accent)}
+.nav-links{display:flex;align-items:center;gap:6px;list-style:none}.nav-links a{display:block;padding:10px 14px;border-radius:12px;color:#445248;font-weight:650;transition:.25s}.nav-links a:hover,.nav-links a.active{color:var(--primary);background:#edf5ee}.nav-links .nav-btn{color:#fff;background:var(--primary);padding:11px 18px;margin-left:6px}.nav-links .nav-btn:hover{background:#17482a;color:#fff}
+.hamburger{display:none;font-size:1.4rem;color:var(--primary);cursor:pointer}
 
 /* ========================= SCROLLING BAR ========================= */
 
