@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divya Agro Farms Piggery | Professional Livestock Solutions</title>
+    <meta name="description" content="Industry-leading pig farming specializing in high-health status breeding stock, dry feed technology, and sustainable pork production.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+/* ===== MOBILE / NAVIGATION FIX — OVERRIDE ONLY ===== */
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden !important;
+}
+
+body {
+    margin: 0;
+}
+
+*, *::before, *::after {
+    max-width: 100%;
+}
+
+img, video {
+    max-width: 100%;
+}
+
+.hero,
+.hero-video,
+.hero-content,
+main,
+section,
+footer,
+.farm-gallery-section,
+.farm-gallery,
+.stats-banner {
+    max-width: 100%;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 18px;
+    padding-right: 18px;
+    box-sizing: border-box;
+}
+
+.nav-links {
+    box-sizing: border-box;
+}
+
+.scroll-container {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden !important;
+}
+
+/* Desktop navigation */
+@media (min-width: 769px) {
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        display: flex !important;
+        align-items: center;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+    }
+
+    .hamburger {
+        display: none !important;
+    }
+}
+
+/* Mobile navigation */
+@media (max-width: 768px) {
+    header {
+        width: 100%;
+        max-width: 100%;
+        overflow: visible;
+    }
+
+    .navbar {
+        min-height: 68px;
+        position: relative;
+    }
+
+    .logo {
+        max-width: calc(100% - 55px);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .hamburger {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        flex: 0 0 44px;
+        cursor: pointer;
+        z-index: 1101;
+    }
+
+    .nav-links {
+        position: absolute !important;
+        top: 68px;
+        left: 10px !important;
+        right: 10px !important;
+        width: auto !important;
+        max-width: none !important;
+        display: none !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 4px;
+        padding: 12px !important;
+        margin: 0 !important;
+        background: rgba(255,255,255,.98);
+        border-radius: 16px;
+        box-shadow: 0 15px 40px rgba(0,0,0,.15);
+        border: 1px solid rgba(0,0,0,.08);
+        z-index: 1100;
+    }
+
+    .nav-links.mobile-open {
+        display: flex !important;
+    }
+
+    .nav-links li {
+        width: 100%;
+        list-style: none;
+    }
+
+    .nav-links li a {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px 14px;
+        border-radius: 10px;
+    }
+
+    .nav-links .nav-btn {
+        margin-left: 0 !important;
+        text-align: center;
+    }
+
+    /* Prevent gallery/grid/flex children from creating horizontal overflow */
+    .farm-gallery,
+    .split-layout,
+    .testimonials-grid,
+    .roadmap-grid,
+    .stats-banner {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .farm-gallery-item,
+    .split-image,
+    .split-text,
+    .stat-item,
+    .testimonial-card,
+    .roadmap-item {
+        min-width: 0 !important;
+    }
+
+    .farm-gallery-item img,
+    .split-image img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+</style>
+
+</head>
+<body>
+
+    <header>
+          <nav class="navbar">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-piggy-bank"></i> Divya Agro Farms
+            </a>
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#nutrition">Nutrition</a></li>
+                <li><a href="index.html#stories">Reviews</a></li>
+                <li><a href="gallery.html" class="active">Livestock</a></li>
+                 <li><a href="https://script.google.com/a/~/macros/s/AKfycbxltI3jYO7NN47utVJHWxJgkyFjkdDiAaRhCFxyRHa8MODTbKrUbqA7oQQPs1YiQdYghg/exec">Login</a></li>
+                <li><a href="https://forms.gle/qfbE7knoYrA9mHkD8" class="nav-btn">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="scroll-container">
+  <div class="scroll-text">Welcome to Divya Agro Farms — Premium Piggery Solutions!</div>
+</div>
+    </header>
+
+    <div class="hero">
+        <video class="hero-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1516467508483-a721206076f9?auto=format&fit=crop&q=80">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-buttons">
+                <a href="gallery.html" class="cta-button">LiveStock</a>  
+           <!--     <a href="https://divyaagrofarms.github.io/Feed/" class="cta-button">Feed</a> --> </div> 
+            <h1>Excellence in Swine Production</h1>
+            <p>Combining 15 years of husbandry experience with modern dry-feed technology for superior health, growth, and meat quality.</p>
+            <div class="hero-buttons">
+               <a href="https://forms.gle/qfbE7knoYrA9mHkD8" class="cta-button outline">Contact us</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="stats-banner">
+        <div class="stat-item">
+            <i class="fa-solid fa-calendar-check"></i>
+            <h2>2+</h2>
+            <p>Years Experience</p>
+        </div>
+        <div class="stat-item">
+            <i class="fa-solid fa-paw"></i>
+            <h2>600+</h2>
+            <p>Livestock Sold</p>
+        </div>
+        <div class="stat-item">
+            <i class="fa-solid fa-handshake"></i>
+            <h2>100%</h2>
+            <p>Biosecurity Rated</p>
+        </div>
+    </section>
+
+    <main>
+        <section id="about" class="section-white">
+            <div class="section-title">
+                <h2>Our Approach</h2>
+                <p class="subtitle">Why butchers and breeders choose Green Valley.</p>
+            </div>
+            <div class="split-layout">
+                <div class="split-text">
+                    <h3>Professional Husbandry Standards</h3>
+                    <p>Managing a piggery requires deep biological understanding. We manage genetics, environment, and nutrition to produce the industry's best livestock.</p>
+                    <ul class="check-list">
+                        <li><i class="fa-solid fa-check"></i> Veterinary Certified Herd Health</li>
+                        <li><i class="fa-solid fa-check"></i> Climate Controlled Environments</li>
+                        <li><i class="fa-solid fa-check"></i> Premium Landrace & Large White Genetics</li>
+                    </ul>
+                </div>
+                <div class="split-image">
+                    <img src="Farmer visit.png" alt="Farmer inspecting pigs">
+                </div>
+            </div>
+        </section>
+
+        <section id="nutrition" class="section-gray">
+            <div class="split-layout reverse">
+                <div class="split-text">
+                    <h3>The Dry Feed Advantage</h3>
+                    <p>We utilize a scientifically formulated <strong>Dry Feed System</strong>. Unlike traditional swill, dry feed ensures precise nutritional intake.</p>
+                    <div class="feature-box">
+                        <div class="fb-icon"><i class="fa-solid fa-shield-virus"></i></div>
+                        <div class="fb-text">
+                            <strong>Enhanced Hygiene</strong>
+                            <p>Eliminates bacterial contamination risks associated with wet feeding.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="fb-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <div class="fb-text">
+                            <strong>Optimized Growth</strong>
+                            <p>Industry-leading Feed Conversion Ratio (FCR) for faster market weight.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="split-image">
+                    <img src="DryFeed.png" alt="Dry feed trough">
+                </div>
+            </div>
+        </section>
+
+<!-- =========================================================
+     DIVYA AGRO FARMS — BULK IMAGE GALLERY
+     Add this section before the Partner Stories section
+     ========================================================= -->
+
+<section id="farm-gallery" class="farm-gallery-section">
+<div class="section-title">
+    <span class="gallery-eyebrow">DIVYA AGRO FARMS</span>
+    <h2>Our Farm in Pictures</h2>
+    <p class="subtitle">
+        A visual glimpse into our livestock, farm operations,
+        breeding stock and modern piggery practices.
+    </p>
+</div>
+
+<div class="farm-gallery">
+
+    <!-- IMAGE 01 -->
+    <div class="farm-gallery-item gallery-large">
+        <img src="images/logo.png"
+             alt="Divya Agro Farms livestock"
+             loading="lazy"
+             onclick="openFarmImage(this)">
+        <div class="farm-gallery-overlay">
+            <span>Logo</span>
+            <i class="fa-solid fa-expand"></i>
+        </div>
+    </div>
+
+    <!-- IMAGE 02 -->
+    <div class="farm-gallery-item">
+        <img src="images/pic1.jpg"
+             alt="Pig farm operations"
+             loading="lazy"
+             onclick="openFarmImage(this)">
+        <div class="farm-gallery-overlay">
+            <span>Piglets Feeding</span>
+            <i class="fa-solid fa-expand"></i>
+        </div>
+    </div>
+
+    <!-- IMAGE 03 -->
+    <div class="farm-gallery-item">
+        <img src="images/pic2.jpg"
+             alt="Premium breeding pigs"
+             loading="lazy"
+             onclick="openFarmImage(this)">
+        <div class="farm-gallery-overlay">
+            <span>Breeding Stock</span>
+            <i class="fa-solid fa-expand"></i>
+        </div>
+    </div>
+
+    <!-- IMAGE 04 -->
+    <div class="farm-gallery-item gallery-wide">
+        <img src="images/pic3.jpg"
+             alt="Piglets at Divya Agro Farms"
+             loading="lazy"
+             onclick="openFarmImage(this)">
+        <div class="farm-gallery-overlay">
+            <span>Sleeping</span>
+            <i class="fa-solid fa-expand"></i>
+        </div>
+    </div>
+
+    <!-- IMAGE 05 -->
+    <div class="farm-gallery-item">
+        <img src="images/pic4.jpg"
+             alt="Farm feeding system"
+             loading="lazy"
+             onclick="openFarmImage(this)">
+        <div class="farm-gallery-overlay">
+            <span>New Born</span>
+            <i class="fa-solid fa-expand"></i>
+        </div>
+    </div>
+
+    <!-- IMAGE 06 -->
+    <div class="farm-gallery-item">
+        <img src="images/pic5.jpg"
+             alt="Healthy livestock"
+             loading="lazy"
+             onclick="openFarmImage(this)">
+        <div class="farm-gallery-overlay">
+            <span>Healthy Sow & Piglets</span>
+            <i class="fa-solid fa-expand"></i>
+        </div>
+    </div>
+
+    <!-- IMAGE 07 -->
+    <div class="farm-gallery-item">
+        <img src="images/pic6.jpg"
+             alt="Modern piggery"
+             loading="lazy"
+             onclick="openFarmImage(this)">
+        <div class="farm-gallery-overlay">
+            <span> Piggery</span>
+            <i class="fa-solid fa-expand"></i>
+        </div>
+    </div>
+
+    <!-- IMAGE 08 -->
+    <div class="farm-gallery-item gallery-large">
+        <img src="images/pic7.jpg"
+             alt="Divya Agro Farms team"
+             loading="lazy"
+             onclick="openFarmImage(this)">
+        <div class="farm-gallery-overlay">
+            <span>Our Farm</span>
+            <i class="fa-solid fa-expand"></i>
+        </div>
+    </div>
+
+    <!-- IMAGE 09 -->
+    <div class="farm-gallery-item gallery-large">
+        <img src="images/pic8.jpg"
+             alt="Divya Agro Farms team"
+             loading="lazy"
+             onclick="openFarmImage(this)">
+        <div class="farm-gallery-overlay">
+            <span>Sow</span>
+            <i class="fa-solid fa-expand"></i>
+        </div>
+    </div>
+    
+    <!-- Add more images by copying any .farm-gallery-item -->
+
+</div>
+
+<div class="gallery-more">
+    <a href="gallery.html" class="gallery-more-btn">
+        View Complete Livestock Gallery
+        <i class="fa-solid fa-arrow-right"></i>
+    </a>
+</div>
+
+</section>
+
+<!-- FULLSCREEN IMAGE VIEWER -->
+
+<div id="farmImageViewer" class="farm-image-viewer">
+<button class="farm-viewer-close"
+        onclick="closeFarmImage()"
+        aria-label="Close image">
+    <i class="fa-solid fa-xmark"></i>
+</button>
+
+<img id="farmViewerImage"
+     src=""
+     alt="Farm image preview">
+
+</div>
+
+        
+        <section id="stories" class="section-white">
+            <div class="section-title">
+                <h2>Partner Stories</h2>
+                <p class="subtitle">Trusted by local businesses.</p>
+            </div>
+            <div class="testimonials-grid">
+            <!---      <div class="testimonial-card">
+                  <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p>"The meat quality is unmatched. The fat-to-meat ratio is exactly what my customers ask for."</p>
+                    <div class="author"><strong>James Carter</strong><span>Master Butcher</span></div>
+                </div> --->
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p>"I purchased 30 sows & 5 boars for breeding. Their maternal instincts are excellent."</p>
+                    <div class="author"><strong>Shirish Reddy</strong><span>Breeder</span></div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p>"Divya Agro Farm- biosecurity records made the partnership decision easy."</p>
+                    <div class="author"><strong>Admin</strong><span></span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="roadmap-section">
+            <div class="roadmap-content">
+                <h2><i class="fa-solid fa-rocket"></i> Future Developments</h2>
+                <div class="roadmap-grid">
+                    <div class="roadmap-item">
+                        <h4><i class="fa-solid fa-bolt"></i> Biogas Energy</h4>
+                        <p>Waste-to-energy systems by 2024.</p>
+                    </div>
+                    <div class="roadmap-item">
+                        <h4><i class="fa-solid fa-robot"></i> Automated Silos</h4>
+                        <p>AI-driven feed delivery systems.</p>
+                    </div>
+                    <div class="roadmap-item">
+                        <h4><i class="fa-solid fa-dna"></i> Duroc Genetics</h4>
+                        <p>Introducing purebred Duroc lines.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Divya Agro Farms</h3>
+                <h3><a href="https://script.google.com/a/~/macros/s/AKfycbxltI3jYO7NN47utVJHWxJgkyFjkdDiAaRhCFxyRHa8MODTbKrUbqA7oQQPs1YiQdYghg/exec"  style="color:#6CF3F3;">Inventory Login (Desktop)</a></h3>
+                <p>Sustainable. Ethical. Professional.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p><i class="fa-solid fa-envelope"></i> divyaagrofarmstr@gmail.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Marepally, Nagarkurnool, Telangana</p>
+                <p><i class="fa-solid fa-phone"></i> 9000366245</p>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://youtube.com/@divyaagrofarms?si=rPuU8BE7GiFG2D_f"><i class="fa-brands fa-youtube"></i></a>
+              <!--      <a href="https://www.facebook.com/share/1CBjUc9Hqu/"><i class="fa-brands fa-facebook"></i></a> -->
+                    <a href="https://www.instagram.com/divyaagrofarms?igsh=ODhrdm40YjV1MHA4"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=<+919966966538>&text=<Hello>"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">&copy; 2025-26 Divya Agro Farms Piggery. All rights reserved.</div>
+    </footer>
+
+    <script src="script.js"></script>
+
+<script>
+/* ===== MOBILE NAVIGATION FIX ===== */
+(function () {
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+
+    if (!hamburger || !navLinks) return;
+
+    hamburger.addEventListener("click", function (e) {
+        e.stopPropagation();
+        navLinks.classList.toggle("mobile-open");
+    });
+
+    navLinks.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+            navLinks.classList.remove("mobile-open");
+        });
+    });
+
+    document.addEventListener("click", function (e) {
+        if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+            navLinks.classList.remove("mobile-open");
+        }
+    });
+
+    window.addEventListener("resize", function () {
+        if (window.innerWidth > 768) {
+            navLinks.classList.remove("mobile-open");
+        }
+    });
+})();
+</script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
