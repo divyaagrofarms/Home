@@ -2062,7 +2062,260 @@ ul {
     }
 }
 
+/* =========================================================
+   GOOGLE FORM
+========================================================= */
 
+.google-form-wrapper {
+
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 32px;
+
+    border-radius: 28px;
+
+    background:
+
+        radial-gradient(
+            circle at 90% 0%,
+            rgba(200,155,60,0.08),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 5% 100%,
+            rgba(76,135,88,0.06),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f9fcf9
+        );
+
+    border:
+        1px solid var(--border);
+
+    box-shadow:
+        0 20px 55px
+        rgba(23,54,32,0.08);
+
+    overflow: hidden;
+}
+
+
+/* FORM HEADER */
+
+.google-form-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding-bottom: 25px;
+
+    border-bottom:
+        1px solid #edf1ed;
+
+    margin-bottom: 25px;
+}
+
+
+.google-form-icon {
+
+    width: 52px;
+
+    height: 52px;
+
+    flex-shrink: 0;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 15px;
+
+    color: #fff;
+
+    font-size: 20px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            var(--green),
+            var(--green-light)
+        );
+
+    box-shadow:
+
+        0 10px 25px
+        rgba(36,92,53,0.15);
+}
+
+
+.google-form-header h3 {
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size: 19px;
+
+    color: var(--text);
+
+    margin-bottom: 4px;
+}
+
+
+.google-form-header p {
+
+    color: var(--text-light);
+
+    font-size: 11px;
+
+    line-height: 1.6;
+}
+
+
+/* GOOGLE FORM CONTAINER */
+
+.google-form-container {
+
+    width: 100%;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    background: #fff;
+
+    border:
+        1px solid #e4e9e5;
+}
+
+
+/* GOOGLE FORM IFRAME */
+
+.google-form-container iframe {
+
+    display: block;
+
+    width: 100%;
+
+    min-height: 1050px;
+
+    border: 0;
+
+    background: #fff;
+}
+
+
+/* FORM FOOTER */
+
+.google-form-footer {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    padding-top: 18px;
+
+    color: #8a948d;
+
+    font-size: 10px;
+}
+
+
+.google-form-footer i {
+
+    color: var(--green);
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   GOOGLE FORM MOBILE
+========================================================= */
+
+@media (max-width:600px) {
+
+    .google-form-wrapper {
+
+        padding: 18px;
+
+        border-radius: 22px;
+    }
+
+
+    .google-form-header {
+
+        align-items: flex-start;
+
+        padding-bottom: 20px;
+
+        margin-bottom: 18px;
+    }
+
+
+    .google-form-icon {
+
+        width: 45px;
+
+        height: 45px;
+
+        border-radius: 12px;
+
+        font-size: 17px;
+    }
+
+
+    .google-form-header h3 {
+
+        font-size: 16px;
+    }
+
+
+    .google-form-header p {
+
+        font-size: 10px;
+    }
+
+
+    .google-form-container {
+
+        border-radius: 10px;
+    }
+
+
+    .google-form-container iframe {
+
+        min-height: 1100px;
+    }
+
+
+    .google-form-footer {
+
+        font-size: 9px;
+
+        text-align: center;
+
+        line-height: 1.5;
+    }
+
+}
 /* =========================================================
    REDUCED MOTION
 ========================================================= */
@@ -2925,222 +3178,93 @@ management sections are informative.
 <!-- ======================================================
      SUBMIT REVIEW
 ====================================================== -->
-<!--
-<section class="section alt"
-         id="submit-review">
+<!-- ======================================================
+     GOOGLE REVIEW FORM
+====================================================== -->
 
-<div class="container">
+<section class="section alt" id="submit-review">
 
+    <div class="container">
 
-<div class="section-heading reveal">
+        <div class="section-heading reveal">
 
-<span class="section-tag">
-    Share Your Experience
-</span>
+            <span class="section-tag">
+                Share Your Experience
+            </span>
 
-<h2>
-    Leave a Review
-</h2>
+            <h2>
+                Leave a Review
+            </h2>
 
-<p>
+            <p>
+                We value your feedback. Share your experience
+                with Divya Agro Farms through our review form.
+            </p>
 
-    Your feedback helps Divya Agro Farms
-    continue improving its services and
-    farmer experience.
+        </div>
 
-</p>
 
-</div>
-      <div class="review-form-wrapper reveal">
+        <div class="google-form-wrapper reveal">
 
-<form id="reviewForm">
+            <div class="google-form-header">
 
+                <div class="google-form-icon">
+                    <i class="fa-solid fa-star"></i>
+                </div>
 
-<div class="form-grid">
+                <div>
+                    <h3>
+                        Share Your Feedback
+                    </h3>
 
+                    <p>
+                        Your feedback helps us improve
+                        our services and farming practices.
+                    </p>
+                </div>
 
-<div class="form-group">
+            </div>
 
-<label for="name">
-    Your Name
-</label>
 
-<input
-    type="text"
-    id="name"
-    name="name"
-    placeholder="Enter your name"
-    required>
+            <!-- ==================================================
+                 GOOGLE FORM EMBED
+                 
+                 Replace YOUR_GOOGLE_FORM_EMBED_URL
+                 with your actual Google Form URL.
+            ================================================== -->
 
-</div>
+            <div class="google-form-container">
 
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLScSPYd5I3JWgJvRCMAgo7hYobnOAmbQmR7c4rcKbzjnECLPeg/viewform?embedded=true"
+                    title="Divya Agro Farms Review Form"
+                    loading="lazy"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0">
 
-<div class="form-group">
+                    Loading Google Form...
 
-<label for="location">
-    Location
-</label>
+                </iframe>
 
-<input
-    type="text"
-    id="location"
-    name="location"
-    placeholder="Village / City">
+            </div>
 
-</div>
 
+            <div class="google-form-footer">
 
-<div class="form-group">
+                <i class="fa-solid fa-shield-halved"></i>
 
-<label for="role">
-    You Are
-</label>
+                <span>
+                    Your feedback is valuable to Divya Agro Farms.
+                </span>
 
-<select id="role"
-        name="role">
+            </div>
 
-<option value="">
-    Select
-</option>
+        </div>
 
-<option>
-    Farmer
-</option>
-
-<option>
-    Pig Farm Owner
-</option>
-
-<option>
-    Farm Operator
-</option>
-
-<option>
-    Livestock Enthusiast
-</option>
-
-<option>
-    Other
-</option>
-
-</select>
-
-</div>
-
-
-<div class="form-group">
-
-<label>
-    Your Rating
-</label>
-
-
-<div class="star-input">
-
-
-<input
-    type="radio"
-    id="star5"
-    name="rating"
-    value="5"
-    required>
-
-<label for="star5">
-    ★
-</label>
-
-
-<input
-    type="radio"
-    id="star4"
-    name="rating"
-    value="4">
-
-<label for="star4">
-    ★
-</label>
-
-
-<input
-    type="radio"
-    id="star3"
-    name="rating"
-    value="3">
-
-<label for="star3">
-    ★
-</label>
-
-
-<input
-    type="radio"
-    id="star2"
-    name="rating"
-    value="2">
-
-<label for="star2">
-    ★
-</label>
-
-
-<input
-    type="radio"
-    id="star1"
-    name="rating"
-    value="1">
-
-<label for="star1">
-    ★
-</label>
-
-
-</div>
-
-</div>
-
-
-<div class="form-group full">
-
-<label for="review">
-    Your Review
-</label>
-
-<textarea
-    id="review"
-    name="review"
-    placeholder="Write your experience..."
-    required></textarea>
-
-</div>
-
-
-</div>
-
-
-<div class="form-submit">
-
-<button
-    type="submit"
-    class="submit-button">
-
-<i class="fa-solid fa-paper-plane"></i>
-
-Submit Review
-
-</button>
-
-</div>
-
-
-</form>
-
-</div>
-
-</div>
+    </div>
 
 </section>
--->
-
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScSPYd5I3JWgJvRCMAgo7hYobnOAmbQmR7c4rcKbzjnECLPeg/viewform?embedded=true" width="100%" height="1050" style="border :0;" allowfullscreen ="" loading-"lazy"></iframe>
 
 
@@ -3502,6 +3626,9 @@ document.addEventListener(
 );
 
 
+/* =========================================================
+   REVIEW FORM
+========================================================= */
 /* =========================================================
    REVIEW FORM
 ========================================================= */
