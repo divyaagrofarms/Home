@@ -1,0 +1,4138 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<meta name="theme-color"
+      content="#173b25">
+
+<meta name="description"
+      content="Divya Agro Farms - Professional Piggery, Breeding, Nutrition, Farm Setup and Livestock Management Services.">
+
+<title>Services | Divya Agro Farms</title>
+
+
+<!-- =====================================================
+     GOOGLE FONTS
+===================================================== -->
+
+<link rel="preconnect"
+      href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet">
+
+
+<!-- =====================================================
+     FONT AWESOME
+===================================================== -->
+
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+<style>
+
+/* =====================================================
+   ROOT
+===================================================== */
+
+:root{
+
+    --primary:#1f5c35;
+    --primary-dark:#123d22;
+    --primary-light:#3f7d50;
+
+    --gold:#d7a641;
+    --gold-light:#efcf7b;
+
+    --dark:#102117;
+    --dark-2:#193322;
+
+    --text:#44554a;
+    --muted:#748178;
+
+    --white:#ffffff;
+    --cream:#f7faf6;
+    --soft:#edf5ed;
+
+    --border:#e1e9e1;
+
+    --shadow:
+        0 20px 60px rgba(16,33,23,.10);
+
+    --shadow-soft:
+        0 10px 35px rgba(16,33,23,.07);
+
+    --radius:24px;
+
+}
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+    overflow-x:hidden;
+}
+
+body{
+
+    width:100%;
+    max-width:100%;
+
+    overflow-x:hidden;
+
+    background:var(--cream);
+
+    color:var(--dark);
+
+    font-family:"DM Sans",sans-serif;
+
+    line-height:1.6;
+
+}
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+button{
+    font-family:inherit;
+}
+
+.container{
+
+    width:100%;
+
+    max-width:1240px;
+
+    margin:auto;
+
+    padding-left:22px;
+    padding-right:22px;
+
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:9999;
+
+    width:100%;
+
+    background:
+        rgba(255,255,255,.95);
+
+    backdrop-filter:
+        blur(18px);
+
+    border-bottom:
+        1px solid rgba(31,92,53,.08);
+
+}
+
+.navbar{
+
+    min-height:78px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:30px;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:11px;
+
+    color:var(--primary);
+
+    font-family:"Manrope",sans-serif;
+
+    font-size:18px;
+
+    font-weight:800;
+
+    white-space:nowrap;
+
+}
+
+.logo-mark{
+
+    width:44px;
+    height:44px;
+
+    border-radius:14px;
+
+    display:grid;
+
+    place-items:center;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary),
+            var(--primary-light)
+        );
+
+    color:white;
+
+    box-shadow:
+        0 8px 20px rgba(31,92,53,.2);
+
+}
+
+.logo-mark i{
+    font-size:20px;
+}
+
+.nav-menu{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:5px;
+
+    list-style:none;
+
+}
+
+.nav-menu a{
+
+    position:relative;
+
+    display:block;
+
+    padding:10px 14px;
+
+    border-radius:12px;
+
+    color:#4b5b51;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    transition:.25s ease;
+
+}
+
+.nav-menu a:hover,
+.nav-menu a.active{
+
+    color:var(--primary);
+
+    background:var(--soft);
+
+}
+
+.nav-menu a.active::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:14px;
+    right:14px;
+
+    bottom:4px;
+
+    height:2px;
+
+    border-radius:10px;
+
+    background:var(--gold);
+
+}
+
+.contact-button{
+
+    background:var(--primary)!important;
+
+    color:#fff!important;
+
+    padding:
+        11px 19px!important;
+
+    margin-left:6px;
+
+}
+
+.contact-button:hover{
+
+    background:
+        var(--primary-dark)!important;
+
+    transform:translateY(-1px);
+
+}
+
+.menu-toggle{
+
+    display:none;
+
+    width:44px;
+    height:44px;
+
+    border:0;
+
+    border-radius:13px;
+
+    background:var(--soft);
+
+    color:var(--primary);
+
+    font-size:20px;
+
+    cursor:pointer;
+
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero{
+
+    position:relative;
+
+    min-height:
+        calc(100vh - 78px);
+
+    display:flex;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 5% 20%,
+            rgba(63,125,80,.15),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 95% 20%,
+            rgba(215,166,65,.14),
+            transparent 28%
+        ),
+
+        linear-gradient(
+            135deg,
+            #f8fbf7,
+            #edf5ed
+        );
+
+}
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    right:-250px;
+    bottom:-250px;
+
+    border-radius:50%;
+
+    border:
+        1px solid rgba(31,92,53,.08);
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    display:grid;
+
+    grid-template-columns:
+        1.05fr .95fr;
+
+    align-items:center;
+
+    gap:70px;
+
+    padding:
+        85px 0;
+
+}
+
+.hero-text{
+
+    max-width:720px;
+
+}
+
+.hero-label{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:9px;
+
+    padding:
+        8px 13px;
+
+    border-radius:999px;
+
+    background:#e8f3e9;
+
+    border:
+        1px solid #d7e8d9;
+
+    color:var(--primary);
+
+    font-size:12px;
+
+    font-weight:800;
+
+    letter-spacing:1.2px;
+
+    text-transform:uppercase;
+
+    margin-bottom:20px;
+
+}
+
+.hero-label i{
+
+    color:var(--gold);
+
+}
+
+.hero h1{
+
+    font-family:"Manrope",sans-serif;
+
+    font-size:
+        clamp(42px,6vw,76px);
+
+    line-height:1.03;
+
+    letter-spacing:-3px;
+
+    font-weight:800;
+
+    margin-bottom:23px;
+
+}
+
+.hero h1 span{
+
+    color:var(--primary);
+
+}
+
+.hero-description{
+
+    max-width:650px;
+
+    color:var(--muted);
+
+    font-size:17px;
+
+    line-height:1.8;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:32px;
+
+}
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:9px;
+
+    min-height:49px;
+
+    padding:
+        0 20px;
+
+    border-radius:14px;
+
+    font-size:14px;
+
+    font-weight:800;
+
+    transition:.25s ease;
+
+}
+
+.btn-primary{
+
+    background:var(--primary);
+
+    color:white;
+
+    box-shadow:
+        0 12px 28px rgba(31,92,53,.20);
+
+}
+
+.btn-primary:hover{
+
+    background:var(--primary-dark);
+
+    transform:translateY(-3px);
+
+}
+
+.btn-outline{
+
+    background:white;
+
+    color:var(--primary);
+
+    border:
+        1px solid var(--border);
+
+}
+
+.btn-outline:hover{
+
+    background:var(--soft);
+
+    transform:translateY(-3px);
+
+}
+
+
+/* =====================================================
+   HERO VISUAL
+===================================================== */
+
+.hero-visual{
+
+    position:relative;
+
+    min-height:520px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.hero-main-card{
+
+    position:relative;
+
+    width:min(100%,500px);
+
+    min-height:450px;
+
+    overflow:hidden;
+
+    border-radius:32px;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            var(--primary),
+            #143c24
+        );
+
+    box-shadow:
+        0 35px 80px rgba(16,33,23,.23);
+
+}
+
+.hero-main-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:300px;
+    height:300px;
+
+    top:-130px;
+    right:-100px;
+
+    border-radius:50%;
+
+    background:
+        rgba(255,255,255,.08);
+
+}
+
+.hero-main-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:240px;
+    height:240px;
+
+    bottom:-120px;
+    left:-80px;
+
+    border-radius:50%;
+
+    background:
+        rgba(215,166,65,.12);
+
+}
+
+.hero-card-content{
+
+    position:relative;
+
+    z-index:2;
+
+    height:100%;
+
+    padding:42px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-end;
+
+}
+
+.hero-icon{
+
+    position:absolute;
+
+    top:40px;
+    left:40px;
+
+    width:76px;
+    height:76px;
+
+    display:grid;
+
+    place-items:center;
+
+    border-radius:22px;
+
+    background:
+        rgba(255,255,255,.12);
+
+    border:
+        1px solid rgba(255,255,255,.15);
+
+    color:#fff;
+
+    font-size:32px;
+
+}
+
+.hero-main-card h2{
+
+    color:#fff;
+
+    font-family:"Manrope",sans-serif;
+
+    font-size:34px;
+
+    line-height:1.15;
+
+    margin-bottom:13px;
+
+}
+
+.hero-main-card p{
+
+    color:#d5e3d8;
+
+    font-size:14px;
+
+    max-width:390px;
+
+}
+
+.hero-stats{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:10px;
+
+    margin-top:25px;
+
+}
+
+.hero-stat{
+
+    padding:15px;
+
+    border-radius:15px;
+
+    background:
+        rgba(255,255,255,.09);
+
+    border:
+        1px solid rgba(255,255,255,.09);
+
+}
+
+.hero-stat strong{
+
+    display:block;
+
+    color:white;
+
+    font-size:20px;
+
+}
+
+.hero-stat span{
+
+    color:#b9ccbf;
+
+    font-size:10px;
+
+}
+
+
+/* =====================================================
+   SECTION
+===================================================== */
+
+.section{
+
+    padding:
+        100px 0;
+
+}
+
+.section-white{
+
+    background:#fff;
+
+}
+
+.section-heading{
+
+    max-width:760px;
+
+    margin:
+        0 auto 55px;
+
+    text-align:center;
+
+}
+
+.section-tag{
+
+    display:inline-block;
+
+    color:var(--primary);
+
+    font-size:12px;
+
+    font-weight:850;
+
+    letter-spacing:1.8px;
+
+    text-transform:uppercase;
+
+    margin-bottom:12px;
+
+}
+
+.section-heading h2{
+
+    font-family:"Manrope",sans-serif;
+
+    font-size:
+        clamp(31px,4vw,48px);
+
+    line-height:1.1;
+
+    letter-spacing:-1.8px;
+
+    margin-bottom:15px;
+
+}
+
+.section-heading p{
+
+    color:var(--muted);
+
+    font-size:15px;
+
+}
+
+
+/* =====================================================
+   SERVICES
+===================================================== */
+
+.services-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:22px;
+
+}
+
+.service-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:#fff;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    padding:30px;
+
+    box-shadow:var(--shadow-soft);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+
+}
+
+.service-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:150px;
+    height:150px;
+
+    top:-90px;
+    right:-90px;
+
+    border-radius:50%;
+
+    background:
+        rgba(31,92,53,.06);
+
+    transition:.35s;
+
+}
+
+.service-card:hover{
+
+    transform:
+        translateY(-8px);
+
+    box-shadow:var(--shadow);
+
+    border-color:
+        #cbdccc;
+
+}
+
+.service-card:hover::before{
+
+    transform:scale(1.4);
+
+}
+
+.service-number{
+
+    position:absolute;
+
+    top:25px;
+    right:27px;
+
+    color:#dfe8df;
+
+    font-family:"Manrope",sans-serif;
+
+    font-size:28px;
+
+    font-weight:800;
+
+}
+
+.service-icon{
+
+    width:58px;
+    height:58px;
+
+    display:grid;
+
+    place-items:center;
+
+    border-radius:17px;
+
+    background:var(--soft);
+
+    color:var(--primary);
+
+    font-size:22px;
+
+    margin-bottom:22px;
+
+    transition:.3s;
+
+}
+
+.service-card:hover .service-icon{
+
+    background:var(--primary);
+
+    color:#fff;
+
+    transform:
+        rotate(-4deg)
+        scale(1.04);
+
+}
+
+.service-card h3{
+
+    font-family:"Manrope",sans-serif;
+
+    font-size:20px;
+
+    margin-bottom:9px;
+
+}
+
+.service-card p{
+
+    color:var(--muted);
+
+    font-size:13px;
+
+    line-height:1.75;
+
+}
+
+.service-list{
+
+    list-style:none;
+
+    margin-top:19px;
+
+}
+
+.service-list li{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:8px;
+
+    color:#55635a;
+
+    font-size:12px;
+
+    padding:6px 0;
+
+}
+
+.service-list i{
+
+    color:var(--primary);
+
+    margin-top:4px;
+
+    font-size:10px;
+
+}
+
+
+/* =====================================================
+   FEATURED SERVICE
+===================================================== */
+
+.featured{
+
+    background:
+        linear-gradient(
+            135deg,
+            #173b25,
+            #245f38
+        );
+
+    color:white;
+
+}
+
+.featured-wrapper{
+
+    display:grid;
+
+    grid-template-columns:
+        .9fr 1.1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.featured-label{
+
+    color:var(--gold-light);
+
+    font-size:12px;
+
+    font-weight:800;
+
+    letter-spacing:1.7px;
+
+    text-transform:uppercase;
+
+    margin-bottom:13px;
+
+}
+
+.featured h2{
+
+    font-family:"Manrope",sans-serif;
+
+    font-size:
+        clamp(32px,4vw,52px);
+
+    line-height:1.08;
+
+    letter-spacing:-2px;
+
+    margin-bottom:17px;
+
+}
+
+.featured p{
+
+    color:#c8d9cd;
+
+    font-size:14px;
+
+    line-height:1.8;
+
+}
+
+.featured-features{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:12px;
+
+    margin-top:28px;
+
+}
+
+.featured-feature{
+
+    padding:17px;
+
+    border-radius:16px;
+
+    background:
+        rgba(255,255,255,.07);
+
+    border:
+        1px solid rgba(255,255,255,.09);
+
+}
+
+.featured-feature i{
+
+    color:var(--gold-light);
+
+    margin-bottom:8px;
+
+}
+
+.featured-feature strong{
+
+    display:block;
+
+    font-size:13px;
+
+}
+
+.featured-feature span{
+
+    display:block;
+
+    margin-top:3px;
+
+    color:#b8cabe;
+
+    font-size:10px;
+
+}
+
+.featured-visual{
+
+    min-height:430px;
+
+    border-radius:30px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.12),
+            rgba(255,255,255,.03)
+        );
+
+    border:
+        1px solid rgba(255,255,255,.12);
+
+    display:grid;
+
+    place-items:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.featured-circle{
+
+    width:260px;
+    height:260px;
+
+    border-radius:50%;
+
+    display:grid;
+
+    place-items:center;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(215,166,65,.24),
+            rgba(215,166,65,.02)
+        );
+
+    border:
+        1px solid rgba(255,255,255,.13);
+
+}
+
+.featured-circle i{
+
+    color:#fff;
+
+    font-size:95px;
+
+    filter:
+        drop-shadow(
+            0 20px 30px rgba(0,0,0,.2)
+        );
+
+}
+
+.floating-card{
+
+    position:absolute;
+
+    padding:16px 19px;
+
+    border-radius:16px;
+
+    background:
+        rgba(255,255,255,.96);
+
+    color:var(--dark);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.16);
+
+}
+
+.floating-card.one{
+
+    top:55px;
+    left:30px;
+
+}
+
+.floating-card.two{
+
+    bottom:55px;
+    right:30px;
+
+}
+
+.floating-card strong{
+
+    display:block;
+
+    font-size:14px;
+
+}
+
+.floating-card span{
+
+    color:var(--muted);
+
+    font-size:10px;
+
+}
+
+
+/* =====================================================
+   PROCESS
+===================================================== */
+
+.process-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:15px;
+
+}
+
+.process-card{
+
+    position:relative;
+
+    padding:26px;
+
+    border-radius:20px;
+
+    background:#fff;
+
+    border:
+        1px solid var(--border);
+
+}
+
+.process-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:42px;
+
+    right:-25px;
+
+    width:35px;
+
+    height:1px;
+
+    background:#ccd8cd;
+
+}
+
+.process-card:last-child::after{
+
+    display:none;
+
+}
+
+.process-icon{
+
+    width:50px;
+    height:50px;
+
+    display:grid;
+
+    place-items:center;
+
+    border-radius:15px;
+
+    background:var(--soft);
+
+    color:var(--primary);
+
+    margin-bottom:17px;
+
+}
+
+.process-card h3{
+
+    font-family:"Manrope",sans-serif;
+
+    font-size:16px;
+
+    margin-bottom:7px;
+
+}
+
+.process-card p{
+
+    color:var(--muted);
+
+    font-size:11px;
+
+    line-height:1.7;
+
+}
+
+.process-number{
+
+    color:#dce6dd;
+
+    font-size:12px;
+
+    font-weight:900;
+
+    margin-bottom:8px;
+
+}
+
+
+/* =====================================================
+   STATS
+===================================================== */
+
+.stats{
+
+    background:#f0f6f0;
+
+}
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+.stat-box{
+
+    text-align:center;
+
+    padding:30px 20px;
+
+    border-radius:20px;
+
+    background:#fff;
+
+    border:
+        1px solid var(--border);
+
+}
+
+.stat-box i{
+
+    color:var(--primary);
+
+    font-size:23px;
+
+    margin-bottom:12px;
+
+}
+
+.stat-box strong{
+
+    display:block;
+
+    font-family:"Manrope",sans-serif;
+
+    font-size:34px;
+
+    line-height:1;
+
+}
+
+.stat-box span{
+
+    display:block;
+
+    color:var(--muted);
+
+    font-size:11px;
+
+    margin-top:7px;
+
+}
+
+
+/* =====================================================
+   WHY CHOOSE US
+===================================================== */
+
+.why-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:25px;
+
+}
+
+.why-card{
+
+    display:flex;
+
+    gap:17px;
+
+    padding:23px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:18px;
+
+    background:#fff;
+
+}
+
+.why-icon{
+
+    flex:0 0 48px;
+
+    width:48px;
+    height:48px;
+
+    display:grid;
+
+    place-items:center;
+
+    border-radius:14px;
+
+    background:var(--soft);
+
+    color:var(--primary);
+
+}
+
+.why-card h3{
+
+    font-size:16px;
+
+    margin-bottom:5px;
+
+}
+
+.why-card p{
+
+    color:var(--muted);
+
+    font-size:12px;
+
+    line-height:1.7;
+
+}
+
+
+/* =====================================================
+   CTA
+===================================================== */
+
+.cta{
+
+    padding:
+        90px 0;
+
+}
+
+.cta-box{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:
+        65px 60px;
+
+    border-radius:32px;
+
+    background:
+
+        radial-gradient(
+            circle at 90% 20%,
+            rgba(215,166,65,.22),
+            transparent 28%
+        ),
+
+        linear-gradient(
+            135deg,
+            var(--primary-dark),
+            var(--primary)
+        );
+
+    color:#fff;
+
+}
+
+.cta-box::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:300px;
+    height:300px;
+
+    border-radius:50%;
+
+    right:-150px;
+    bottom:-180px;
+
+    border:
+        1px solid rgba(255,255,255,.12);
+
+}
+
+.cta-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:750px;
+
+}
+
+.cta-content span{
+
+    color:var(--gold-light);
+
+    font-size:11px;
+
+    font-weight:800;
+
+    letter-spacing:1.6px;
+
+    text-transform:uppercase;
+
+}
+
+.cta-content h2{
+
+    font-family:"Manrope",sans-serif;
+
+    font-size:
+        clamp(30px,4vw,48px);
+
+    line-height:1.1;
+
+    letter-spacing:-1.5px;
+
+    margin:
+        10px 0 15px;
+
+}
+
+.cta-content p{
+
+    color:#cbdacf;
+
+    font-size:14px;
+
+}
+
+.cta-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:27px;
+
+}
+
+.btn-white{
+
+    background:#fff;
+
+    color:var(--primary);
+
+}
+
+.btn-white:hover{
+
+    transform:translateY(-3px);
+
+    background:#f4f8f4;
+
+}
+
+.btn-transparent{
+
+    color:#fff;
+
+    border:
+        1px solid rgba(255,255,255,.25);
+
+}
+
+.btn-transparent:hover{
+
+    background:
+        rgba(255,255,255,.08);
+
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer{
+
+    background:#0e2015;
+
+    color:#dce7df;
+
+}
+
+.footer-main{
+
+    display:grid;
+
+    grid-template-columns:
+        1.5fr 1fr 1fr 1fr;
+
+    gap:45px;
+
+    padding:
+        70px 0 55px;
+
+}
+
+.footer-logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:white;
+
+    font-family:"Manrope",sans-serif;
+
+    font-size:18px;
+
+    font-weight:800;
+
+    margin-bottom:17px;
+
+}
+
+.footer-description{
+
+    color:#9eaea3;
+
+    font-size:12px;
+
+    max-width:350px;
+
+    line-height:1.8;
+
+}
+
+.footer h3{
+
+    color:#fff;
+
+    font-size:14px;
+
+    margin-bottom:15px;
+
+}
+
+.footer-links{
+
+    list-style:none;
+
+}
+
+.footer-links li{
+
+    margin-bottom:9px;
+
+}
+
+.footer-links a{
+
+    color:#9eaea3;
+
+    font-size:12px;
+
+    transition:.2s;
+
+}
+
+.footer-links a:hover{
+
+    color:#fff;
+
+}
+
+.footer-contact{
+
+    list-style:none;
+
+}
+
+.footer-contact li{
+
+    display:flex;
+
+    gap:9px;
+
+    color:#9eaea3;
+
+    font-size:12px;
+
+    margin-bottom:12px;
+
+}
+
+.footer-contact i{
+
+    color:var(--gold);
+
+    width:16px;
+
+}
+
+.socials{
+
+    display:flex;
+
+    gap:8px;
+
+    margin-top:20px;
+
+}
+
+.socials a{
+
+    width:38px;
+    height:38px;
+
+    display:grid;
+
+    place-items:center;
+
+    border-radius:11px;
+
+    background:#193121;
+
+    color:#dce7df;
+
+    transition:.2s;
+
+}
+
+.socials a:hover{
+
+    background:var(--primary);
+
+    color:#fff;
+
+    transform:translateY(-2px);
+
+}
+
+.footer-bottom{
+
+    padding:
+        18px 0;
+
+    border-top:
+        1px solid rgba(255,255,255,.08);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:15px;
+
+    color:#7f9185;
+
+    font-size:10px;
+
+}
+
+
+/* =====================================================
+   SCROLL REVEAL
+===================================================== */
+
+.reveal{
+
+    opacity:0;
+
+    transform:
+        translateY(25px);
+
+    transition:
+        opacity .7s ease,
+        transform .7s ease;
+
+}
+
+.reveal.show{
+
+    opacity:1;
+
+    transform:
+        translateY(0);
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:1100px){
+
+    .nav-menu{
+
+        gap:0;
+
+    }
+
+    .nav-menu a{
+
+        padding:
+            9px 10px;
+
+        font-size:13px;
+
+    }
+
+    .hero-content{
+
+        gap:40px;
+
+    }
+
+    .services-grid{
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+    .footer-main{
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+}
+
+
+@media(max-width:850px){
+
+    .menu-toggle{
+
+        display:grid;
+
+        place-items:center;
+
+    }
+
+    .nav-menu{
+
+        position:absolute;
+
+        top:74px;
+
+        left:12px;
+        right:12px;
+
+        width:auto;
+
+        display:none;
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+        gap:3px;
+
+        padding:12px;
+
+        background:
+            rgba(255,255,255,.98);
+
+        border:
+            1px solid var(--border);
+
+        border-radius:18px;
+
+        box-shadow:
+            0 25px 60px rgba(0,0,0,.13);
+
+    }
+
+    .nav-menu.open{
+
+        display:flex;
+
+    }
+
+    .nav-menu li{
+
+        width:100%;
+
+    }
+
+    .nav-menu a{
+
+        width:100%;
+
+        padding:
+            12px 14px;
+
+    }
+
+    .contact-button{
+
+        margin:
+            4px 0 0;
+
+        text-align:center;
+
+    }
+
+    .hero-content{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .hero{
+
+        min-height:auto;
+
+    }
+
+    .hero-visual{
+
+        min-height:430px;
+
+    }
+
+    .featured-wrapper{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .process-grid{
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+    .process-card::after{
+
+        display:none;
+
+    }
+
+    .stats-grid{
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+}
+
+
+@media(max-width:650px){
+
+    .container{
+
+        padding-left:15px;
+        padding-right:15px;
+
+    }
+
+    .navbar{
+
+        min-height:68px;
+
+    }
+
+    .logo{
+
+        font-size:15px;
+
+    }
+
+    .logo-mark{
+
+        width:39px;
+        height:39px;
+
+    }
+
+    .nav-menu{
+
+        top:68px;
+
+    }
+
+    .hero-content{
+
+        padding:
+            60px 0;
+
+    }
+
+    .hero h1{
+
+        font-size:
+            clamp(39px,12vw,58px);
+
+        letter-spacing:-2px;
+
+    }
+
+    .hero-description{
+
+        font-size:14px;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .btn{
+
+        width:100%;
+
+    }
+
+    .hero-visual{
+
+        min-height:390px;
+
+    }
+
+    .hero-main-card{
+
+        min-height:390px;
+
+        border-radius:25px;
+
+    }
+
+    .hero-card-content{
+
+        padding:27px;
+
+    }
+
+    .hero-icon{
+
+        top:27px;
+        left:27px;
+
+    }
+
+    .hero-main-card h2{
+
+        font-size:27px;
+
+    }
+
+    .hero-stats{
+
+        gap:6px;
+
+    }
+
+    .hero-stat{
+
+        padding:11px;
+
+    }
+
+    .hero-stat strong{
+
+        font-size:16px;
+
+    }
+
+    .section{
+
+        padding:
+            70px 0;
+
+    }
+
+    .section-heading{
+
+        margin-bottom:38px;
+
+    }
+
+    .services-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .featured-features{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .featured-visual{
+
+        min-height:350px;
+
+    }
+
+    .featured-circle{
+
+        width:210px;
+        height:210px;
+
+    }
+
+    .featured-circle i{
+
+        font-size:72px;
+
+    }
+
+    .floating-card.one{
+
+        left:12px;
+        top:35px;
+
+    }
+
+    .floating-card.two{
+
+        right:12px;
+        bottom:35px;
+
+    }
+
+    .process-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .stats-grid{
+
+        grid-template-columns:
+            1fr 1fr;
+
+        gap:10px;
+
+    }
+
+    .stat-box{
+
+        padding:23px 12px;
+
+    }
+
+    .stat-box strong{
+
+        font-size:28px;
+
+    }
+
+    .why-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .cta-box{
+
+        padding:
+            45px 25px;
+
+        border-radius:25px;
+
+    }
+
+    .cta-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .footer-main{
+
+        grid-template-columns:1fr;
+
+        gap:32px;
+
+        padding:
+            50px 0 40px;
+
+    }
+
+    .footer-bottom{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+}
+
+
+@media(max-width:380px){
+
+    .logo span{
+
+        max-width:165px;
+
+        overflow:hidden;
+
+        text-overflow:ellipsis;
+
+    }
+
+    .hero-stats{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .stats-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+/* =====================================================
+   ACCESSIBILITY
+===================================================== */
+
+@media(prefers-reduced-motion:reduce){
+
+    *,
+    *::before,
+    *::after{
+
+        scroll-behavior:auto!important;
+
+        transition:none!important;
+
+        animation:none!important;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header">
+
+<div class="container navbar">
+
+
+<a href="index.html"
+   class="logo">
+
+    <span class="logo-mark">
+
+        <i class="fa-solid fa-piggy-bank"></i>
+
+    </span>
+
+    <span>
+        Divya Agro Farms
+    </span>
+
+</a>
+
+
+<button class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation">
+
+    <i class="fa-solid fa-bars"></i>
+
+</button>
+
+
+<ul class="nav-menu"
+    id="navMenu">
+
+    <li>
+        <a href="index.html">
+            Home
+        </a>
+    </li>
+
+    <li>
+        <a href="gallery_professional.html">
+            Gallery
+        </a>
+    </li>
+
+    <li>
+        <a href="nutrition.html">
+            Nutrition
+        </a>
+    </li>
+
+    <li>
+        <a href="services.html"
+           class="active">
+            Services
+        </a>
+    </li>
+
+    <li>
+        <a href="#about">
+            About
+        </a>
+    </li>
+
+    <li>
+        <a href="#contact"
+           class="contact-button">
+            Contact Us
+        </a>
+    </li>
+
+</ul>
+
+</div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero">
+
+<div class="container hero-content">
+
+
+<div class="hero-text reveal">
+
+<span class="hero-label">
+
+    <i class="fa-solid fa-leaf"></i>
+
+    Professional Livestock Services
+
+</span>
+
+
+<h1>
+
+    Building Better
+    <span>Farms.</span>
+
+</h1>
+
+
+<p class="hero-description">
+
+    From piggery farm setup and breeding management
+    to nutrition, piglet care, biosecurity and
+    day-to-day farm operations — Divya Agro Farms
+    provides practical livestock solutions focused on
+    healthy animals and sustainable farm performance.
+
+</p>
+
+
+<div class="hero-buttons">
+
+<a href="#services"
+   class="btn btn-primary">
+
+    Explore Services
+
+    <i class="fa-solid fa-arrow-right"></i>
+
+</a>
+
+
+<a href="#contact"
+   class="btn btn-outline">
+
+    <i class="fa-solid fa-phone"></i>
+
+    Talk to Our Team
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="hero-visual reveal">
+
+<div class="hero-main-card">
+
+
+<div class="hero-icon">
+
+    <i class="fa-solid fa-piggy-bank"></i>
+
+</div>
+
+
+<div class="hero-card-content">
+
+<h2>
+
+    Complete Piggery
+    Solutions
+
+</h2>
+
+
+<p>
+
+    Professional support for breeding,
+    nutrition, farm management, animal care
+    and production planning.
+
+</p>
+
+
+<div class="hero-stats">
+
+<div class="hero-stat">
+
+    <strong>
+        360°
+    </strong>
+
+    <span>
+        Farm Support
+    </span>
+
+</div>
+
+
+<div class="hero-stat">
+
+    <strong>
+        7+
+    </strong>
+
+    <span>
+        Core Services
+    </span>
+
+</div>
+
+
+<div class="hero-stat">
+
+    <strong>
+        Pro
+    </strong>
+
+    <span>
+        Farm Approach
+    </span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+
+<section class="section section-white"
+         id="services">
+
+<div class="container">
+
+
+<div class="section-heading reveal">
+
+<span class="section-tag">
+    What We Offer
+</span>
+
+<h2>
+    Professional Farm Services
+</h2>
+
+<p>
+
+    Practical services designed around animal welfare,
+    productivity, farm efficiency and sustainable
+    piggery management.
+
+</p>
+
+</div>
+
+
+<div class="services-grid">
+
+
+<!-- 01 -->
+
+<article class="service-card reveal">
+
+<span class="service-number">
+    01
+</span>
+
+<div class="service-icon">
+
+    <i class="fa-solid fa-tractor"></i>
+
+</div>
+
+<h3>
+    Farm Setup & Planning
+</h3>
+
+<p>
+
+    Support for planning efficient pig housing,
+    production areas, workflow and basic farm
+    infrastructure.
+
+</p>
+
+<ul class="service-list">
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Farm layout planning
+</li>
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Pen & housing planning
+</li>
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Production flow
+</li>
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Equipment planning
+</li>
+
+</ul>
+
+</article>
+
+
+<!-- 02 -->
+
+<article class="service-card reveal">
+
+<span class="service-number">
+    02
+</span>
+
+<div class="service-icon">
+
+    <i class="fa-solid fa-dna"></i>
+
+</div>
+
+<h3>
+    Breeding Management
+</h3>
+
+<p>
+
+    Structured breeding management focused on
+    maintaining healthy breeding stock and
+    improving production planning.
+
+</p>
+
+<ul class="service-list">
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Sow management
+</li>
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Boar management
+</li>
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Breeding records
+</li>
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Litter planning
+</li>
+
+</ul>
+
+</article>
+
+
+<!-- 03 -->
+
+<article class="service-card reveal">
+
+<span class="service-number">
+    03
+</span>
+
+<div class="service-icon">
+
+    <i class="fa-solid fa-wheat-awn"></i>
+
+</div>
+
+<h3>
+    Feed & Nutrition
+</h3>
+
+<p>
+
+    Stage-specific feeding strategies designed
+    to support growth, body condition and
+    efficient feed utilization.
+
+</p>
+
+<ul class="service-list">
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Piglet nutrition
+</li>
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Grower & finisher feeding
+</li>
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Sow nutrition
+</li>
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Feed management
+</li>
+
+</ul>
+
+</article>
+
+
+<!-- 04 -->
+
+<article class="service-card reveal">
+
+<span class="service-number">
+    04
+</span>
+
+<div class="service-icon">
+
+    <i class="fa-solid fa-baby"></i>
+
+</div>
+
+<h3>
+    Piglet Management
+</h3>
+
+<p>
+
+    Practical piglet management from birth
+    through weaning, with emphasis on
+    early care and consistent monitoring.
+
+</p>
+
+<ul class="service-list">
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Newborn care
+</li>
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Colostrum management
+</li>
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Weaning management
+</li>
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Growth monitoring
+</li>
+
+</ul>
+
+</article>
+
+
+<!-- 05 -->
+
+<article class="service-card reveal">
+
+<span class="service-number">
+    05
+</span>
+
+<div class="service-icon">
+
+    <i class="fa-solid fa-shield-virus"></i>
+
+</div>
+
+<h3>
+    Biosecurity & Hygiene
+</h3>
+
+<p>
+
+    Farm hygiene and biosecurity practices
+    designed to reduce avoidable disease
+    introduction and spread.
+
+</p>
+
+<ul class="service-list">
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Entry protocols
+</li>
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Cleaning routines
+</li>
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Disinfection planning
+</li>
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Farm movement control
+</li>
+
+</ul>
+
+</article>
+
+
+<!-- 06 -->
+
+<article class="service-card reveal">
+
+<span class="service-number">
+    06
+</span>
+
+<div class="service-icon">
+
+    <i class="fa-solid fa-heart-pulse"></i>
+
+</div>
+
+<h3>
+    Herd Health Support
+</h3>
+
+<p>
+
+    Farm-level health monitoring and record
+    management to help identify changes in
+    animal condition early.
+
+</p>
+
+<ul class="service-list">
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Health observations
+</li>
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Treatment records
+</li>
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Mortality tracking
+</li>
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Veterinary coordination
+</li>
+
+</ul>
+
+</article>
+
+
+<!-- 07 -->
+
+<article class="service-card reveal">
+
+<span class="service-number">
+    07
+</span>
+
+<div class="service-icon">
+
+    <i class="fa-solid fa-chart-line"></i>
+
+</div>
+
+<h3>
+    Farm Performance
+</h3>
+
+<p>
+
+    Monitoring important farm indicators
+    to help management understand production
+    efficiency and operating performance.
+
+</p>
+
+<ul class="service-list">
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Growth tracking
+</li>
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Feed monitoring
+</li>
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    FCR monitoring
+</li>
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Farm records
+</li>
+
+</ul>
+
+</article>
+
+
+<!-- 08 -->
+
+<article class="service-card reveal">
+
+<span class="service-number">
+    08
+</span>
+
+<div class="service-icon">
+
+    <i class="fa-solid fa-graduation-cap"></i>
+
+</div>
+
+<h3>
+    Training & Consultation
+</h3>
+
+<p>
+
+    Practical guidance for farmers and farm
+    teams covering daily livestock management
+    and production practices.
+
+</p>
+
+<ul class="service-list">
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Staff training
+</li>
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Farm SOP guidance
+</li>
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Record keeping
+</li>
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Operational guidance
+</li>
+
+</ul>
+
+</article>
+
+
+<!-- 09 -->
+
+<article class="service-card reveal">
+
+<span class="service-number">
+    09
+</span>
+
+<div class="service-icon">
+
+    <i class="fa-solid fa-database"></i>
+
+</div>
+
+<h3>
+    Farm Records & Digital Management
+</h3>
+
+<p>
+
+    Organize pig, breeding, feed, health,
+    inventory and production records for
+    better farm decision-making.
+
+</p>
+
+<ul class="service-list">
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Pig records
+</li>
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Breeding records
+</li>
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Feed records
+</li>
+
+<li>
+    <i class="fa-solid fa-check"></i>
+    Reports & analytics
+</li>
+
+</ul>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FEATURED SERVICE
+===================================================== -->
+
+<section class="section featured">
+
+<div class="container featured-wrapper">
+
+
+<div class="reveal">
+
+<span class="featured-label">
+    Complete Farm Approach
+</span>
+
+<h2>
+    One Farm.
+    One System.
+    Better Management.
+</h2>
+
+<p>
+
+    Successful pig production requires more than
+    good animals. Nutrition, breeding, health,
+    biosecurity, housing, records and daily
+    management must work together.
+
+</p>
+
+
+<div class="featured-features">
+
+
+<div class="featured-feature">
+
+<i class="fa-solid fa-piggy-bank"></i>
+
+<strong>
+    Pig Management
+</strong>
+
+<span>
+    Structured animal records
+</span>
+
+</div>
+
+
+<div class="featured-feature">
+
+<i class="fa-solid fa-wheat-awn"></i>
+
+<strong>
+    Nutrition
+</strong>
+
+<span>
+    Stage-specific feeding
+</span>
+
+</div>
+
+
+<div class="featured-feature">
+
+<i class="fa-solid fa-dna"></i>
+
+<strong>
+    Breeding
+</strong>
+
+<span>
+    Sow & boar management
+</span>
+
+</div>
+
+
+<div class="featured-feature">
+
+<i class="fa-solid fa-chart-line"></i>
+
+<strong>
+    Performance
+</strong>
+
+<span>
+    Farm-level monitoring
+</span>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<div class="featured-visual reveal">
+
+
+<div class="featured-circle">
+
+    <i class="fa-solid fa-piggy-bank"></i>
+
+</div>
+
+
+<div class="floating-card one">
+
+<strong>
+    Healthy Herd
+</strong>
+
+<span>
+    Better management
+</span>
+
+</div>
+
+
+<div class="floating-card two">
+
+<strong>
+    Smart Farming
+</strong>
+
+<span>
+    Data-driven decisions
+</span>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PROCESS
+===================================================== -->
+
+<section class="section section-white">
+
+<div class="container">
+
+
+<div class="section-heading reveal">
+
+<span class="section-tag">
+    Our Approach
+</span>
+
+<h2>
+    How We Work
+</h2>
+
+<p>
+
+    A structured approach helps turn farm goals
+    into practical day-to-day management.
+
+</p>
+
+</div>
+
+
+<div class="process-grid">
+
+
+<div class="process-card reveal">
+
+<div class="process-number">
+    STEP 01
+</div>
+
+<div class="process-icon">
+
+<i class="fa-solid fa-comments"></i>
+
+</div>
+
+<h3>
+    Understand
+</h3>
+
+<p>
+
+    Understand your farm size,
+    production goals, livestock,
+    infrastructure and challenges.
+
+</p>
+
+</div>
+
+
+<div class="process-card reveal">
+
+<div class="process-number">
+    STEP 02
+</div>
+
+<div class="process-icon">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+</div>
+
+<h3>
+    Assess
+</h3>
+
+<p>
+
+    Review existing practices,
+    records, housing, feeding and
+    farm management systems.
+
+</p>
+
+</div>
+
+
+<div class="process-card reveal">
+
+<div class="process-number">
+    STEP 03
+</div>
+
+<div class="process-icon">
+
+<i class="fa-solid fa-clipboard-check"></i>
+
+</div>
+
+<h3>
+    Plan
+</h3>
+
+<p>
+
+    Develop practical recommendations
+    aligned with your farm's objectives
+    and resources.
+
+</p>
+
+</div>
+
+
+<div class="process-card reveal">
+
+<div class="process-number">
+    STEP 04
+</div>
+
+<div class="process-icon">
+
+<i class="fa-solid fa-chart-line"></i>
+
+</div>
+
+<h3>
+    Improve
+</h3>
+
+<p>
+
+    Monitor performance and continuously
+    improve farm practices using
+    measurable results.
+
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     STATS
+===================================================== -->
+
+<section class="section stats">
+
+<div class="container">
+
+
+<div class="section-heading reveal">
+
+<span class="section-tag">
+    Our Focus
+</span>
+
+<h2>
+    Built Around Better Farming
+</h2>
+
+</div>
+
+
+<div class="stats-grid">
+
+
+<div class="stat-box reveal">
+
+<i class="fa-solid fa-piggy-bank"></i>
+
+<strong>
+    360°
+</strong>
+
+<span>
+    Farm Management Approach
+</span>
+
+</div>
+
+
+<div class="stat-box reveal">
+
+<i class="fa-solid fa-layer-group"></i>
+
+<strong>
+    09
+</strong>
+
+<span>
+    Core Service Areas
+</span>
+
+</div>
+
+
+<div class="stat-box reveal">
+
+<i class="fa-solid fa-chart-line"></i>
+
+<strong>
+    24/7
+</strong>
+
+<span>
+    Farm Operations Mindset
+</span>
+
+</div>
+
+
+<div class="stat-box reveal">
+
+<i class="fa-solid fa-seedling"></i>
+
+<strong>
+    Pro
+</strong>
+
+<span>
+    Sustainable Farm Focus
+</span>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     WHY CHOOSE US
+===================================================== -->
+
+<section class="section section-white"
+         id="about">
+
+<div class="container">
+
+
+<div class="section-heading reveal">
+
+<span class="section-tag">
+    Why Divya Agro Farms
+</span>
+
+<h2>
+    Practical. Professional. Farm Focused.
+</h2>
+
+<p>
+
+    Our approach is designed to keep farm
+    management practical, measurable and
+    focused on long-term livestock performance.
+
+</p>
+
+</div>
+
+
+<div class="why-grid">
+
+
+<div class="why-card reveal">
+
+<div class="why-icon">
+
+<i class="fa-solid fa-leaf"></i>
+
+</div>
+
+<div>
+
+<h3>
+    Practical Approach
+</h3>
+
+<p>
+
+    Recommendations should work in real
+    farm conditions and be understandable
+    to farm teams.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="why-card reveal">
+
+<div class="why-icon">
+
+<i class="fa-solid fa-chart-simple"></i>
+
+</div>
+
+<div>
+
+<h3>
+    Data & Records
+</h3>
+
+<p>
+
+    Good records help identify trends,
+    evaluate performance and support
+    better management decisions.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="why-card reveal">
+
+<div class="why-icon">
+
+<i class="fa-solid fa-shield-heart"></i>
+
+</div>
+
+<div>
+
+<h3>
+    Animal Welfare
+</h3>
+
+<p>
+
+    Healthy animals, suitable housing,
+    proper nutrition and responsible
+    management are fundamental.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="why-card reveal">
+
+<div class="why-icon">
+
+<i class="fa-solid fa-seedling"></i>
+
+</div>
+
+<div>
+
+<h3>
+    Sustainable Growth
+</h3>
+
+<p>
+
+    The objective is not only today's
+    production but also long-term
+    farm sustainability.
+
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="cta"
+         id="contact">
+
+<div class="container">
+
+<div class="cta-box reveal">
+
+<div class="cta-content">
+
+<span>
+    Let's Build Better Farms
+</span>
+
+<h2>
+    Looking for professional
+    piggery support?
+</h2>
+
+<p>
+
+    Whether you are planning a new farm,
+    improving an existing operation or
+    looking for better livestock management,
+    connect with Divya Agro Farms.
+
+</p>
+
+
+<div class="cta-buttons">
+
+<a href="tel:+919000366245"
+   class="btn btn-white">
+
+<i class="fa-solid fa-phone"></i>
+
+Call Us
+
+</a>
+
+
+<a href="https://api.whatsapp.com/send?phone=919966966538&text=Hello%20Divya%20Agro%20Farms"
+   class="btn btn-transparent">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+<div class="container">
+
+
+<div class="footer-main">
+
+
+<div>
+
+<div class="footer-logo">
+
+<span class="logo-mark">
+
+<i class="fa-solid fa-piggy-bank"></i>
+
+</span>
+
+Divya Agro Farms
+
+</div>
+
+
+<p class="footer-description">
+
+Professional piggery and livestock
+management focused on healthy animals,
+responsible farming and sustainable
+production.
+
+</p>
+
+
+<div class="socials">
+
+<a href="#"
+   aria-label="Facebook">
+
+<i class="fa-brands fa-facebook-f"></i>
+
+</a>
+
+<a href="#"
+   aria-label="Instagram">
+
+<i class="fa-brands fa-instagram"></i>
+
+</a>
+
+<a href="#"
+   aria-label="YouTube">
+
+<i class="fa-brands fa-youtube"></i>
+
+</a>
+
+<a href="https://api.whatsapp.com/send?phone=919966966538"
+   aria-label="WhatsApp">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<div>
+
+<h3>
+    Quick Links
+</h3>
+
+<ul class="footer-links">
+
+<li>
+<a href="index.html">
+    Home
+</a>
+</li>
+
+<li>
+<a href="gallery_professional.html">
+    Gallery
+</a>
+</li>
+
+<li>
+<a href="nutrition.html">
+    Nutrition
+</a>
+</li>
+
+<li>
+<a href="services.html">
+    Services
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+
+<div>
+
+<h3>
+    Services
+</h3>
+
+<ul class="footer-links">
+
+<li>
+<a href="#services">
+    Farm Setup
+</a>
+</li>
+
+<li>
+<a href="#services">
+    Breeding
+</a>
+</li>
+
+<li>
+<a href="#services">
+    Nutrition
+</a>
+</li>
+
+<li>
+<a href="#services">
+    Piglet Management
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+
+<div>
+
+<h3>
+    Contact
+</h3>
+
+<ul class="footer-contact">
+
+<li>
+
+<i class="fa-solid fa-location-dot"></i>
+
+<span>
+Marepally, Nagarkurnool,
+Telangana, 509209.
+</span>
+
+</li>
+
+<li>
+
+<i class="fa-solid fa-phone"></i>
+
+<span>
+9000366245, 8522943295
+</span>
+
+</li>
+
+<li>
+
+<i class="fa-solid fa-envelope"></i>
+
+<span>
+divyaagrofarmstr@gmail.com
+</span>
+
+</li>
+
+</ul>
+
+</div>
+
+
+</div>
+
+
+<div class="footer-bottom">
+
+<span>
+© 2026 Divya Agro Farms. All rights reserved.
+</span>
+
+<span>
+Professional Piggery & Livestock Solutions
+</span>
+
+</div>
+
+
+</div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+
+/* =====================================================
+   MOBILE MENU
+===================================================== */
+
+const menuToggle =
+    document.getElementById("menuToggle");
+
+const navMenu =
+    document.getElementById("navMenu");
+
+
+menuToggle.addEventListener(
+    "click",
+    function(){
+
+        navMenu.classList.toggle("open");
+
+        const icon =
+            menuToggle.querySelector("i");
+
+        if(
+            navMenu.classList.contains("open")
+        ){
+
+            icon.className =
+                "fa-solid fa-xmark";
+
+        }else{
+
+            icon.className =
+                "fa-solid fa-bars";
+
+        }
+
+    }
+);
+
+
+/* Close menu after clicking link */
+
+navMenu
+.querySelectorAll("a")
+.forEach(
+    function(link){
+
+        link.addEventListener(
+            "click",
+            function(){
+
+                navMenu.classList.remove("open");
+
+                const icon =
+                    menuToggle.querySelector("i");
+
+                icon.className =
+                    "fa-solid fa-bars";
+
+            }
+        );
+
+    }
+);
+
+
+/* Close when clicking outside */
+
+document.addEventListener(
+    "click",
+    function(event){
+
+        if(
+
+            !navMenu.contains(event.target) &&
+            !menuToggle.contains(event.target)
+
+        ){
+
+            navMenu.classList.remove("open");
+
+            const icon =
+                menuToggle.querySelector("i");
+
+            icon.className =
+                "fa-solid fa-bars";
+
+        }
+
+    }
+);
+
+
+/* =====================================================
+   SCROLL REVEAL
+===================================================== */
+
+const revealElements =
+    document.querySelectorAll(".reveal");
+
+
+const observer =
+    new IntersectionObserver(
+        function(entries){
+
+            entries.forEach(
+                function(entry){
+
+                    if(entry.isIntersecting){
+
+                        entry.target.classList.add("show");
+
+                        observer.unobserve(
+                            entry.target
+                        );
+
+                    }
+
+                }
+            );
+
+        },
+        {
+            threshold:.12
+        }
+    );
+
+
+revealElements.forEach(
+    function(element){
+
+        observer.observe(element);
+
+    }
+);
+
+
+/* =====================================================
+   ACTIVE NAVIGATION
+===================================================== */
+
+const sections =
+    document.querySelectorAll(
+        "section[id]"
+    );
+
+const navigationLinks =
+    document.querySelectorAll(
+        ".nav-menu a[href^='#']"
+    );
+
+
+window.addEventListener(
+    "scroll",
+    function(){
+
+        let current = "";
+
+        sections.forEach(
+            function(section){
+
+                const sectionTop =
+                    section.offsetTop - 140;
+
+                if(
+                    window.scrollY >= sectionTop
+                ){
+
+                    current =
+                        section.getAttribute("id");
+
+                }
+
+            }
+        );
+
+
+        navigationLinks.forEach(
+            function(link){
+
+                link.classList.remove(
+                    "active"
+                );
+
+                if(
+                    link.getAttribute("href")
+                    === "#" + current
+                ){
+
+                    link.classList.add(
+                        "active"
+                    );
+
+                }
+
+            }
+        );
+
+    }
+);
+
+
+/* =====================================================
+   PREVENT MOBILE HORIZONTAL OVERFLOW
+===================================================== */
+
+function fixMobileOverflow(){
+
+    document.documentElement.style
+        .overflowX = "hidden";
+
+    document.body.style
+        .overflowX = "hidden";
+
+}
+
+
+fixMobileOverflow();
+
+window.addEventListener(
+    "resize",
+    fixMobileOverflow
+);
+
+</script>
+
+
+</body>
+</html>
+```
