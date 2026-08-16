@@ -395,11 +395,11 @@ section {
 }
 
 .split-text > p { margin-bottom: 1.4rem; }
-
+/*
 .split-image {
     position: relative;
 }
-
+*/
 .split-image::before {
     content: "";
     position: absolute;
