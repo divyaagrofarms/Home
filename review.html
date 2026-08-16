@@ -1,34 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport"
-      content="width=device-width,
-               initial-scale=1.0,
-               maximum-scale=1.0,
-               user-scalable=no">
+    <meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1.0,
+                   maximum-scale=1.0,
+                   user-scalable=no">
 
-<meta name="description"
-      content="Divya Agro Farms Reviews - Farmer Experiences, Testimonials and Customer Feedback">
+    <meta name="description"
+          content="Divya Agro Farms Reviews - Farmer Experiences, Testimonials and Customer Feedback">
 
-<title>Reviews | Divya Agro Farms</title>
+    <meta name="theme-color"
+          content="#245c35">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Reviews | Divya Agro Farms</title>
 
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
-      rel="stylesheet">
 
-<link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+          rel="stylesheet">
+
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 
 <style>
 
 /* =========================================================
-   ROOT
+   ROOT VARIABLES
 ========================================================= */
 
 :root {
@@ -161,6 +179,7 @@ ul {
     margin: 0 auto;
 
     padding-left: 22px;
+
     padding-right: 22px;
 }
 
@@ -207,7 +226,9 @@ ul {
 }
 
 
-/* LOGO */
+/* =========================================================
+   LOGO
+========================================================= */
 
 .logo {
 
@@ -233,6 +254,7 @@ ul {
 .logo-icon {
 
     width: 43px;
+
     height: 43px;
 
     flex-shrink: 0;
@@ -258,7 +280,9 @@ ul {
 }
 
 
-/* NAVIGATION */
+/* =========================================================
+   NAVIGATION
+========================================================= */
 
 .nav-menu {
 
@@ -313,6 +337,7 @@ ul {
     position: absolute;
 
     left: 13px;
+
     right: 13px;
 
     bottom: 4px;
@@ -355,13 +380,16 @@ ul {
 }
 
 
-/* MOBILE MENU */
+/* =========================================================
+   MOBILE MENU BUTTON
+========================================================= */
 
 .menu-button {
 
     display: none;
 
     width: 43px;
+
     height: 43px;
 
     border: 0;
@@ -429,7 +457,9 @@ ul {
 }
 
 
-/* HERO TEXT */
+/* =========================================================
+   HERO TEXT
+========================================================= */
 
 .hero-label {
 
@@ -606,7 +636,9 @@ ul {
 }
 
 
-/* RATING BARS */
+/* =========================================================
+   RATING BARS
+========================================================= */
 
 .rating-bars {
 
@@ -762,294 +794,6 @@ ul {
 
 
 /* =========================================================
-   REVIEW GRID
-========================================================= */
-
-.review-grid {
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(3,minmax(0,1fr));
-
-    gap: 20px;
-}
-
-
-/* REVIEW CARD */
-
-.review-card {
-
-    position: relative;
-
-    min-width: 0;
-
-    padding: 28px;
-
-    border-radius: var(--radius);
-
-    background:
-
-        radial-gradient(
-            circle at 100% 0%,
-            rgba(76,135,88,0.065),
-            transparent 30%
-        ),
-
-        linear-gradient(
-            145deg,
-            #ffffff,
-            #fbfdfb
-        );
-
-    border:
-        1px solid var(--border);
-
-    box-shadow:
-        var(--shadow);
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-}
-
-.review-card:hover {
-
-    transform:
-        translateY(-7px);
-
-    box-shadow:
-        var(--shadow-hover);
-}
-
-
-/* QUOTE */
-
-.quote-icon {
-
-    position: absolute;
-
-    top: 22px;
-
-    right: 25px;
-
-    color:
-        rgba(36,92,53,0.09);
-
-    font-size: 32px;
-}
-
-
-/* USER */
-
-.reviewer {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 13px;
-
-    margin-bottom: 18px;
-}
-
-.avatar {
-
-    width: 48px;
-    height: 48px;
-
-    flex: 0 0 48px;
-
-    display: grid;
-
-    place-items: center;
-
-    border-radius: 50%;
-
-    color: #fff;
-
-    font-family:
-        "Manrope",
-        sans-serif;
-
-    font-weight: 800;
-
-    background:
-        linear-gradient(
-            135deg,
-            var(--green),
-            var(--green-light)
-        );
-}
-
-.reviewer-info h3 {
-
-    font-family:
-        "Manrope",
-        sans-serif;
-
-    font-size: 14px;
-
-    margin-bottom: 3px;
-}
-
-.reviewer-info span {
-
-    color: var(--text-light);
-
-    font-size: 10px;
-}
-
-
-/* REVIEW STARS */
-
-.review-stars {
-
-    display: flex;
-
-    gap: 3px;
-
-    color: var(--gold);
-
-    font-size: 12px;
-
-    margin-bottom: 13px;
-}
-
-
-/* REVIEW TEXT */
-
-.review-text {
-
-    color: #5e6b62;
-
-    font-size: 12px;
-
-    line-height: 1.85;
-
-    margin-bottom: 20px;
-}
-
-.review-date {
-
-    padding-top: 14px;
-
-    border-top:
-        1px solid #edf0ed;
-
-    color: #8a948d;
-
-    font-size: 9px;
-}
-
-
-/* =========================================================
-   FEATURED REVIEW
-========================================================= */
-
-.featured-review {
-
-    max-width: 900px;
-
-    margin: 0 auto;
-
-    padding: 45px;
-
-    text-align: center;
-
-    border-radius: 28px;
-
-    color: #fff;
-
-    background:
-
-        radial-gradient(
-            circle at 85% 10%,
-            rgba(200,155,60,0.18),
-            transparent 30%
-        ),
-
-        radial-gradient(
-            circle at 10% 90%,
-            rgba(76,135,88,0.15),
-            transparent 30%
-        ),
-
-        linear-gradient(
-            135deg,
-            #12351e,
-            #245c35
-        );
-
-    box-shadow:
-        0 25px 65px
-        rgba(23,54,32,0.15);
-}
-
-.featured-review .quote-icon {
-
-    position: static;
-
-    color:
-        rgba(255,255,255,0.18);
-
-    font-size: 42px;
-
-    margin-bottom: 15px;
-}
-
-.featured-review .review-stars {
-
-    justify-content: center;
-
-    margin-bottom: 18px;
-}
-
-.featured-review blockquote {
-
-    max-width: 720px;
-
-    margin:
-        0 auto 22px;
-
-    color: #eef5ef;
-
-    font-family:
-        "Manrope",
-        sans-serif;
-
-    font-size:
-        clamp(18px,3vw,26px);
-
-    line-height: 1.55;
-
-    font-weight: 600;
-}
-
-.featured-review .reviewer {
-
-    justify-content: center;
-
-    margin-bottom: 0;
-}
-
-.featured-review .reviewer-info {
-
-    text-align: left;
-}
-
-.featured-review .reviewer-info h3 {
-
-    color: #fff;
-}
-
-.featured-review .reviewer-info span {
-
-    color: #aebfb3;
-}
-
-
-/* =========================================================
    REVIEW STATISTICS
 ========================================================= */
 
@@ -1126,16 +870,300 @@ ul {
 
 
 /* =========================================================
-   REVIEW FORM
+   FEATURED REVIEW
 ========================================================= */
 
-.review-form-wrapper {
+.featured-review {
 
-    max-width: 850px;
+    max-width: 900px;
 
     margin: 0 auto;
 
-    padding: 40px;
+    padding: 45px;
+
+    text-align: center;
+
+    border-radius: 28px;
+
+    color: #fff;
+
+    background:
+
+        radial-gradient(
+            circle at 85% 10%,
+            rgba(200,155,60,0.18),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 10% 90%,
+            rgba(76,135,88,0.15),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            135deg,
+            #12351e,
+            #245c35
+        );
+
+    box-shadow:
+        0 25px 65px
+        rgba(23,54,32,0.15);
+}
+
+.featured-review .quote-icon {
+
+    color:
+        rgba(255,255,255,0.18);
+
+    font-size: 42px;
+
+    margin-bottom: 15px;
+}
+
+.featured-review .review-stars {
+
+    justify-content: center;
+
+    margin-bottom: 18px;
+}
+
+.featured-review blockquote {
+
+    max-width: 720px;
+
+    margin:
+        0 auto 22px;
+
+    color: #eef5ef;
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size:
+        clamp(18px,3vw,26px);
+
+    line-height: 1.55;
+
+    font-weight: 600;
+}
+
+.featured-review .reviewer {
+
+    justify-content: center;
+
+    margin-bottom: 0;
+}
+
+.featured-review .reviewer-info {
+
+    text-align: left;
+}
+
+.featured-review .reviewer-info h3 {
+
+    color: #fff;
+}
+
+.featured-review .reviewer-info span {
+
+    color: #aebfb3;
+}
+
+
+/* =========================================================
+   REVIEW GRID
+========================================================= */
+
+.review-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,minmax(0,1fr));
+
+    gap: 20px;
+}
+
+.review-card {
+
+    position: relative;
+
+    min-width: 0;
+
+    padding: 28px;
+
+    border-radius: var(--radius);
+
+    background:
+
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(76,135,88,0.065),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #fbfdfb
+        );
+
+    border:
+        1px solid var(--border);
+
+    box-shadow:
+        var(--shadow);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+
+    transform:
+        translateY(-7px);
+
+    box-shadow:
+        var(--shadow-hover);
+}
+
+.quote-icon {
+
+    position: absolute;
+
+    top: 22px;
+
+    right: 25px;
+
+    color:
+        rgba(36,92,53,0.09);
+
+    font-size: 32px;
+}
+
+
+/* =========================================================
+   REVIEWER
+========================================================= */
+
+.reviewer {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    margin-bottom: 18px;
+}
+
+.avatar {
+
+    width: 48px;
+
+    height: 48px;
+
+    flex: 0 0 48px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    color: #fff;
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-weight: 800;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--green),
+            var(--green-light)
+        );
+}
+
+.reviewer-info h3 {
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size: 14px;
+
+    margin-bottom: 3px;
+}
+
+.reviewer-info span {
+
+    color: var(--text-light);
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   REVIEW STARS
+========================================================= */
+
+.review-stars {
+
+    display: flex;
+
+    gap: 3px;
+
+    color: var(--gold);
+
+    font-size: 12px;
+
+    margin-bottom: 13px;
+}
+
+.review-text {
+
+    color: #5e6b62;
+
+    font-size: 12px;
+
+    line-height: 1.85;
+
+    margin-bottom: 20px;
+}
+
+.review-date {
+
+    padding-top: 14px;
+
+    border-top:
+        1px solid #edf0ed;
+
+    color: #8a948d;
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   GOOGLE FORM SECTION
+========================================================= */
+
+.google-form-wrapper {
+
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 32px;
 
     border-radius: 28px;
 
@@ -1143,8 +1171,14 @@ ul {
 
         radial-gradient(
             circle at 90% 0%,
-            rgba(200,155,60,0.07),
+            rgba(200,155,60,0.08),
             transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 5% 100%,
+            rgba(76,135,88,0.06),
+            transparent 30%
         ),
 
         linear-gradient(
@@ -1157,166 +1191,53 @@ ul {
         1px solid var(--border);
 
     box-shadow:
-        var(--shadow);
-}
+        0 20px 55px
+        rgba(23,54,32,0.08);
 
-.form-grid {
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(2,minmax(0,1fr));
-
-    gap: 18px;
-}
-
-.form-group {
-
-    min-width: 0;
-}
-
-.form-group.full {
-
-    grid-column:
-        1 / -1;
-}
-
-.form-group label {
-
-    display: block;
-
-    margin-bottom: 7px;
-
-    color: #4d5c52;
-
-    font-size: 11px;
-
-    font-weight: 700;
-}
-
-.form-group input,
-.form-group textarea,
-.form-group select {
-
-    width: 100%;
-
-    border:
-        1px solid #dfe6e0;
-
-    outline: none;
-
-    border-radius: 12px;
-
-    background: #fff;
-
-    color: var(--text);
-
-    font-size: 12px;
-
-    padding:
-        13px 14px;
-
-    transition:
-        border-color 0.2s,
-        box-shadow 0.2s;
-}
-
-.form-group textarea {
-
-    min-height: 130px;
-
-    resize: vertical;
-}
-
-.form-group input:focus,
-.form-group textarea:focus,
-.form-group select:focus {
-
-    border-color:
-        rgba(36,92,53,0.45);
-
-    box-shadow:
-        0 0 0 4px
-        rgba(36,92,53,0.06);
+    overflow: hidden;
 }
 
 
-/* STAR INPUT */
+/* =========================================================
+   GOOGLE FORM HEADER
+========================================================= */
 
-.star-input {
+.google-form-header {
 
     display: flex;
-
-    flex-direction: row-reverse;
-
-    justify-content: flex-end;
-
-    gap: 5px;
-}
-
-.star-input input {
-
-    display: none;
-}
-
-.star-input label {
-
-    cursor: pointer;
-
-    color: #d8ded9;
-
-    font-size: 24px;
-
-    margin: 0;
-
-    transition: 0.2s;
-}
-
-.star-input label:hover,
-.star-input label:hover ~ label,
-.star-input input:checked ~ label {
-
-    color: var(--gold);
-}
-
-
-/* SUBMIT */
-
-.form-submit {
-
-    margin-top: 22px;
-
-    display: flex;
-
-    justify-content: center;
-}
-
-.submit-button {
-
-    min-height: 49px;
-
-    padding:
-        0 25px;
-
-    display: inline-flex;
 
     align-items: center;
 
-    justify-content: center;
+    gap: 15px;
 
-    gap: 9px;
+    padding-bottom: 25px;
 
-    border: 0;
+    border-bottom:
+        1px solid #edf1ed;
 
-    border-radius: 13px;
+    margin-bottom: 25px;
+}
+
+.google-form-icon {
+
+    width: 52px;
+
+    height: 52px;
+
+    flex-shrink: 0;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 15px;
 
     color: #fff;
 
-    font-size: 13px;
-
-    font-weight: 800;
+    font-size: 20px;
 
     background:
+
         linear-gradient(
             135deg,
             var(--green),
@@ -1324,20 +1245,103 @@ ul {
         );
 
     box-shadow:
-        0 10px 25px
-        rgba(36,92,53,0.18);
 
-    transition: 0.25s ease;
+        0 10px 25px
+        rgba(36,92,53,0.15);
 }
 
-.submit-button:hover {
+.google-form-header h3 {
 
-    transform:
-        translateY(-3px);
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size: 19px;
+
+    color: var(--text);
+
+    margin-bottom: 4px;
+}
+
+.google-form-header p {
+
+    color: var(--text-light);
+
+    font-size: 11px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   GOOGLE FORM CONTAINER
+========================================================= */
+
+.google-form-container {
+
+    width: 100%;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    background: #ffffff;
+
+    border:
+        1px solid #e4e9e5;
 
     box-shadow:
-        0 16px 32px
-        rgba(36,92,53,0.22);
+        0 8px 25px
+        rgba(23,54,32,0.04);
+}
+
+
+/* =========================================================
+   GOOGLE FORM IFRAME
+========================================================= */
+
+.google-form-container iframe {
+
+    display: block;
+
+    width: 100%;
+
+    min-height: 1050px;
+
+    height: 1050px;
+
+    border: 0;
+
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   GOOGLE FORM FOOTER
+========================================================= */
+
+.google-form-footer {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    padding-top: 18px;
+
+    color: #8a948d;
+
+    font-size: 10px;
+}
+
+.google-form-footer i {
+
+    color: var(--green);
+
+    font-size: 11px;
 }
 
 
@@ -1495,10 +1499,23 @@ ul {
         rgba(255,255,255,0.25);
 }
 
+.btn-white:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 12px 25px
+        rgba(0,0,0,0.15);
+}
+
 .btn-glass:hover {
 
     background:
         rgba(255,255,255,0.08);
+
+    transform:
+        translateY(-3px);
 }
 
 
@@ -1632,6 +1649,7 @@ ul {
 .socials a {
 
     width: 36px;
+
     height: 36px;
 
     display: grid;
@@ -1749,7 +1767,7 @@ ul {
 
 
 /* =========================================================
-   MOBILE NAV
+   MOBILE NAVIGATION
 ========================================================= */
 
 @media (max-width:820px) {
@@ -1773,6 +1791,7 @@ ul {
         top: 68px;
 
         left: 12px;
+
         right: 12px;
 
         width: auto;
@@ -1935,7 +1954,8 @@ ul {
 
     .featured-review {
 
-        padding: 35px 22px;
+        padding:
+            35px 22px;
 
         border-radius: 23px;
     }
@@ -1959,30 +1979,70 @@ ul {
         font-size: 25px;
     }
 
-    .review-form-wrapper {
+
+    /* GOOGLE FORM MOBILE */
+
+    .google-form-wrapper {
 
         padding:
-            28px 18px;
+            18px;
 
-        border-radius: 23px;
+        border-radius: 22px;
     }
 
-    .form-grid {
+    .google-form-header {
 
-        grid-template-columns: 1fr;
+        align-items: flex-start;
 
-        gap: 15px;
+        padding-bottom: 20px;
+
+        margin-bottom: 18px;
     }
 
-    .form-group.full {
+    .google-form-icon {
 
-        grid-column: auto;
+        width: 45px;
+
+        height: 45px;
+
+        border-radius: 12px;
+
+        font-size: 17px;
     }
 
-    .submit-button {
+    .google-form-header h3 {
 
-        width: 100%;
+        font-size: 16px;
     }
+
+    .google-form-header p {
+
+        font-size: 10px;
+    }
+
+    .google-form-container {
+
+        border-radius: 10px;
+    }
+
+    .google-form-container iframe {
+
+        min-height: 1100px;
+
+        height: 1100px;
+    }
+
+    .google-form-footer {
+
+        font-size: 9px;
+
+        text-align: center;
+
+        line-height: 1.5;
+    }
+
+
+    /* CTA */
 
     .cta {
 
@@ -2007,6 +2067,9 @@ ul {
 
         width: 100%;
     }
+
+
+    /* FOOTER */
 
     .footer-main {
 
@@ -2062,260 +2125,7 @@ ul {
     }
 }
 
-/* =========================================================
-   GOOGLE FORM
-========================================================= */
 
-.google-form-wrapper {
-
-    width: 100%;
-
-    max-width: 900px;
-
-    margin: 0 auto;
-
-    padding: 32px;
-
-    border-radius: 28px;
-
-    background:
-
-        radial-gradient(
-            circle at 90% 0%,
-            rgba(200,155,60,0.08),
-            transparent 28%
-        ),
-
-        radial-gradient(
-            circle at 5% 100%,
-            rgba(76,135,88,0.06),
-            transparent 30%
-        ),
-
-        linear-gradient(
-            145deg,
-            #ffffff,
-            #f9fcf9
-        );
-
-    border:
-        1px solid var(--border);
-
-    box-shadow:
-        0 20px 55px
-        rgba(23,54,32,0.08);
-
-    overflow: hidden;
-}
-
-
-/* FORM HEADER */
-
-.google-form-header {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 15px;
-
-    padding-bottom: 25px;
-
-    border-bottom:
-        1px solid #edf1ed;
-
-    margin-bottom: 25px;
-}
-
-
-.google-form-icon {
-
-    width: 52px;
-
-    height: 52px;
-
-    flex-shrink: 0;
-
-    display: grid;
-
-    place-items: center;
-
-    border-radius: 15px;
-
-    color: #fff;
-
-    font-size: 20px;
-
-    background:
-
-        linear-gradient(
-            135deg,
-            var(--green),
-            var(--green-light)
-        );
-
-    box-shadow:
-
-        0 10px 25px
-        rgba(36,92,53,0.15);
-}
-
-
-.google-form-header h3 {
-
-    font-family:
-        "Manrope",
-        sans-serif;
-
-    font-size: 19px;
-
-    color: var(--text);
-
-    margin-bottom: 4px;
-}
-
-
-.google-form-header p {
-
-    color: var(--text-light);
-
-    font-size: 11px;
-
-    line-height: 1.6;
-}
-
-
-/* GOOGLE FORM CONTAINER */
-
-.google-form-container {
-
-    width: 100%;
-
-    overflow: hidden;
-
-    border-radius: 15px;
-
-    background: #fff;
-
-    border:
-        1px solid #e4e9e5;
-}
-
-
-/* GOOGLE FORM IFRAME */
-
-.google-form-container iframe {
-
-    display: block;
-
-    width: 100%;
-
-    min-height: 1050px;
-
-    border: 0;
-
-    background: #fff;
-}
-
-
-/* FORM FOOTER */
-
-.google-form-footer {
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 8px;
-
-    padding-top: 18px;
-
-    color: #8a948d;
-
-    font-size: 10px;
-}
-
-
-.google-form-footer i {
-
-    color: var(--green);
-
-    font-size: 11px;
-}
-
-
-/* =========================================================
-   GOOGLE FORM MOBILE
-========================================================= */
-
-@media (max-width:600px) {
-
-    .google-form-wrapper {
-
-        padding: 18px;
-
-        border-radius: 22px;
-    }
-
-
-    .google-form-header {
-
-        align-items: flex-start;
-
-        padding-bottom: 20px;
-
-        margin-bottom: 18px;
-    }
-
-
-    .google-form-icon {
-
-        width: 45px;
-
-        height: 45px;
-
-        border-radius: 12px;
-
-        font-size: 17px;
-    }
-
-
-    .google-form-header h3 {
-
-        font-size: 16px;
-    }
-
-
-    .google-form-header p {
-
-        font-size: 10px;
-    }
-
-
-    .google-form-container {
-
-        border-radius: 10px;
-    }
-
-
-    .google-form-container iframe {
-
-        min-height: 1100px;
-    }
-
-
-    .google-form-footer {
-
-        font-size: 9px;
-
-        text-align: center;
-
-        line-height: 1.5;
-    }
-
-}
 /* =========================================================
    REDUCED MOTION
 ========================================================= */
@@ -2323,6 +2133,7 @@ ul {
 @media (prefers-reduced-motion:reduce) {
 
     html {
+
         scroll-behavior: auto;
     }
 
@@ -2337,6 +2148,7 @@ ul {
 }
 
 </style>
+
 </head>
 
 
@@ -2349,68 +2161,73 @@ ul {
 
 <header class="header">
 
-<div class="container navbar">
+    <div class="container navbar">
 
 
-<a href="index.html"
-   class="logo">
+        <a href="index.html"
+           class="logo">
 
-    <span class="logo-icon">
-        <i class="fa-solid fa-piggy-bank"></i>
-    </span>
+            <span class="logo-icon">
 
-    <span>
-        Divya Agro Farms
-    </span>
+                <i class="fa-solid fa-piggy-bank"></i>
 
-</a>
+            </span>
 
+            <span>
+                Divya Agro Farms
+            </span>
 
-<button class="menu-button"
-        id="menuButton"
-        aria-label="Open Menu">
-
-    <i class="fa-solid fa-bars"></i>
-
-</button>
-
-
-<nav>
-
-<ul class="nav-menu"
-    id="navMenu">
-
-    <li>
-        <a href="index.html">
-            Home
         </a>
-    </li>
 
-    <li>
-        <a href="services.html">
-            Services
-        </a>
-    </li>
 
-    <li>
-        <a href="review.html"
-           class="active">
-            Reviews
-        </a>
-    </li>
+        <button class="menu-button"
+                id="menuButton"
+                aria-label="Open Menu"
+                type="button">
 
-    <li>
-        <a href="#contact"
-           class="nav-contact">
-            Contact
-        </a>
-    </li>
+            <i class="fa-solid fa-bars"></i>
 
-</ul>
+        </button>
 
-</nav>
 
-</div>
+        <nav>
+
+            <ul class="nav-menu"
+                id="navMenu">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="nutrition.html">
+                        Nutrition
+                    </a>
+                </li>
+
+                <li>
+                    <a href="services.html">
+                        Services
+                    </a>
+                </li>
+
+                
+
+                <li>
+                    <a href="#contact"
+                       class="nav-contact">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
 
 </header>
 
@@ -2422,171 +2239,171 @@ ul {
 
 <section class="hero">
 
-<div class="container hero-inner">
+    <div class="container hero-inner">
 
 
-<div class="hero-text reveal">
+        <div class="hero-text reveal">
 
-<span class="hero-label">
+            <span class="hero-label">
 
-    <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
 
-    Farmer Experiences
+                Farmer Experiences
 
-</span>
+            </span>
 
 
-<h1>
+            <h1>
 
-    Trusted by
-    <span>Farmers.</span>
+                Trusted by
+                <span>Farmers.</span>
 
-</h1>
+            </h1>
 
 
-<p class="hero-description">
+            <p class="hero-description">
 
-    Discover experiences and feedback from
-    farmers and livestock enthusiasts who have
-    connected with Divya Agro Farms.
+                Discover experiences and feedback from
+                farmers and livestock enthusiasts who have
+                connected with Divya Agro Farms.
 
-</p>
+            </p>
 
-</div>
+        </div>
 
 
 
-<div class="hero-rating reveal">
+        <div class="hero-rating reveal">
 
-<div class="rating-top">
+            <div class="rating-top">
 
-<div>
+                <div>
 
-<div class="rating-number">
-    4.9
-</div>
+                    <div class="rating-number">
+                        4.9
+                    </div>
 
-<div class="rating-outof">
-    Overall Rating
-</div>
+                    <div class="rating-outof">
+                        Overall Rating
+                    </div>
 
-</div>
+                </div>
 
 
-<div>
+                <div>
 
-<div class="stars">
+                    <div class="stars">
 
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
 
-</div>
+                    </div>
 
-<div class="rating-title">
-    Excellent farmer experience
-</div>
+                    <div class="rating-title">
+                        Excellent farmer experience
+                    </div>
 
-</div>
+                </div>
 
-</div>
+            </div>
 
 
-<div class="rating-bars">
+            <div class="rating-bars">
 
 
-<div class="rating-row">
+                <div class="rating-row">
 
-<span>5</span>
+                    <span>5</span>
 
-<div class="rating-track">
+                    <div class="rating-track">
 
-<div class="rating-fill"
-     style="width:92%">
-</div>
+                        <div class="rating-fill"
+                             style="width:92%">
+                        </div>
 
-</div>
+                    </div>
 
-<span>92%</span>
+                    <span>92%</span>
 
-</div>
+                </div>
 
 
-<div class="rating-row">
+                <div class="rating-row">
 
-<span>4</span>
+                    <span>4</span>
 
-<div class="rating-track">
+                    <div class="rating-track">
 
-<div class="rating-fill"
-     style="width:6%">
-</div>
+                        <div class="rating-fill"
+                             style="width:6%">
+                        </div>
 
-</div>
+                    </div>
 
-<span>6%</span>
+                    <span>6%</span>
 
-</div>
+                </div>
 
 
-<div class="rating-row">
+                <div class="rating-row">
 
-<span>3</span>
+                    <span>3</span>
 
-<div class="rating-track">
+                    <div class="rating-track">
 
-<div class="rating-fill"
-     style="width:2%">
-</div>
+                        <div class="rating-fill"
+                             style="width:2%">
+                        </div>
 
-</div>
+                    </div>
 
-<span>2%</span>
+                    <span>2%</span>
 
-</div>
+                </div>
 
 
-<div class="rating-row">
+                <div class="rating-row">
 
-<span>2</span>
+                    <span>2</span>
 
-<div class="rating-track">
+                    <div class="rating-track">
 
-<div class="rating-fill"
-     style="width:0%">
-</div>
+                        <div class="rating-fill"
+                             style="width:0%">
+                        </div>
 
-</div>
+                    </div>
 
-<span>0%</span>
+                    <span>0%</span>
 
-</div>
+                </div>
 
 
-<div class="rating-row">
+                <div class="rating-row">
 
-<span>1</span>
+                    <span>1</span>
 
-<div class="rating-track">
+                    <div class="rating-track">
 
-<div class="rating-fill"
-     style="width:0%">
-</div>
+                        <div class="rating-fill"
+                             style="width:0%">
+                        </div>
 
-</div>
+                    </div>
 
-<span>0%</span>
+                    <span>0%</span>
 
-</div>
+                </div>
 
 
-</div>
+            </div>
 
-</div>
+        </div>
 
-</div>
+    </div>
 
 </section>
 
@@ -2598,95 +2415,95 @@ ul {
 
 <section class="section">
 
-<div class="container">
+    <div class="container">
 
 
-<div class="section-heading reveal">
+        <div class="section-heading reveal">
 
-<span class="section-tag">
-    Feedback
-</span>
+            <span class="section-tag">
+                Feedback
+            </span>
 
-<h2>
-    What Our Reviews Tell Us
-</h2>
+            <h2>
+                What Our Reviews Tell Us
+            </h2>
 
-<p>
+            <p>
 
-    Every experience helps us understand what
-    matters most to farmers and livestock operations.
+                Every experience helps us understand what
+                matters most to farmers and livestock operations.
 
-</p>
+            </p>
 
-</div>
-
-
-<div class="review-stats">
+        </div>
 
 
-<div class="review-stat reveal">
-
-<i class="fa-solid fa-star"></i>
-
-<strong>
-4.9
-</strong>
-
-<span>
-Average Rating
-</span>
-
-</div>
+        <div class="review-stats">
 
 
-<div class="review-stat reveal">
+            <div class="review-stat reveal">
 
-<i class="fa-solid fa-thumbs-up"></i>
+                <i class="fa-solid fa-star"></i>
 
-<strong>
-98%
-</strong>
+                <strong>
+                    4.9
+                </strong>
 
-<span>
-Positive Feedback
-</span>
+                <span>
+                    Average Rating
+                </span>
 
-</div>
-
-
-<div class="review-stat reveal">
-
-<i class="fa-solid fa-users"></i>
-
-<strong>
-100+
-</strong>
-
-<span>
-Farmer Connections
-</span>
-
-</div>
+            </div>
 
 
-<div class="review-stat reveal">
+            <div class="review-stat reveal">
 
-<i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-thumbs-up"></i>
 
-<strong>
-100%
-</strong>
+                <strong>
+                    98%
+                </strong>
 
-<span>
-Farm Focused
-</span>
+                <span>
+                    Positive Feedback
+                </span>
 
-</div>
+            </div>
 
 
-</div>
+            <div class="review-stat reveal">
 
-</div>
+                <i class="fa-solid fa-users"></i>
+
+                <strong>
+                    100+
+                </strong>
+
+                <span>
+                    Farmer Connections
+                </span>
+
+            </div>
+
+
+            <div class="review-stat reveal">
+
+                <i class="fa-solid fa-heart"></i>
+
+                <strong>
+                    100%
+                </strong>
+
+                <span>
+                    Farm Focused
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </div>
 
 </section>
 
@@ -2698,78 +2515,78 @@ Farm Focused
 
 <section class="section alt">
 
-<div class="container">
+    <div class="container">
 
 
-<div class="section-heading reveal">
+        <div class="section-heading reveal">
 
-<span class="section-tag">
-    Featured Experience
-</span>
+            <span class="section-tag">
+                Featured Experience
+            </span>
 
-<h2>
-    A Farmer's Perspective
-</h2>
+            <h2>
+                A Farmer's Perspective
+            </h2>
 
-</div>
-
-
-<div class="featured-review reveal">
+        </div>
 
 
-<div class="quote-icon">
-
-<i class="fa-solid fa-quote-left"></i>
-
-</div>
+        <div class="featured-review reveal">
 
 
-<div class="review-stars">
+            <div class="quote-icon">
 
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-quote-left"></i>
 
-</div>
+            </div>
 
 
-<blockquote>
+            <div class="review-stars">
 
-"Professional farm management starts with
-good planning, healthy animals and consistent
-day-to-day care. The practical approach of
-Divya Agro Farms makes these areas easier
-to understand."
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
 
-</blockquote>
-
-
-<div class="reviewer">
-
-<div class="avatar">
-    RK
-</div>
-
-<div class="reviewer-info">
-
-<h3>
-    R. Kumar
-</h3>
-
-<span>
-    Livestock Farmer
-</span>
-
-</div>
-
-</div>
+            </div>
 
 
-</div>
+            <blockquote>
 
-</div>
+                "Professional farm management starts with
+                good planning, healthy animals and consistent
+                day-to-day care. The practical approach of
+                Divya Agro Farms makes these areas easier
+                to understand."
+
+            </blockquote>
+
+
+            <div class="reviewer">
+
+                <div class="avatar">
+                    RK
+                </div>
+
+                <div class="reviewer-info">
+
+                    <h3>
+                        R. Kumar
+                    </h3>
+
+                    <span>
+                        Livestock Farmer
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
 
 </section>
 
@@ -2782,409 +2599,408 @@ to understand."
 <section class="section"
          id="reviews">
 
-<div class="container">
+    <div class="container">
 
 
-<div class="section-heading reveal">
+        <div class="section-heading reveal">
 
-<span class="section-tag">
-    Customer Reviews
-</span>
+            <span class="section-tag">
+                Customer Reviews
+            </span>
 
-<h2>
-    What Farmers Say
-</h2>
+            <h2>
+                What Farmers Say
+            </h2>
 
-<p>
+            <p>
 
-    Real experiences create stronger relationships
-    and help us continuously improve.
+                Real experiences create stronger relationships
+                and help us continuously improve.
 
-</p>
+            </p>
 
-</div>
+        </div>
 
 
-<div class="review-grid">
+        <div class="review-grid">
 
 
-<!-- REVIEW 01 -->
+            <!-- REVIEW 01 -->
 
-<article class="review-card reveal">
+            <article class="review-card reveal">
 
-<div class="quote-icon">
+                <div class="quote-icon">
 
-<i class="fa-solid fa-quote-right"></i>
+                    <i class="fa-solid fa-quote-right"></i>
 
-</div>
+                </div>
 
 
-<div class="reviewer">
+                <div class="reviewer">
 
-<div class="avatar">
-    SK
-</div>
+                    <div class="avatar">
+                        SK
+                    </div>
 
-<div class="reviewer-info">
+                    <div class="reviewer-info">
 
-<h3>
-    S. Krishna
-</h3>
+                        <h3>
+                            S. Krishna
+                        </h3>
 
-<span>
-    Pig Farmer
-</span>
+                        <span>
+                            Pig Farmer
+                        </span>
 
-</div>
+                    </div>
 
-</div>
+                </div>
 
 
-<div class="review-stars">
+                <div class="review-stars">
 
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
 
-</div>
+                </div>
 
 
-<p class="review-text">
+                <p class="review-text">
 
-The information about pig management and
-nutrition is presented in a very simple and
-practical way. Very useful for farmers.
+                    The information about pig management and
+                    nutrition is presented in a very simple and
+                    practical way. Very useful for farmers.
 
-</p>
+                </p>
 
 
-<div class="review-date">
-    Farmer Feedback
-</div>
+                <div class="review-date">
+                    Farmer Feedback
+                </div>
 
-</article>
+            </article>
 
 
 
-<!-- REVIEW 02 -->
+            <!-- REVIEW 02 -->
 
-<article class="review-card reveal">
+            <article class="review-card reveal">
 
-<div class="quote-icon">
+                <div class="quote-icon">
 
-<i class="fa-solid fa-quote-right"></i>
+                    <i class="fa-solid fa-quote-right"></i>
 
-</div>
+                </div>
 
 
-<div class="reviewer">
+                <div class="reviewer">
 
-<div class="avatar">
-    MR
-</div>
+                    <div class="avatar">
+                        MR
+                    </div>
 
-<div class="reviewer-info">
+                    <div class="reviewer-info">
 
-<h3>
-    M. Ramesh
-</h3>
+                        <h3>
+                            M. Ramesh
+                        </h3>
 
-<span>
-    Livestock Farmer
-</span>
+                        <span>
+                            Livestock Farmer
+                        </span>
 
-</div>
+                    </div>
 
-</div>
+                </div>
 
 
-<div class="review-stars">
+                <div class="review-stars">
 
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
 
-</div>
+                </div>
 
 
-<p class="review-text">
+                <p class="review-text">
 
-The focus on farm hygiene, feeding and
-animal management gives a good overall
-understanding of modern pig farming.
+                    The focus on farm hygiene, feeding and
+                    animal management gives a good overall
+                    understanding of modern pig farming.
 
-</p>
+                </p>
 
 
-<div class="review-date">
-    Farmer Feedback
-</div>
+                <div class="review-date">
+                    Farmer Feedback
+                </div>
 
-</article>
+            </article>
 
 
 
-<!-- REVIEW 03 -->
+            <!-- REVIEW 03 -->
 
-<article class="review-card reveal">
+            <article class="review-card reveal">
 
-<div class="quote-icon">
+                <div class="quote-icon">
 
-<i class="fa-solid fa-quote-right"></i>
+                    <i class="fa-solid fa-quote-right"></i>
 
-</div>
+                </div>
 
 
-<div class="reviewer">
+                <div class="reviewer">
 
-<div class="avatar">
-    AP
-</div>
+                    <div class="avatar">
+                        AP
+                    </div>
 
-<div class="reviewer-info">
+                    <div class="reviewer-info">
 
-<h3>
-    A. Prasad
-</h3>
+                        <h3>
+                            A. Prasad
+                        </h3>
 
-<span>
-    Farm Operator
-</span>
+                        <span>
+                            Farm Operator
+                        </span>
 
-</div>
+                    </div>
 
-</div>
+                </div>
 
 
-<div class="review-stars">
+                <div class="review-stars">
 
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-regular fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
 
-</div>
+                </div>
 
 
-<p class="review-text">
+                <p class="review-text">
 
-A professional presentation of piggery
-management. The breeding and piglet
-management information is particularly useful.
+                    A professional presentation of piggery
+                    management. The breeding and piglet
+                    management information is particularly useful.
 
-</p>
+                </p>
 
 
-<div class="review-date">
-    Farmer Feedback
-</div>
+                <div class="review-date">
+                    Farmer Feedback
+                </div>
 
-</article>
+            </article>
 
 
 
-<!-- REVIEW 04 -->
+            <!-- REVIEW 04 -->
 
-<article class="review-card reveal">
+            <article class="review-card reveal">
 
-<div class="quote-icon">
+                <div class="quote-icon">
 
-<i class="fa-solid fa-quote-right"></i>
+                    <i class="fa-solid fa-quote-right"></i>
 
-</div>
+                </div>
 
 
-<div class="reviewer">
+                <div class="reviewer">
 
-<div class="avatar">
-    VN
-</div>
+                    <div class="avatar">
+                        VN
+                    </div>
 
-<div class="reviewer-info">
+                    <div class="reviewer-info">
 
-<h3>
-    V. Naveen
-</h3>
+                        <h3>
+                            V. Naveen
+                        </h3>
 
-<span>
-    Farmer
-</span>
+                        <span>
+                            Farmer
+                        </span>
 
-</div>
+                    </div>
 
-</div>
+                </div>
 
 
-<div class="review-stars">
+                <div class="review-stars">
 
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
 
-</div>
+                </div>
 
 
-<p class="review-text">
+                <p class="review-text">
 
-Good emphasis on keeping farm records.
-It helps farmers understand their production
-and make better decisions.
+                    Good emphasis on keeping farm records.
+                    It helps farmers understand their production
+                    and make better decisions.
 
-</p>
+                </p>
 
 
-<div class="review-date">
-    Farmer Feedback
-</div>
+                <div class="review-date">
+                    Farmer Feedback
+                </div>
 
-</article>
+            </article>
 
 
 
-<!-- REVIEW 05 -->
+            <!-- REVIEW 05 -->
 
-<article class="review-card reveal">
+            <article class="review-card reveal">
 
-<div class="quote-icon">
+                <div class="quote-icon">
 
-<i class="fa-solid fa-quote-right"></i>
+                    <i class="fa-solid fa-quote-right"></i>
 
-</div>
+                </div>
 
 
-<div class="reviewer">
+                <div class="reviewer">
 
-<div class="avatar">
-    SR
-</div>
+                    <div class="avatar">
+                        SR
+                    </div>
 
-<div class="reviewer-info">
+                    <div class="reviewer-info">
 
-<h3>
-    S. Raju
-</h3>
+                        <h3>
+                            S. Raju
+                        </h3>
 
-<span>
-    Pig Farm Owner
-</span>
+                        <span>
+                            Pig Farm Owner
+                        </span>
 
-</div>
+                    </div>
 
-</div>
+                </div>
 
 
-<div class="review-stars">
+                <div class="review-stars">
 
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
 
-</div>
+                </div>
 
 
-<p class="review-text">
+                <p class="review-text">
 
-The website provides a clear overview of
-different areas of pig farming. The design
-also makes the information easy to explore.
+                    The website provides a clear overview of
+                    different areas of pig farming. The design
+                    also makes the information easy to explore.
 
-</p>
+                </p>
 
 
-<div class="review-date">
-    Farmer Feedback
-</div>
+                <div class="review-date">
+                    Farmer Feedback
+                </div>
 
-</article>
+            </article>
 
 
 
-<!-- REVIEW 06 -->
+            <!-- REVIEW 06 -->
 
-<article class="review-card reveal">
+            <article class="review-card reveal">
 
-<div class="quote-icon">
+                <div class="quote-icon">
 
-<i class="fa-solid fa-quote-right"></i>
+                    <i class="fa-solid fa-quote-right"></i>
 
-</div>
+                </div>
 
 
-<div class="reviewer">
+                <div class="reviewer">
 
-<div class="avatar">
-    PV
-</div>
+                    <div class="avatar">
+                        PV
+                    </div>
 
-<div class="reviewer-info">
+                    <div class="reviewer-info">
 
-<h3>
-    P. Venkat
-</h3>
+                        <h3>
+                            P. Venkat
+                        </h3>
 
-<span>
-    Livestock Enthusiast
-</span>
+                        <span>
+                            Livestock Enthusiast
+                        </span>
 
-</div>
+                    </div>
 
-</div>
+                </div>
 
 
-<div class="review-stars">
+                <div class="review-stars">
 
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-regular fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
 
-</div>
+                </div>
 
 
-<p class="review-text">
+                <p class="review-text">
 
-A clean and professional approach to
-livestock farming. The nutrition and
-management sections are informative.
+                    A clean and professional approach to
+                    livestock farming. The nutrition and
+                    management sections are informative.
 
-</p>
+                </p>
 
 
-<div class="review-date">
-    Farmer Feedback
-</div>
+                <div class="review-date">
+                    Farmer Feedback
+                </div>
 
-</article>
+            </article>
 
 
-</div>
+        </div>
 
-</div>
+    </div>
 
 </section>
 
 
 
 <!-- ======================================================
-     SUBMIT REVIEW
-====================================================== -->
-<!-- ======================================================
-     GOOGLE REVIEW FORM
+     GOOGLE FORM
 ====================================================== -->
 
-<section class="section alt" id="submit-review">
+<section class="section alt"
+         id="submit-review">
 
     <div class="container">
+
 
         <div class="section-heading reveal">
 
@@ -3197,8 +3013,10 @@ management sections are informative.
             </h2>
 
             <p>
+
                 We value your feedback. Share your experience
                 with Divya Agro Farms through our review form.
+
             </p>
 
         </div>
@@ -3206,31 +3024,47 @@ management sections are informative.
 
         <div class="google-form-wrapper reveal">
 
+
+            <!-- FORM HEADER -->
+
             <div class="google-form-header">
 
                 <div class="google-form-icon">
+
                     <i class="fa-solid fa-star"></i>
+
                 </div>
 
+
                 <div>
+
                     <h3>
                         Share Your Feedback
                     </h3>
 
                     <p>
+
                         Your feedback helps us improve
                         our services and farming practices.
+
                     </p>
+
                 </div>
 
             </div>
 
 
-            <!-- ==================================================
+            <!-- =================================================
                  GOOGLE FORM EMBED
-                 
-                 Replace YOUR_GOOGLE_FORM_EMBED_URL
-                 with your actual Google Form URL.
+
+                 IMPORTANT:
+                 Replace the URL below with your actual
+                 Google Form EMBED URL.
+
+                 Example:
+
+                 https://docs.google.com/forms/d/e/
+                 YOUR_FORM_ID/viewform?embedded=true
             ================================================== -->
 
             <div class="google-form-container">
@@ -3250,23 +3084,27 @@ management sections are informative.
             </div>
 
 
+            <!-- FORM FOOTER -->
+
             <div class="google-form-footer">
 
                 <i class="fa-solid fa-shield-halved"></i>
 
                 <span>
-                    Your feedback is valuable to Divya Agro Farms.
+
+                    Your feedback is valuable to
+                    Divya Agro Farms.
+
                 </span>
 
             </div>
+
 
         </div>
 
     </div>
 
 </section>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScSPYd5I3JWgJvRCMAgo7hYobnOAmbQmR7c4rcKbzjnECLPeg/viewform?embedded=true" width="100%" height="1050" style="border :0;" allowfullscreen ="" loading-"lazy"></iframe>
-
 
 
 
@@ -3277,55 +3115,59 @@ management sections are informative.
 <section class="cta"
          id="contact">
 
-<div class="container">
+    <div class="container">
 
-<div class="cta-box reveal">
-
-
-<span class="cta-label">
-    Divya Agro Farms
-</span>
-
-<h2>
-    Have an Experience to Share?
-</h2>
-
-<p>
-
-    We value feedback from farmers, livestock
-    professionals and everyone connected with
-    responsible pig farming.
-
-</p>
+        <div class="cta-box reveal">
 
 
-<div class="cta-buttons">
-
-<a href="#submit-review"
-   class="btn btn-white">
-
-<i class="fa-solid fa-star"></i>
-
-Write a Review
-
-</a>
+            <span class="cta-label">
+                Divya Agro Farms
+            </span>
 
 
-<a href="https://api.whatsapp.com/send?phone=919966966538"
-   class="btn btn-glass">
-
-<i class="fa-brands fa-whatsapp"></i>
-
-Contact Us
-
-</a>
-
-</div>
+            <h2>
+                Have an Experience to Share?
+            </h2>
 
 
-</div>
+            <p>
 
-</div>
+                We value feedback from farmers, livestock
+                professionals and everyone connected with
+                responsible pig farming.
+
+            </p>
+
+
+            <div class="cta-buttons">
+
+
+                <a href="#submit-review"
+                   class="btn btn-white">
+
+                    <i class="fa-solid fa-star"></i>
+
+                    Write a Review
+
+                </a>
+
+
+                <a href="https://api.whatsapp.com/send?phone=919966966538"
+                   class="btn btn-glass">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    Contact Us
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
 
 </section>
 
@@ -3337,195 +3179,231 @@ Contact Us
 
 <footer class="footer">
 
-<div class="container">
+    <div class="container">
 
 
-<div class="footer-main">
+        <div class="footer-main">
 
 
-<div>
+            <!-- FOOTER BRAND -->
 
-<div class="footer-logo">
+            <div>
 
-<span class="logo-icon">
+                <div class="footer-logo">
 
-<i class="fa-solid fa-piggy-bank"></i>
+                    <span class="logo-icon">
 
-</span>
+                        <i class="fa-solid fa-piggy-bank"></i>
 
-Divya Agro Farms
+                    </span>
 
-</div>
+                    Divya Agro Farms
 
+                </div>
 
-<p class="footer-description">
 
-Professional piggery and livestock
-management focused on healthy animals,
-responsible farming and sustainable
-production.
+                <p class="footer-description">
 
-</p>
+                    Professional piggery and livestock
+                    management focused on healthy animals,
+                    responsible farming and sustainable
+                    production.
 
+                </p>
 
-<div class="socials">
 
+                <div class="socials">
 
-<a href="https://www.instagram.com/divyaagrofarms?igsh=ODhrdm40YjV1MHA4">
-<i class="fa-brands fa-instagram"></i>
-</a>
+                    <a href="#"
+                       aria-label="Facebook">
 
-<a href="https://www.youtube.com/@divyaagrofarms">
-<i class="fa-brands fa-youtube"></i>
-</a>
+                        <i class="fa-brands fa-facebook-f"></i>
 
-<a href="https://api.whatsapp.com/send?phone=919966966538&text=Hello! Thanks for Messaging us. How can we help you today?">
-<i class="fa-brands fa-whatsapp"></i>
-</a>
+                    </a>
 
-</div>
 
-</div>
+                    <a href="#"
+                       aria-label="Instagram">
 
+                        <i class="fa-brands fa-instagram"></i>
 
+                    </a>
 
-<div>
 
-<h3>
-Quick Links
-</h3>
+                    <a href="#"
+                       aria-label="YouTube">
 
-<ul class="footer-links">
+                        <i class="fa-brands fa-youtube"></i>
 
-<li>
-<a href="index.html">
-Home
-</a>
-</li>
+                    </a>
 
-<li>
-<a href="gallery.html">
-Gallery
-</a>
-</li>
 
-<li>
-<a href="nutrition.html">
-Nutrition
-</a>
-</li>
+                    <a href="https://api.whatsapp.com/send?phone=919966966538"
+                       aria-label="WhatsApp">
 
-<li>
-<a href="services.html">
-Services
-</a>
-</li>
+                        <i class="fa-brands fa-whatsapp"></i>
 
-</ul>
+                    </a>
 
-</div>
+                </div>
 
+            </div>
 
 
-<div>
 
-<h3>
-Services
-</h3>
+            <!-- QUICK LINKS -->
 
-<ul class="footer-links">
+            <div>
 
-<li>
-<a href="services.html">
-Farm Setup
-</a>
-</li>
+                <h3>
+                    Quick Links
+                </h3>
 
-<li>
-<a href="services.html">
-Breeding
-</a>
-</li>
+                <ul class="footer-links">
 
-<li>
-<a href="nutition.html">
-Nutrition
-</a>
-</li>
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
 
-<li>
-<a href="services.html">
-Piglet Management
-</a>
-</li>
+                    <li>
+                        <a href="gallery_professional.html">
+                            Gallery
+                        </a>
+                    </li>
 
-</ul>
+                    <li>
+                        <a href="nutrition.html">
+                            Nutrition
+                        </a>
+                    </li>
 
-</div>
+                    <li>
+                        <a href="services.html">
+                            Services
+                        </a>
+                    </li>
 
+                    <li>
+                        <a href="review.html">
+                            Reviews
+                        </a>
+                    </li>
 
+                </ul>
 
-<div>
+            </div>
 
-<h3>
-Contact
-</h3>
 
-<ul class="footer-contact">
 
-<li>
+            <!-- SERVICES -->
 
-<i class="fa-solid fa-location-dot"></i>
+            <div>
 
-<span>
-Marepally, Nagarkurnool,
-Telangana 509209
-</span>
+                <h3>
+                    Services
+                </h3>
 
-</li>
+                <ul class="footer-links">
 
-<li>
+                    <li>
+                        <a href="services.html">
+                            Farm Setup
+                        </a>
+                    </li>
 
-<i class="fa-solid fa-phone"></i>
+                    <li>
+                        <a href="services.html">
+                            Breeding
+                        </a>
+                    </li>
 
-<span>
-9000366245, 8522943295
-</span>
+                    <li>
+                        <a href="services.html">
+                            Nutrition
+                        </a>
+                    </li>
 
-</li>
+                    <li>
+                        <a href="services.html">
+                            Piglet Management
+                        </a>
+                    </li>
 
-<li>
+                </ul>
 
-<i class="fa-solid fa-envelope"></i>
+            </div>
 
-<span>
-divyaagrofarmstr@gmail.com
-</span>
 
-</li>
 
-</ul>
+            <!-- CONTACT -->
 
-</div>
+            <div>
 
+                <h3>
+                    Contact
+                </h3>
 
-</div>
+                <ul class="footer-contact">
 
+                    <li>
 
-<div class="footer-bottom">
+                        <i class="fa-solid fa-location-dot"></i>
 
-<span>
-© 2026 Divya Agro Farms. All Rights Reserved.
-</span>
+                        <span>
+                            Marepally, Nagarkurnool,
+                            Telangana
+                        </span>
 
-<span>
-Professional Piggery & Livestock Solutions
-</span>
+                    </li>
 
-</div>
 
+                    <li>
 
-</div>
+                        <i class="fa-solid fa-phone"></i>
+
+                        <span>
+                            9000366245, 8522943295
+                        </span>
+
+                    </li>
+
+
+                    <li>
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <span>
+                            divyaagrofarmstr@gmail.com
+                        </span>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 Divya Agro Farms. All Rights Reserved.
+            </span>
+
+            <span>
+                Professional Piggery & Livestock Solutions
+            </span>
+
+        </div>
+
+
+    </div>
 
 </footer>
 
@@ -3548,45 +3426,99 @@ const navMenu =
     document.getElementById("navMenu");
 
 
-menuButton.addEventListener(
-    "click",
-    function () {
+if (menuButton && navMenu) {
 
-        navMenu.classList.toggle("open");
+    menuButton.addEventListener(
+        "click",
+        function () {
 
-        const icon =
-            menuButton.querySelector("i");
+            navMenu.classList.toggle("open");
 
-        if (
-            navMenu.classList.contains("open")
-        ) {
+            const icon =
+                menuButton.querySelector("i");
 
-            icon.className =
-                "fa-solid fa-xmark";
+            if (
+                navMenu.classList.contains("open")
+            ) {
 
-        } else {
+                icon.className =
+                    "fa-solid fa-xmark";
 
-            icon.className =
-                "fa-solid fa-bars";
+                menuButton.setAttribute(
+                    "aria-label",
+                    "Close Menu"
+                );
+
+            } else {
+
+                icon.className =
+                    "fa-solid fa-bars";
+
+                menuButton.setAttribute(
+                    "aria-label",
+                    "Open Menu"
+                );
+            }
+
         }
-
-    }
-);
+    );
 
 
-/* =========================================================
-   CLOSE MENU AFTER CLICK
-========================================================= */
+    /* =====================================================
+       CLOSE MOBILE MENU AFTER CLICK
+    ===================================================== */
 
-navMenu
-    .querySelectorAll("a")
-    .forEach(function(link) {
+    navMenu
+        .querySelectorAll("a")
+        .forEach(function(link) {
 
-        link.addEventListener(
-            "click",
-            function() {
+            link.addEventListener(
+                "click",
+                function() {
 
-                navMenu.classList.remove("open");
+                    navMenu.classList.remove(
+                        "open"
+                    );
+
+                    menuButton
+                        .querySelector("i")
+                        .className =
+                        "fa-solid fa-bars";
+
+                    menuButton.setAttribute(
+                        "aria-label",
+                        "Open Menu"
+                    );
+
+                }
+            );
+
+        });
+
+
+    /* =====================================================
+       CLOSE MENU WHEN CLICKING OUTSIDE
+    ===================================================== */
+
+    document.addEventListener(
+        "click",
+        function(event) {
+
+            if (
+
+                !navMenu.contains(
+                    event.target
+                ) &&
+
+                !menuButton.contains(
+                    event.target
+                )
+
+            ) {
+
+                navMenu.classList.remove(
+                    "open"
+                );
 
                 menuButton
                     .querySelector("i")
@@ -3594,108 +3526,38 @@ navMenu
                     "fa-solid fa-bars";
 
             }
-        );
 
-    });
-
-
-/* =========================================================
-   CLICK OUTSIDE MENU
-========================================================= */
-
-document.addEventListener(
-    "click",
-    function(event) {
-
-        if (
-
-            !navMenu.contains(event.target) &&
-            !menuButton.contains(event.target)
-
-        ) {
-
-            navMenu.classList.remove("open");
-
-            menuButton
-                .querySelector("i")
-                .className =
-                "fa-solid fa-bars";
         }
-
-    }
-);
+    );
 
 
-/* =========================================================
-   REVIEW FORM
-========================================================= */
-/* =========================================================
-   REVIEW FORM
-========================================================= */
+    /* =====================================================
+       ESC KEY
+    ===================================================== */
 
-const reviewForm =
-    document.getElementById("reviewForm");
+    document.addEventListener(
+        "keydown",
+        function(event) {
 
+            if (
+                event.key === "Escape"
+            ) {
 
-reviewForm.addEventListener(
-    "submit",
-    function(event) {
+                navMenu.classList.remove(
+                    "open"
+                );
 
-        event.preventDefault();
+                menuButton
+                    .querySelector("i")
+                    .className =
+                    "fa-solid fa-bars";
 
-        const name =
-            document.getElementById("name").value.trim();
+            }
 
-        const review =
-            document.getElementById("review").value.trim();
-
-        const rating =
-            document.querySelector(
-                'input[name="rating"]:checked'
-            );
-
-
-        if (!name) {
-
-            alert(
-                "Please enter your name."
-            );
-
-            return;
         }
+    );
 
-
-        if (!rating) {
-
-            alert(
-                "Please select your rating."
-            );
-
-            return;
-        }
-
-
-        if (!review) {
-
-            alert(
-                "Please write your review."
-            );
-
-            return;
-        }
-
-
-        alert(
-            "Thank you, " +
-            name +
-            "! Your review has been submitted."
-        );
-
-
-        reviewForm.reset();
-
-    }
-);
+}
 
 
 /* =========================================================
@@ -3706,48 +3568,62 @@ const revealElements =
     document.querySelectorAll(".reveal");
 
 
-const observer =
-    new IntersectionObserver(
-        function(entries) {
+if ("IntersectionObserver" in window) {
 
-            entries.forEach(
-                function(entry) {
+    const observer =
+        new IntersectionObserver(
+            function(entries) {
 
-                    if (
-                        entry.isIntersecting
-                    ) {
+                entries.forEach(
+                    function(entry) {
 
-                        entry.target.classList.add(
-                            "show"
-                        );
+                        if (
+                            entry.isIntersecting
+                        ) {
 
-                        observer.unobserve(
-                            entry.target
-                        );
+                            entry.target.classList.add(
+                                "show"
+                            );
+
+                            observer.unobserve(
+                                entry.target
+                            );
+
+                        }
 
                     }
+                );
 
-                }
-            );
+            },
+            {
+                threshold: 0.10
+            }
+        );
 
-        },
-        {
-            threshold: 0.10
+
+    revealElements.forEach(
+        function(element) {
+
+            observer.observe(element);
+
         }
     );
 
+} else {
 
-revealElements.forEach(
-    function(element) {
+    revealElements.forEach(
+        function(element) {
 
-        observer.observe(element);
+            element.classList.add("show");
 
-    }
-);
+        }
+    );
+
+}
 
 
 /* =========================================================
-   PREVENT HORIZONTAL OVERFLOW
+   FORCE NO HORIZONTAL OVERFLOW
 ========================================================= */
 
 document.documentElement.style.overflowX =
@@ -3756,30 +3632,9 @@ document.documentElement.style.overflowX =
 document.body.style.overflowX =
     "hidden";
 
-
-/* =========================================================
-   ESC KEY
-========================================================= */
-
-document.addEventListener(
-    "keydown",
-    function(event) {
-
-        if (event.key === "Escape") {
-
-            navMenu.classList.remove("open");
-
-            menuButton
-                .querySelector("i")
-                .className =
-                "fa-solid fa-bars";
-        }
-
-    }
-);
-
 </script>
 
 
 </body>
+
 </html>
