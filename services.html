@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -93,21 +92,26 @@ html{
     overflow-x:hidden;
 }
 
-body{
+body {
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(63,125,80,0.10),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 90% 30%,
+            rgba(215,166,65,0.08),
+            transparent 25%
+        ),
+        linear-gradient(
+            135deg,
+            #eef6ef 0%,
+            #e4f0e5 45%,
+            #f2f7f1 100%
+        );
 
-    width:100%;
-    max-width:100%;
-
-    overflow-x:hidden;
-
-    background:var(--cream);
-
-    color:var(--dark);
-
-    font-family:"DM Sans",sans-serif;
-
-    line-height:1.6;
-
+    color: #102117;
 }
 
 img{
@@ -334,39 +338,25 @@ button{
    HERO
 ===================================================== */
 
-.hero{
-
-    position:relative;
-
-    min-height:
-        calc(100vh - 78px);
-
-    display:flex;
-
-    align-items:center;
-
-    overflow:hidden;
+.hero {
 
     background:
-
         radial-gradient(
-            circle at 5% 20%,
-            rgba(63,125,80,.15),
+            circle at 15% 25%,
+            rgba(63,125,80,0.18),
             transparent 30%
         ),
-
         radial-gradient(
-            circle at 95% 20%,
-            rgba(215,166,65,.14),
-            transparent 28%
+            circle at 85% 20%,
+            rgba(215,166,65,0.15),
+            transparent 25%
         ),
-
         linear-gradient(
             135deg,
-            #f8fbf7,
-            #edf5ed
+            #e8f3e9,
+            #dcebdd,
+            #f1f7f1
         );
-
 }
 
 .hero::before{
@@ -764,71 +754,18 @@ button{
    SECTION
 ===================================================== */
 
-.section{
-
-    padding:
-        100px 0;
-
+.section {
+    background: transparent;
 }
 
-.section-white{
-
-    background:#fff;
-
+.section-white {
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,0.45),
+            rgba(232,243,233,0.65)
+        );
 }
-
-.section-heading{
-
-    max-width:760px;
-
-    margin:
-        0 auto 55px;
-
-    text-align:center;
-
-}
-
-.section-tag{
-
-    display:inline-block;
-
-    color:var(--primary);
-
-    font-size:12px;
-
-    font-weight:850;
-
-    letter-spacing:1.8px;
-
-    text-transform:uppercase;
-
-    margin-bottom:12px;
-
-}
-
-.section-heading h2{
-
-    font-family:"Manrope",sans-serif;
-
-    font-size:
-        clamp(31px,4vw,48px);
-
-    line-height:1.1;
-
-    letter-spacing:-1.8px;
-
-    margin-bottom:15px;
-
-}
-
-.section-heading p{
-
-    color:var(--muted);
-
-    font-size:15px;
-
-}
-
 
 /* =====================================================
    SERVICES
@@ -845,30 +782,34 @@ button{
 
 }
 
-.service-card{
+.service-card {
 
-    position:relative;
-
-    overflow:hidden;
-
-    background:#fff;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.88),
+            rgba(235,245,236,0.88)
+        );
 
     border:
-        1px solid var(--border);
+        1px solid rgba(31,92,53,0.12);
 
-    border-radius:var(--radius);
-
-    padding:30px;
-
-    box-shadow:var(--shadow-soft);
-
-    transition:
-        transform .35s ease,
-        box-shadow .35s ease,
-        border-color .35s ease;
-
+    box-shadow:
+        0 15px 45px rgba(31,92,53,0.08);
 }
 
+.service-card:hover {
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #e8f4e9
+        );
+
+    box-shadow:
+        0 25px 65px rgba(31,92,53,0.15);
+}
 .service-card::before{
 
     content:"";
@@ -1019,17 +960,20 @@ button{
    FEATURED SERVICE
 ===================================================== */
 
-.featured{
+.featured {
 
     background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(215,166,65,0.12),
+            transparent 25%
+        ),
         linear-gradient(
             135deg,
-            #173b25,
-            #245f38
+            #12351f,
+            #1f5c35,
+            #285f3b
         );
-
-    color:white;
-
 }
 
 .featured-wrapper{
@@ -1190,6 +1134,8 @@ button{
 
 }
 
+
+      
 .featured-circle i{
 
     color:#fff;
@@ -1267,19 +1213,20 @@ button{
 
 }
 
-.process-card{
+.process-card {
 
-    position:relative;
-
-    padding:26px;
-
-    border-radius:20px;
-
-    background:#fff;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.90),
+            rgba(232,243,233,0.90)
+        );
 
     border:
-        1px solid var(--border);
+        1px solid rgba(31,92,53,0.10);
 
+    box-shadow:
+        0 10px 35px rgba(31,92,53,0.06);
 }
 
 .process-card::after{
@@ -1362,10 +1309,19 @@ button{
    STATS
 ===================================================== */
 
-.stats{
+.stats {
 
-    background:#f0f6f0;
-
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(63,125,80,0.12),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #dcebdd,
+            #edf6ee
+        );
 }
 
 .stats-grid{
@@ -1379,20 +1335,19 @@ button{
 
 }
 
-.stat-box{
+.stat-box {
 
-    text-align:center;
-
-    padding:30px 20px;
-
-    border-radius:20px;
-
-    background:#fff;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.92),
+            rgba(228,241,229,0.95)
+        );
 
     border:
-        1px solid var(--border);
-
+        1px solid rgba(31,92,53,0.10);
 }
+
 
 .stat-box i{
 
@@ -1444,22 +1399,22 @@ button{
 
 }
 
-.why-card{
+.why-card {
 
-    display:flex;
-
-    gap:17px;
-
-    padding:23px;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.92),
+            rgba(232,243,233,0.85)
+        );
 
     border:
-        1px solid var(--border);
+        1px solid rgba(31,92,53,0.10);
 
-    border-radius:18px;
-
-    background:#fff;
-
+    box-shadow:
+        0 10px 35px rgba(31,92,53,0.06);
 }
+
 
 .why-icon{
 
@@ -1503,11 +1458,14 @@ button{
    CTA
 ===================================================== */
 
-.cta{
+.cta {
 
-    padding:
-        90px 0;
-
+    background:
+        linear-gradient(
+            135deg,
+            #e1eee2,
+            #edf5ee
+        );
 }
 
 .cta-box{
@@ -1655,12 +1613,15 @@ button{
    FOOTER
 ===================================================== */
 
-.footer{
+.footer {
 
-    background:#0e2015;
-
-    color:#dce7df;
-
+    background:
+        linear-gradient(
+            135deg,
+            #0b1e12,
+            #102c19,
+            #153a22
+        );
 }
 
 .footer-main{
