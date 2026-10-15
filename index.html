@@ -279,6 +279,12 @@
             animation: popupFadeIn 0.5s ease-out forwards;
         }
 
+        .popup-logo {
+            max-width: 90px;
+            margin-bottom: 15px;
+            border-radius: 50%;
+        }
+
         .popup-content h2 {
             margin-top: 0;
             color: #2c3e50;
@@ -288,6 +294,13 @@
         .popup-content p {
             color: #555;
             margin-bottom: 20px;
+        }
+
+        .popup-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
         .close-btn {
@@ -317,9 +330,13 @@
     <div id="welcomePopup" class="popup-overlay">
         <div class="popup-content">
             <span class="close-btn" onclick="closePopup()">&times;</span>
+            <img src="images/logo.png" alt="Divya Agro Farms Logo" class="popup-logo">
             <h2>Welcome to Divya Agro Farms!</h2>
             <p>Premium Piggery Solutions & High-Quality Livestock.</p>
-            <a href="https://forms.gle/qfbE7knoYrA9mHkD8" class="cta-button">Contact Us Today</a>
+            <div class="popup-buttons">
+                <a href="gallery.html" class="cta-button">Livestock</a>
+                <a href="https://forms.gle/qfbE7knoYrA9mHkD8" class="cta-button outline" style="background: transparent; color: #2c3e50; border: 2px solid #2c3e50;">Contact Us</a>
+            </div>
         </div>
     </div>
 
